@@ -129,6 +129,7 @@ header{
 @media (min-width: 0px) and (max-width: 992px) {
     header{
         height: 100vh;
+        transition: all 0.5s ease;
     }
     /* #nav{
         height: 650vh;
@@ -137,17 +138,21 @@ header{
     .container .navbar .nav-content .nav{
         flex-direction: column;
         display: none;
+        transition: all 0.5s ease;
     }
     .container .navbar .btn-login{
         display: none;
+        transition: all 0.5s ease;
     }
     .container .container .text-header .text-moto{
         margin-top: 70px; 
         font-size: 48px; 
+        transition: all 0.5s ease;
     }
     .container .container .text-header .btn{
         margin-top: 10px;
         margin-bottom: 10px;
+        transition: all 0.5s ease;
     }
     .container .container .img .logo-pemadam{
         display: flex;
@@ -164,6 +169,7 @@ header{
         width: 100%;
         object-fit: cover;
         text-align: center;
+        transition: all 0.5s ease;
     }
     .link-terkait{
         height: 40vh;
@@ -174,12 +180,15 @@ header{
     }
     .link-terkait .logo-link{
         margin-top: 30px;
+        transition: all 0.5s ease;
     }
     .navbar .btn-login{
         display: none;
+        transition: all 0.5s ease;
     }
     .navbar .btn-small{
         display: block;
+        transition: all 0.5s ease;
     }
 }
 @media (max-width: 767px) {
@@ -191,6 +200,7 @@ header{
         display: flex;
         margin-top: 30px;
         width: 150px;
+        transition: all 0.5s ease;
     }
 }
 @media (max-width: 500px) {
@@ -201,13 +211,16 @@ header{
         margin-top: 50px;
         margin-left: 35px;
         font-size: 40px;
+        transition: all 0.5s ease;
     }
     .container .container .text-header .text-moto2{
         color: rgb(133, 129, 147); 
         margin-left: 35px;
+        transition: all 0.5s ease;
     }
     .container .container .text-header .btn{
         margin-left: 35px;
+        transition: all 0.5s ease;
     }
     .graph .data-img{
         width: 400px;
@@ -215,9 +228,11 @@ header{
     }
     .footer{
         padding: 100px;
+        transition: all 0.5s ease;
     }
     .copy{
         text-align: center;
+        transition: all 0.5s ease;
     }
 }
 
@@ -229,20 +244,32 @@ header{
     .container .container .navbar .btn-login{
         margin-right: 20px;
     }
+    .graph .img-news{
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+        text-align: center;
+        transition: all 0.5s ease;
+    }
+
 }
 
 @media (min-width:  1200px) {
     .navbar .navbar-brand .logo-darmisa{
         margin-left: 45px;
+        transition: all 0.5s ease;
     }
     .container .container .text-header .text-moto{
-        margin-left: 50px; 
+        margin-left: 50px;
+        transition: all 0.5s ease; 
     }
     .container .container .text-header .text-moto2{
         margin-left: 50px; 
+        transition: all 0.5s ease;
     }
     .container .container .text-header .btn{
         margin-left: 50px; 
+        transition: all 0.5s ease;
     }
     .container .container .img .logo-pemadam{
         width: 55%; 
@@ -252,5 +279,13 @@ header{
     }
     .box .box-box{
         width: 88%;
+        transition: all 0.5s ease;
+    }
+    .graph .img-news{
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+        text-align: center;
+        transition: all 0.5s ease;
     }
 }
