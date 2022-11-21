@@ -1,0 +1,159 @@
+/* #nav{
+    height: 2600vh;
+    transition: all 0.5s ease;
+} */
+body{
+    font-family: sans-serif;
+}
+p{
+    transition: all 0.5 ease;
+}
+header{
+    top: 0;
+    padding: 0;
+    width: 100%;
+    height: 10vh;
+    transition: all 0.5s ease;
+}
+.navbar .nav-content .nav{
+    display: flex;
+}
+.navbar .collapse .nav-link{
+    color: rgb(181, 174, 205);
+    transition: all 0.3s ease;
+}
+.navbar .collapse .nav-link:hover{
+    color: whitesmoke;
+}
+.navbar .btn-small{
+    display: none;
+}
+.nav .nav-link{
+    color: rgb(181, 174, 205);
+    transition: all 0.3s ease;
+}
+.nav .nav-link:hover{
+    color: whitesmoke;
+}
+.navbar .btn-login{
+    display: flex;
+}
+
+.text-sejarah{
+    text-indent: 50px;
+    text-align: justify;
+}
+.struktur{
+    width: 800px;
+}
+.text-tf{
+    text-align: justify;
+}
+.text-dh{
+    text-align: justify;
+}
+.box .box-content{
+    background-color: rgba(105, 105, 105, 0.5);
+}
+.box .box-content-ch{
+    background-color: rgba(67, 67, 67, 0.6);
+}
+.box .box-content-st{
+    background-color: rgba(194, 188, 183, 0.75);
+}
+.text-title{
+    margin-left: 100px; 
+}
+.logo-darmisa{
+    width: 30px;
+}
+.bottom{
+    border: 10px red;
+    border-radius: 10%;
+    transition: all 0.5s ease;
+}
+.btn{
+    color: white;
+    transition: all 0.5s ease;
+}
+.footer{
+    padding: 170px;
+}
+.copy{
+    display: flex;
+}
+
+@media (min-width: 0px) and (max-width: 992px) {
+    /* #nav{
+        height: 700vh;
+        transition: all 0.5s ease;
+    } */
+    .container-fluid .navbar .nav-content .nav{
+        display: none;
+    }
+    .container-fluid .navbar .btn-login{
+        display: none;
+    }
+    .struktur{
+        width: 600px;
+    }
+    .text-title{
+        margin-left: 0;
+        text-align: center;   
+    }
+    .box .box-content, .box .box-content-ch{
+        background-color: rgba(105, 105, 105, 0.9);
+    }
+    .box .box-content-st{
+        background-color: rgba(194, 188, 183, 0.9);
+    }
+    .navbar .btn-login{
+        display: none;
+    }
+    .navbar .btn-small{
+        display: block;
+    }
+}
+@media (max-width: 767px) {
+    /* #nav{
+        height: 4000vh;
+        transition: all 0.5 ease;
+    } */
+    .struktur{
+        width: 450px;
+    }
+}
+@media (max-width: 500px) {
+    .struktur{
+        width: 350px;
+    }
+    .footer{
+        padding: 100px;
+    }
+    .copy{
+        text-align: center;
+    }
+
+}
+@media (min-width: 993px) and (max-width: 1199px) {
+    .container-fluid .img .logo-pemadam{
+        margin-left: 150px;
+        margin-top: 150px;
+    }
+    .container-fluid .navbar .btn-login{
+        margin-right: 20px;
+    }
+    .struktur{
+        width: 600px;
+    }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .struktur{
+        width: 700px;
+    }
+}
+@media (min-width:  1400px) {
+    .struktur{
+        width: 900px;
+    }
+}
