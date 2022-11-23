@@ -145,6 +145,131 @@
             </div>
         </div>
 
+        <?php
+
+$akses_database = mysqli_connect("localhost", "root", "", "database_ugi");
+
+if(!$akses_database)
+{
+	die("Databse tidak berhasil diakses . . .<br>");
+}
+else
+{
+	print("Database berhasil diakses . . .<br><br>");
+	
+}
+
+
+
+
+
+
+?>
+
+
+
+
+
+
+
+
+
+<?php
+
+
+$akses_tabel = mysqli_query($akses_database, "SELECT Id, Negara, jmlh_penduduk FROM data_grafik_batang_1");
+
+
+if(!$akses_tabel)
+{
+	die("Tabel tidak berhasil diakses . . .<br>");
+}
+else
+{
+	print("Tabel berhasil diakses . . .<br><br>");
+	
+}
+
+
+?>
+
+
+
+
+
+
+
+
+
+
+
+<?php
+
+
+$sumbu_y = 'Jumlah Penduduk';
+
+
+	
+	$k = -1;
+	
+	
+	while($row = mysqli_fetch_array($akses_tabel))  
+                          {  
+					  
+							
+					           $y = $row["jmlh_penduduk"];
+							   $negara = $row["Negara"];
+							   
+							   
+							
+							   $k = $k + 1;
+							   
+							  
+							$dataPoints[$k] = array("y"=> $y, "label"=> $negara);
+							   				
+							   }
+							
+	  
+
+?>
+
+
+
+
+<script>
+window.onload = function () {
+
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	theme: "light2", // "light1", "light2", "dark1", "dark2"
+	title:{
+		text: <?php print json_encode($sumbu_y . " Dunia Naruto"); ?>
+	},
+	axisY:{
+		title: <?php print json_encode($sumbu_y); ?>
+	},
+	data: [{        
+		type: "column",  
+		showInLegend: true, 
+		legendMarkerColor: "grey",
+		legendText: <?php print json_encode("Negara"); ?>,
+		dataPoints: <?php echo json_encode($dataPoints, JSON_NUMERIC_CHECK); ?>
+	}]
+	
+	
+	
+	
+	
+	
+	
+	
+	
+});
+chart.render();
+
+}
+</script>
+
         <div id="data2" class="container" style="margin-bottom: 200px;">
             <h5 class="data-content text-center fw-bold mt-5 mb-4" style="font-size: 24px; font-family: sans-serif;">JUMLAH PENGUNJUNG WISATA EDUKASI BERDASARKAN JENIS KELAMIN</h5>
             <div class="row">
@@ -295,6 +420,16 @@
           
           
         <!-- ========== footer End ========== -->
+
+
+        
+
+
+<div id="chartContainer" style="height: 370px; max-width: 920px; margin: 0px auto;"></div>
+<script src="canvasjs.min.js"></script>
+
+
+
 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 
