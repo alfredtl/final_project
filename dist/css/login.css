@@ -1,0 +1,56 @@
+.container .img .logo-pemadam{
+    display: flex;
+    width: 55%; 
+    margin: auto;
+    transition: all 0.5s ease;
+}
+.contact .contact-form{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.contact .contact-form .col-6{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.contact .contact-form .col-12{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.contact .contact-form .form-item{
+    margin-bottom: 30px;
+}
+.contact .contact-form .form-item .form-control{
+    height: 50px;
+    width: 100%;
+    border-radius: 10px;
+    background: #e9e9e9;
+    border: 1px solid white;
+    padding: 10px 25px;
+    font-size: 16px;
+    color: var(--text-black-700);
+    border-color: grey;
+    transition: all 0.2s ease;
+}
+.contact .contact-form .form-item .form-control:focus{
+    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
+.contact .contact-form .form-item textarea.form-control{
+    height: 140px;
+}
+.contact .contact-form .btn{
+    margin-bottom: 10px;
+    height: 50px;
+    cursor: pointer;
+    color: white;
+    background-color: red;
+}
+.contact .contact-form .btn-back{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    height: 50px;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(51, 33, 117);;
+}
