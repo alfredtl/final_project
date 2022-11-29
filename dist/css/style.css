@@ -82,6 +82,11 @@ header{
     width: 700px;
     transition: all 0.5 ease;
 }
+.graph .chart{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .img-news{
     height: 200px;
     object-fit: cover;
