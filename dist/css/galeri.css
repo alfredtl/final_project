@@ -1,0 +1,313 @@
+#nav{
+    height: 650vh;
+    transition: all 0.5s ease;
+}
+body{
+    font-family: sans-serif;
+}
+p{
+    transition: all 0.5 ease;
+}
+header{
+    top: 0;
+    padding: 0;
+    width: 100%;
+    height: 80vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 1.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 1.5)), url('../../image/header.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.5s ease;
+}
+.navbar .navbar-brand .logo-darmisa{
+    display: flex;
+    margin: auto;
+}
+.navbar .nav-content .nav{
+     display: flex;
+}
+/* .navbar .text-logo{
+    margin-left: 70px;
+    margin-right: 70px;
+} */
+.navbar .collapse .nav-link{
+    color: rgb(181, 174, 205);
+    transition: all 0.3s ease;
+}
+.navbar .collapse .nav-link:hover{
+    color: whitesmoke;
+}
+.navbar .btn-small{
+    display: none;
+}
+.navbar .btn-login{
+    display: flex;
+}
+.nav .nav-link{
+    color: rgb(181, 174, 205);
+    transition: all 0.3s ease;
+}
+.nav .nav-link:hover{
+    color: whitesmoke;
+}
+.container{
+    width: 100%;
+}
+.container .container .img .logo-pemadam{
+    width: 55%; 
+    margin-left: 210px; 
+    margin-top: 100px;
+    transition: all 0.5s ease;
+}
+.container .container .text-header .text-moto{
+    margin-top: 100px;  
+    font-size: 48px; 
+}
+.container .container .text-header .text-moto2{
+    text-align: justify;
+    color: rgb(133, 129, 147); 
+}
+.container .container .text-header .btn{
+    background-color:rgb(218, 37, 29); 
+    width: 320px; 
+}
+.box .box-box{
+    width: 95%;
+}
+.data-content{
+    margin-top: 20px;
+    transition: all 0.5s ease;
+}
+.graph .data-img{
+    width: 700px;
+    transition: all 0.5 ease;
+}
+.img-news{
+    height: 200px;
+    object-fit: cover;
+    transition: all 0.5s ease;
+}
+.link-terkait{
+    width: 100%;
+    height: 80vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url('../../image/header.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.5s ease;
+}
+.link-terkait .logo-link{
+    margin-top: 100px;
+    transition: all 0.5s ease;
+}
+.link-terkait .logo-link .logo{
+    width: 200px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+.logo-darmisa{
+    width: 30px;
+}
+.bottom{
+    border: 10px red;
+    border-radius: 10%;
+    transition: all 0.5s ease;
+}
+.btn{
+    color: white;
+    transition: all 0.5s ease;
+}
+.footer{
+    padding: 170px;
+}
+.copy{
+    display: flex;
+}
+
+@media (min-width: 0px) and (max-width: 992px) {
+    header{
+        height: 100vh;
+        transition: all 0.5s ease;
+    }
+    /* #nav{
+        height: 650vh;
+        transition: all 0.5 ease;
+    } */
+    .container .navbar .nav-content .nav{
+        flex-direction: column;
+        display: none;
+        transition: all 0.5s ease;
+    }
+    .container .navbar .btn-login{
+        display: none;
+        transition: all 0.5s ease;
+    }
+    .container .container .text-header .text-moto{
+        margin-top: 70px; 
+        font-size: 48px; 
+        transition: all 0.5s ease;
+    }
+    .container .container .text-header .btn{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        transition: all 0.5s ease;
+    }
+    .container .container .img .logo-pemadam{
+        display: flex;
+        margin: auto;
+        margin-top: 30px;
+        width: 200px;
+    }
+    .graph .data-img{
+        width: 500px;
+        transition: all 0.5 ease;
+    }
+    .graph .img-news{
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+        text-align: center;
+        transition: all 0.5s ease;
+    }
+    .link-terkait{
+        height: 40vh;
+        transition: all 0.5s ease;
+    }
+    .link-terkait .logo-link .logo{
+        width: 80px;
+    }
+    .link-terkait .logo-link{
+        margin-top: 30px;
+        transition: all 0.5s ease;
+    }
+    .navbar .btn-login{
+        display: none;
+        transition: all 0.5s ease;
+    }
+    .navbar .btn-small{
+        display: block;
+        transition: all 0.5s ease;
+    }
+}
+@media (max-width: 767px) {
+    /* #nav{
+        height: 850vh;
+        transition: all 0.5 ease;
+    } */
+    .container .container .img .logo-pemadam{
+        display: flex;
+        margin-top: 30px;
+        width: 150px;
+        transition: all 0.5s ease;
+    }
+}
+@media (max-width: 500px) {
+    /* .navbar .text-logo{
+        margin-left: 20px;
+    } */
+    .container .container .text-header .text-moto{
+        margin-top: 50px;
+        margin-left: 35px;
+        font-size: 40px;
+        transition: all 0.5s ease;
+    }
+    .container .container .text-header .text-moto2{
+        color: rgb(133, 129, 147); 
+        margin-left: 35px;
+        transition: all 0.5s ease;
+    }
+    .container .container .text-header .btn{
+        margin-left: 35px;
+        transition: all 0.5s ease;
+    }
+    .graph .data-img{
+        width: 400px;
+        transition: all 0.5 ease;
+    }
+    .footer{
+        padding: 100px;
+        transition: all 0.5s ease;
+    }
+    .copy{
+        text-align: center;
+        transition: all 0.5s ease;
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1199px) {
+    .navbar .navbar-brand .logo-darmisa{
+        margin-left: 85px;
+        transition: all 0.5s ease;
+    }
+    .container .container .text-header .text-moto{
+        margin-top: 100px;
+        margin-left: 95px;
+        transition: all 0.5s ease; 
+    }
+    .container .container .text-header .text-moto2{
+        margin-left: 95px; 
+        transition: all 0.5s ease;
+    }
+    .container .container .text-header .btn{
+        margin-left: 95px; 
+        transition: all 0.5s ease;
+    }
+    .box .box-box{
+        width: 83%;
+        transition: all 0.5s ease;
+    }
+    .container .container .img .logo-pemadam{
+        margin-left: 150px;
+        margin-top: 150px;
+    }
+    .container .container .navbar .btn-login{
+        margin-right: 20px;
+    }
+    .graph .img-news{
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+        text-align: center;
+        transition: all 0.5s ease;
+    }
+
+}
+
+@media (min-width:  1200px) {
+    .navbar .navbar-brand .logo-darmisa{
+        margin-left: 85px;
+        transition: all 0.5s ease;
+    }
+    .container .container .text-header .text-moto{
+        margin-top: 180px;
+        margin-left: 85px;
+        transition: all 0.5s ease; 
+    }
+    .container .container .text-header .text-moto2{
+        margin-left: 85px; 
+        transition: all 0.5s ease;
+    }
+    .container .container .text-header .btn{
+        margin-left: 85px; 
+        transition: all 0.5s ease;
+    }
+    .container .container .img .logo-pemadam{
+        width: 55%; 
+        margin-left: 200px; 
+        margin-top: 120px;
+        transition: all 0.5s ease;
+    }
+    .box .box-box{
+        width: 83%;
+        transition: all 0.5s ease;
+    }
+    .graph .img-news{
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+        text-align: center;
+        transition: all 0.5s ease;
+    }
+}
