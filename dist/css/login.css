@@ -42,7 +42,7 @@
     height: 50px;
     cursor: pointer;
     color: white;
-    background-color: red;
+    background-color: rgb(51, 33, 117);
 }
 .contact .contact-form .btn-back{
     display: flex;
@@ -52,5 +52,5 @@
     height: 50px;
     cursor: pointer;
     color: white;
-    background-color: rgb(51, 33, 117);;
+    background-color: rgb(218, 37, 29);
 }
