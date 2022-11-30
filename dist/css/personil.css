@@ -61,9 +61,6 @@ header{
 .box .box-content-st{
     background-color: rgba(194, 188, 183, 0.75);
 }
-table,th,td{
-    border: 1px solid black;
-}
 .text-title{
     margin-left: 100px; 
 }
