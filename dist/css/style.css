@@ -242,8 +242,9 @@ header{
         transition: all 0.5s ease;
     }
     .container .container .text-header .text-moto{
-        margin-top: 100px;
+        margin-top: 60px;
         margin-left: 95px;
+        line-height: 60px;
         transition: all 0.5s ease; 
     }
     .container .container .text-header .text-moto2{
@@ -260,7 +261,7 @@ header{
     }
     .container .container .img .logo-pemadam{
         margin-left: 150px;
-        margin-top: 150px;
+        margin-top: 130px;
     }
     .container .container .navbar .btn-login{
         margin-right: 20px;
