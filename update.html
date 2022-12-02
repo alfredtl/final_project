@@ -59,11 +59,11 @@
                         <div class="card-body p-4">
                             <h2>UPDATE DATA JUMLAH PENGUNJUNG BULANAN</h2>
                             <form action="action.php?p=gambar" method="post" enctype="multipart/form-data">
-                                <br>Tanggal :
-                                <input type="text" name="tanggal">
-                                <br>Upload Foto
-                                <input type="file" name="berkas">
-                                <input class="btn btn-primary" type="button" name="submit" value="submit">
+                                <br>Tanggal :<br>
+                                <input type="text" name="tanggal" class="mb-3">
+                                <br>Upload Foto :<br>
+                                <input type="file" name="berkas" class="mb-3"><br>
+                                <input class="btn btn-primary" type="button" name="submit" value="Submit">
                             </form>
                         </div>
                     </div>
@@ -79,13 +79,13 @@
                         <div class="card-body p-4">
                             <h2>UPDATE DATA KEBAKARAN TAHUNAN</h2>
                             <form action="action.php?p=gambar" method="post" enctype="multipart/form-data">
-                                Judul :
-                                <input type="text" name="judul">
-                                <br> Tanggal :
-                                <input type="text" name="judul">
-                                <br>Upload foto :
-                                <input type="file" name="berkas">
-                                <input class="btn btn-primary" type="button" name="submit" value="submit">
+                                Judul :<br>
+                                <input type="text" name="judul kejadian" class="mb-3">
+                                <br> Tanggal :<br>
+                                <input type="text" name="tanggal kejadian" class="mb-3">
+                                <br>Upload foto :<br>
+                                <input type="file" name="berkas" class="mb-3"><br>
+                                <input class="btn btn-primary" type="button" name="submit" value="Submit">
                             </form>
                         </div>
                     </div>
@@ -101,13 +101,15 @@
                         <div class="card-body p-4">
                             <h2>UPDATE GALERI</h2>
                             <form action="action.php?p=gambar" method="post" enctype="multipart/form-data">
-                                Judul :
-                                <input type="text" name="judul kegiatan">
-                                <br>Tanggal :
-                                <input type="text" name="tanggal kegiatan">
-                                <br>Upload Foto :
-                                <input type="file" name="berkas">
-                                <input class="btn btn-primary" type="button" name="submit" value="submit">
+                                Judul :<br>
+                                <input type="text" name="judul kegiatan" class="mb-3">
+                                <br>Tanggal :<br>
+                                <input type="text" name="tanggal kegiatan" class="mb-3">
+                                <br>Upload Multiple Foto :<br>
+                                <div class="mb-3">
+                                    <input class="form-control mb-3" name="berkas" type="file" id="formFileMultiple" multiple>
+                                    <input class="btn btn-primary" type="button" name="submit" value="Submit">
+                                </div>
                             </form>
                         </div>
                     </div>
@@ -123,15 +125,17 @@
                         <div class="card-body p-4">
                             <h2>UPDATE BERITA</h2>
                             <form action="action.php?p=gambar" method="post" enctype="multipart/form-data">
-                                Judul :
-                                <input type="text" name="judul kegiatan">
-                                <br>Tanggal :
-                                <input type="text" name="tanggal kegiatan">
-                                <br>Tempat Kejadian :
-                                <input type="text" name="tempat kejadian">
-                                <br>Upload Foto :
-                                <input type="file" name="berkas">
-                                <input class="btn btn-primary" type="button" name="submit" value="submit">
+                                Judul :<br>
+                                <input type="text" name="judul kegiatan" class="mb-3">
+                                <br>Isi Berita :<br>
+                                <input type="text" name="Isi Berita" class="mb-3">
+                                <br>Tanggal :<br>
+                                <input type="text" name="tanggal kegiatan" class="mb-3">
+                                <br>Tempat Kejadian :<br>
+                                <input type="text" name="tempat kejadian" class="mb-3">
+                                <br>Upload Foto :<br>
+                                <input type="file" name="berkas" class="mb-3"><br>
+                                <input class="btn btn-primary" type="button" name="submit" value="Submit">
                             </form>
                         </div>
                     </div>
