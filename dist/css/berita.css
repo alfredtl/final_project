@@ -1,7 +1,7 @@
-#nav{
+/* #nav{
     height: 650vh;
     transition: all 0.5s ease;
-}
+} */
 body{
     font-family: sans-serif;
 }
@@ -65,17 +65,6 @@ p{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    transition: all 0.5s ease;
-}
-.link-terkait .logo-link{
-    margin-top: 100px;
-    transition: all 0.5s ease;
-}
-.link-terkait .logo-link .logo{
-    width: 200px;
-    margin: auto;
-    align-items: center;
-    justify-content: center;
     transition: all 0.5s ease;
 }
 .logo-darmisa{

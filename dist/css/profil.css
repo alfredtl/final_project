@@ -8,6 +8,10 @@ body{
 p{
     transition: all 0.5 ease;
 }
+.navbar .navbar-brand .logo-darmisa{
+    display: flex;
+    margin: auto;
+}
 header{
     top: 0;
     padding: 0;
