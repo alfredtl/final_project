@@ -103,7 +103,7 @@
         <div class="container">
             <a class="navbar-brand navbar-dark d-flex  align-items-center text-white  ms-sm-3 col-6 col-md-4 me-6" aria-label="Bootstrap" href="./darmisa.html"></svg><img class="logo-darmisa text-dark rounded-circle" src="./image/logo_DarMisa.jpg" alt="" title="DarMisa"><span class="fw-bold" style="margin-right: 100px;">DarMisa</span></a>
             
-            <a href="./login.html" class="btn-small btn btn-sm rounded-pill text-white mb-0 ms-auto me-2" title="Login" style="background-color:rgb(218, 37, 29); width: 80px;">Login</a>
+            <a href="./login.php" class="btn-small btn btn-sm rounded-pill text-white mb-0 ms-auto me-2" title="Login" style="background-color:rgb(218, 37, 29); width: 80px;">Login</a>
             
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <i class="list-burger bi bi-list d-lg-none ms-0 text-end" style="color: white; cursor: pointer;"></i></button>
@@ -130,7 +130,7 @@
                 </ul>
             </div>
             <div class="btn-login col-md-2 col-lg-2 text-end">
-                <a class="w-50" href="./login.html"><button type="button" class="btn text-white rounded-pill w-100 me-2" title="Login" style="background-color:rgb(218, 37, 29);">Login</button></a> 
+                <a class="w-50" href="./login.php"><button type="button" class="btn text-white rounded-pill w-100 me-2" title="Login" style="background-color:rgb(218, 37, 29);">Login</button></a> 
             </div>
         </div>
     </nav>
