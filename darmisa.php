@@ -47,7 +47,7 @@
     <!-- =========== Navbar Baru Lagi =========== -->
     <nav class="navbar navbar-expand-lg shadow-sm sticky-top" style="background-color:rgb(51, 33, 117);">
         <div class="container justify-content-between">
-            <a class="navbar-brand navbar-dark d-flex  align-items-center text-white  ms-sm-3 col-6 col-md-4 me-6" aria-label="Bootstrap" href="./darmisa.html"></svg><img class="logo-darmisa text-dark rounded-circle d-flex mx-auto" src="./image/logo_DarMisa.jpg" alt="" title="DarMisa"><span class="fw-bold" style="margin-left: 70px; margin-right: 70px;">DarMisa</span></a>
+            <a class="navbar-brand navbar-dark d-flex  align-items-center text-white  ms-sm-3 col-6 col-md-4 me-6" aria-label="Bootstrap" href="./darmisa.php"></svg><img class="logo-darmisa text-dark rounded-circle d-flex mx-auto" src="./image/logo_DarMisa.jpg" alt="" title="DarMisa"><span class="fw-bold" style="margin-left: 70px; margin-right: 70px;">DarMisa</span></a>
             <!--<a href="" class="btn-small btn btn-sm rounded-pill text-white mb-0 ms-auto me-2" title="Login" style="background-color:rgb(218, 37, 29); width: 80px;">Login</a>-->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <i class="list-burger bi bi-list d-lg-none ms-0 text-end" style="color: white; cursor: pointer;"></i></button>
@@ -273,7 +273,7 @@
                                 <div class="box-content text-light mx-auto" style="border-radius: 25px;  background-repeat: no-repeat;">
                                     <div class="p-3 fw-bold">                                    
                                         <ul class="list-unstyled lh-lg">
-                                            <li>Aldi Sekeon</li>
+                                            <li>Aldy Paskah Sekeon</li>
                                             <li>No Wa. 085823543297</li>
                                             <li>Gmail : asekeon07@gmail.com</li>
                                             <li>Mahasiswa di Universitas Negeri Manado</li>
@@ -577,7 +577,7 @@
                 <div class="row">
                     <div class="justify-content-between col-12 col-md-4 mb-3">
                         <div class="row">
-                            <a class="navbar-brand navbar-dark d-flex p-0 align-items-center text-dark w-75 fs-5 ms-sm-3 col-6 col-md-4 me-6 mb-4" href=""></svg><img class="logo-darmisa text-dark" src="./image/logo-seal.jpeg" alt="" title="Social Economic Accelerator Lab"><span class="fw-bold mx-4" title="DarMisa">DarMisa</span></a>
+                            <a class="navbar-brand navbar-dark d-flex p-0 align-items-center text-dark w-75 fs-5 ms-sm-3 col-6 col-md-4 me-6 mb-4" href="./darmisa.php"></svg><img class="logo-darmisa text-dark" src="./image/logo-seal.jpeg" alt="" title="Social Economic Accelerator Lab"><span class="fw-bold mx-4" title="DarMisa">DarMisa</span></a>
                         </div>
                         
                         <p class="mb-4">Damkar Information And Reporting Website</p>

@@ -101,7 +101,7 @@
     <!-- =========== Navbar Baru Lagi =========== -->
     <nav class="navbar navbar-expand-lg shadow-sm sticky-top" style="background-color:rgb(51, 33, 117);">
         <div class="container">
-            <a class="navbar-brand navbar-dark d-flex  align-items-center text-white  ms-sm-3 col-6 col-md-4 me-6" aria-label="Bootstrap" href="./darmisa.html"></svg><img class="logo-darmisa text-dark rounded-circle" src="./image/logo_DarMisa.jpg" alt="" title="DarMisa"><span class="fw-bold" style="margin-right: 100px;">DarMisa</span></a>
+            <a class="navbar-brand navbar-dark d-flex  align-items-center text-white  ms-sm-3 col-6 col-md-4 me-6" aria-label="Bootstrap" href="./darmisa.php"></svg><img class="logo-darmisa text-dark rounded-circle" src="./image/logo_DarMisa.jpg" alt="" title="DarMisa"><span class="fw-bold" style="margin-right: 100px;">DarMisa</span></a>
             
             <a href="./login.php" class="btn-small btn btn-sm rounded-pill text-white mb-0 ms-auto me-2" title="Login" style="background-color:rgb(218, 37, 29); width: 80px;">Login</a>
             
@@ -167,7 +167,7 @@
             <div class="container">    
                 <div class="row">
                     <div class="text-header col-lg-6 col-sm-12 col-12">
-                        <p class="text-moto text-white fw-bolder text-align-sm-center" >Pantang Pulang Sebelum Api Padam</p>
+                        <p class="text-moto text-white fw-bolder text-align-sm-center" >Selamat Datang Di Website Damkar Minahasa</p>
                         <p class="text-moto2 text-align-md-center">Tetap jaga kesehatan dan selalu waspada terhadap bahaya kebakaran</p>
                         <button type="button" class="btn text-white rounded mt-4 me-2"><i class="bi bi-telephone-fill" style="color: rgb(51, 33, 117); margin-right: 10px;"></i> EMERGENCY CALL (0431) 321001</button>
                     </div>
@@ -213,7 +213,7 @@
                         <div class="col-md-4 position-relative">
                             <div class="p-3 text-center">
                                 <h1 class="text-gradient text primary">
-                                    <a href="./peralatan-kebakaran.html" class="text-light" style="text-decoration: none;">
+                                    <a href="./peralatan-kebakaran.php" class="text-light" style="text-decoration: none;">
                                         <img src="./image/icon-3.jpg" class="rounded-circle" style="width: 70px;" alt="">
                                         <p class="mt-2" style="font-size: 20px; font-family: sans-serif;">Peralatan Kebakaran</p>
                                         <p class="text-secondary" style="font-size: 14px; margin-top: 10px; font-family: sans-serif;">Peralatan-peralatan yang terkait dengan Safety dan Kebakaran</p>
@@ -329,28 +329,28 @@
             <h5 class="data-content text-center fw-bold mt-5 mb-4" style="font-size: 24px; font-family: sans-serif;">BREAKING NEWS</h5>
             <div class="row">
                 <div class="graph col-12 col-md-6 col-lg-3">
-                    <a href="./berita.html"><img src="./image/berita1.png" class="img-news rounded mb-3" alt=""></a>
+                    <a href="./berita.php"><img src="./image/berita1.png" class="img-news rounded mb-3" alt=""></a>
                 </div>
                 <div class="graph col-12 col-md-6 col-lg-3">
-                    <a href="./berita.html"><img src="./image/berita2.png" class="img-news rounded mb-3" alt=""></a>
+                    <a href="./berita.php"><img src="./image/berita2.png" class="img-news rounded mb-3" alt=""></a>
                 </div>
                 <div class="graph col-12 col-md-6 col-lg-3">
-                    <a href="./berita.html"><img src="./image/berita3.png" class="img-news rounded mb-3" alt=""></a>
+                    <a href="./berita.php"><img src="./image/berita3.png" class="img-news rounded mb-3" alt=""></a>
                 </div>
                 <div class="graph col-12 col-md-6 col-lg-3">
-                    <a href="./berita.html"><img src="./image/berita4.png" class="img-news rounded mb-3" alt=""></a>
+                    <a href="./berita.php"><img src="./image/berita4.png" class="img-news rounded mb-3" alt=""></a>
                 </div>
                 <div class="graph col-12 col-md-6 col-lg-3">
-                    <a href="./berita.html"><img src="./image/berita5.png" class="img-news rounded mb-3" alt=""></a>
+                    <a href="./berita.php"><img src="./image/berita5.png" class="img-news rounded mb-3" alt=""></a>
                 </div>
                 <div class="graph col-12 col-md-6 col-lg-3">
-                    <a href="./berita.html"><img src="./image/berita6.png" class="img-news rounded mb-3" alt=""></a>
+                    <a href="./berita.php"><img src="./image/berita6.png" class="img-news rounded mb-3" alt=""></a>
                 </div>
                 <div class="graph col-12 col-md-6 col-lg-3">
-                    <a href="./berita.html"><img src="./image/berita7.png" class="img-news rounded mb-3" alt=""></a>
+                    <a href="./berita.php"><img src="./image/berita7.png" class="img-news rounded mb-3" alt=""></a>
                 </div>
                 <div class="graph col-12 col-md-6 col-lg-3">
-                    <a href="./berita.html"><img src="./image/berita8.png" class="img-news rounded mb-3" alt=""></a>
+                    <a href="./berita.php"><img src="./image/berita8.png" class="img-news rounded mb-3" alt=""></a>
                 </div>
             </div>
         </div>
@@ -387,7 +387,7 @@
                 <div class="row">
                     <div class="justify-content-between col-12 col-md-4 mb-3">
                         <div class="row">
-                            <a class="navbar-brand navbar-dark d-flex p-0 align-items-center text-dark w-75 fs-5 ms-sm-3 col-6 col-md-4 me-6 mb-4" href="darmisa.html"></svg><img class="logo-darmisa text-dark" src="./image/logo-seal.jpeg" alt="" title="Social Economic Accelerator Lab"><span a class="fw-bold mx-4" title="DarMisa">DarMisa</span></a>
+                            <a class="navbar-brand navbar-dark d-flex p-0 align-items-center text-dark w-75 fs-5 ms-sm-3 col-6 col-md-4 me-6 mb-4" href="darmisa.php"></svg><img class="logo-darmisa text-dark" src="./image/logo-seal.jpeg" alt="" title="Social Economic Accelerator Lab"><span a class="fw-bold mx-4" title="DarMisa">DarMisa</span></a>
                         </div>
                         
                         <p class="mb-4">Damkar Information And Reporting Website</p>
