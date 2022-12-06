@@ -55,16 +55,16 @@
             <div class="collapse navbar-collapse text-center" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item me-4">
-                        <a class="nav-link" aria-current="page" href="./index.html">Beranda</a>
+                        <a class="nav-link" aria-current="page" href="./index.php">Beranda</a>
                     </li>
                     <li class="nav-item me-4">
-                        <a class="nav-link" aria-current="page" href="./profil.html">Profil</a>
+                        <a class="nav-link" aria-current="page" href="./profil.php">Profil</a>
                     </li>
                     <li class="nav-item me-4">
-                        <a class="nav-link" aria-current="page" href="./berita.html">Berita</a>
+                        <a class="nav-link" aria-current="page" href="./berita.php">Berita</a>
                     </li>
                     <li class="nav-item me-4">
-                        <a class="nav-link" aria-current="page" href="./personil.html">Personil & Unit</a>
+                        <a class="nav-link" aria-current="page" href="./personil.php">Personil & Unit</a>
                     </li>
                     <li class="nav-item me-4">
                         <a class="nav-link" aria-current="page" href="./kontak.html">Hubungi Kami</a>

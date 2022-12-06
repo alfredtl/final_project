@@ -64,7 +64,7 @@
                                                 <div class="form-item text-center col-12 padd-15">
                                                     <button type="submit" class="btn w-100 rounded">Login</button>
                                                     <div class="btn-back rounded mb-3"> 
-                                                        <a href="./index.html" class="btn-back w-100 list-unstyled text-decoration-none">Back</a>
+                                                        <a href="./index.php" class="btn-back w-100 list-unstyled text-decoration-none">Back</a>
                                                     </div>
                                                 </div>
                                             </div>

@@ -110,16 +110,16 @@
             <div class="collapse navbar-collapse text-center" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item me-4">
-                        <a class="nav-link" aria-current="page" href="./index.html">Beranda</a>
+                        <a class="nav-link" aria-current="page" href="./index.php">Beranda</a>
                     </li>
                     <li class="nav-item me-4">
-                        <a class="nav-link" aria-current="page" href="./profil.html">Profil</a>
+                        <a class="nav-link" aria-current="page" href="./profil.php">Profil</a>
                     </li>
                     <li class="nav-item me-4">
-                        <a class="nav-link" aria-current="page" href="./berita.html">Berita</a>
+                        <a class="nav-link" aria-current="page" href="./berita.php">Berita</a>
                     </li>
                     <li class="nav-item me-4">
-                        <a class="nav-link" aria-current="page" href="./personil.html">Personil & Unit</a>
+                        <a class="nav-link" aria-current="page" href="./personil.php">Personil & Unit</a>
                     </li>
                     <li class="nav-item me-4">
                         <a class="nav-link" aria-current="page" href="./kontak.html">Hubungi Kami</a>
@@ -190,19 +190,20 @@
             </div>
         </div>
 
-        <!-- <?php
 
-$akses_database = mysqli_connect("localhost", "root", "", "database_ugi");
+        <?php
 
-if(!$akses_database)
-{
-    die("Databse tidak berhasil diakses . . .<br>");
-}
-else
-{
-    print("Database berhasil diakses . . .<br><br>");
+// $akses_database = mysqli_connect("localhost", "root", "", "database_ugi");
+
+// if(!$akses_database)
+// {
+//     die("Databse tidak berhasil diakses . . .<br>");
+// }
+// else
+// {
+//     print("Database berhasil diakses . . .<br><br>");
     
-}
+// }
 
 
 
@@ -222,18 +223,18 @@ else
 <?php
 
 
-$akses_tabel = mysqli_query($akses_database, "SELECT Id, Negara, jmlh_penduduk FROM data_grafik_batang_1");
+// $akses_tabel = mysqli_query($akses_database, "SELECT Id, Negara, jmlh_penduduk FROM data_grafik_batang_1");
 
 
-if(!$akses_tabel)
-{
-    die("Tabel tidak berhasil diakses . . .<br>");
-}
-else
-{
-    print("Tabel berhasil diakses . . .<br><br>");
+// if(!$akses_tabel)
+// {
+//     die("Tabel tidak berhasil diakses . . .<br>");
+// }
+// else
+// {
+//     print("Tabel berhasil diakses . . .<br><br>");
     
-}
+// }
 
 
 ?>
@@ -258,21 +259,21 @@ $sumbu_y = 'Jumlah Penduduk';
     $k = -1;
     
     
-    while($row = mysqli_fetch_array($akses_tabel))  
-                        {  
+    // while($row = mysqli_fetch_array($akses_tabel))  
+    //                     {  
                     
                             
-                            $y = $row["jmlh_penduduk"];
-                            $negara = $row["Negara"];
+    //                         $y = $row["jmlh_penduduk"];
+    //                         $negara = $row["Negara"];
                             
                             
                             
-                            $k = $k + 1;
+    //                         $k = $k + 1;
                             
                             
-                            $dataPoints[$k] = array("y"=> $y, "label"=> $negara);
+    //                         $dataPoints[$k] = array("y"=> $y, "label"=> $negara);
                                             
-                            }
+    //                         }
                             
     
 
@@ -282,7 +283,7 @@ $sumbu_y = 'Jumlah Penduduk';
 
 
 <script>
-window.onload = function () {
+/*window.onload = function () {
 
 var chart = new CanvasJS.Chart("chartContainer", {
     animationEnabled: true,
@@ -312,8 +313,8 @@ var chart = new CanvasJS.Chart("chartContainer", {
 });
 chart.render();
 
-}
-</script> -->
+}*/
+</script> 
 
         <div id="data2" class="container" style="margin-bottom: 200px;">
             <h5 class="data-content text-center fw-bold mt-5 mb-4" style="font-size: 24px; font-family: sans-serif;">JUMLAH PENGUNJUNG WISATA EDUKASI BERDASARKAN JENIS KELAMIN</h5>

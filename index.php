@@ -110,22 +110,22 @@
             <div class="collapse navbar-collapse text-center" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item me-3">
-                        <a class="nav-link" aria-current="page" href="./index.html">Beranda</a>
+                        <a class="nav-link" aria-current="page" href="./index.php">Beranda</a>
                     </li>
                     <li class="nav-item me-3">
-                        <a class="nav-link" aria-current="page" href="./profil.html">Profil</a>
+                        <a class="nav-link" aria-current="page" href="./profil.php">Profil</a>
                     </li>
                     <li class="nav-item me-3">
-                        <a class="nav-link" aria-current="page" href="./berita.html">Berita</a>
+                        <a class="nav-link" aria-current="page" href="./berita.php">Berita</a>
                     </li>
                     <li class="nav-item me-3">
-                        <a class="nav-link" aria-current="page" href="./personil.html">Personil & Unit</a>
+                        <a class="nav-link" aria-current="page" href="./personil.php">Personil & Unit</a>
                     </li>
                     <li class="nav-item me-3">
-                        <a class="nav-link" aria-current="page" href="./kontak.html">Hubungi Kami</a>
+                        <a class="nav-link" aria-current="page" href="./kontak.php">Hubungi Kami</a>
                     </li>
                     <li class="nav-item me-3">
-                        <a class="nav-link" aria-current="page" href="./update.html">Edit</a>
+                        <a class="nav-link" aria-current="page" href="./update.php">Edit</a>
                     </li>
                 </ul>
             </div>
@@ -191,7 +191,7 @@
                         <div class="col-md-4 position-relative">
                             <div class="p-3 text-center">
                                 <h1 class="text-gradient text primary">
-                                    <a href="data-kebakaran.html" class="text-light" style="text-decoration: none;">
+                                    <a href="data-kebakaran.php" class="text-light" style="text-decoration: none;">
                                         <img src="./image/icon-1.jpg" class="rounded-circle" style="width: 70px;" alt="">
                                         <p class="mt-2" style="font-size: 20px; font-family: sans-serif;">Data Kebakaran</p>
                                         <p class="text-secondary" style="font-size: 14px; margin-top: 10px; font-family: sans-serif;">Data Kebakaran Di Wilayah Minahasa</p>
@@ -202,7 +202,7 @@
                         <div class="col-md-4 position-relative">
                             <div class="p-3 text-center">
                                 <h1 class="text-gradient text primary">
-                                    <a href="./galeri.html" class="text-light" style="text-decoration: none;">
+                                    <a href="./galeri.php" class="text-light" style="text-decoration: none;">
                                         <img src="./image/icon-2.jpg" class="rounded-circle" style="width: 70px;" alt="">
                                         <p class="mt-2" style="font-size: 20px; font-family: sans-serif;">Gallery</p>
                                         <p class="text-secondary" style="font-size: 14px; margin-top: 10px; font-family: sans-serif;">Gallery Foto Dinas Pemadam Kebakaran Minahasa</p>
