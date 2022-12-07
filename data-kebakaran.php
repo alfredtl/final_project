@@ -1,10 +1,15 @@
+<?php
+include_once 'koneksi.php';
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./dist/css/berita.css">
+    <link rel="stylesheet" href="./dist/css/data-kebakaran.css">
     <title>Data Kebakaran</title>
     <!-- icon bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
@@ -193,16 +198,100 @@
             <p class="text-center"><a href="https://docs.google.com/spreadsheets/d/16McdP-aJHylAogYrk9eHr-VJs1tKePUrRICyZgEeDhg/edit?usp=sharing">Bulan Juli</a></p>
             <p class="text-center"><a href="https://docs.google.com/spreadsheets/d/1f86CPQny1tXRtwk8T5w_S2x3OblMI0IhVj1Hae_T1bs/edit?usp=sharing">Bulan Agustus</a></p>
 
+            
+            <h5 class="data-content text-center fw-bold mb-4" style="font-size: 24px; font-family: sans-serif; margin-top: 100px;">Data Evakuasi Bulan Januari</h5>
+            
 
-            <h5 class="data-content text-center fw-bold mt-5 mb-4" style="font-size: 24px; font-family: sans-serif;">JUMLAH PENGUJUNG WISATA EDUKASI</h5>
-            <div class="row">
+            <table>
+                <tr>
+                    <th rowspan="2" style="border: 1px solid black; width: 5%; text-align: center;">No</th>
+                    <th rowspan="2" style="border: 1px solid black; text-align: center;">Hari/Tanggal</th>
+                    <th colspan="3" style="border: 1px solid black; text-align: center;">Penyelamatan</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Pemilik</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Alamat Pemilik</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">No.HP Pengguna Layanan</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Jumlah Unit</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Jenis Objek Evakuasi</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Hasil Pelaksanaan</th>
+                    <th colspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Waktu pelaksanaan</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Keterangan</th>
+                </tr>
+                <tr>
+                    <th style="border: 1px solid black; width: 10%; text-align: center;">Hewan Berbisa</th>
+                    <th style="border: 1px solid black; width: 10%; text-align: center;">Evakuasi</th>
+                    <th style="border: 1px solid black; width: 10%; text-align: center;">Lain-lain</th>
+                    <th style="border: 1px solid black; width: 10%; text-align: center;">Mulai</th>
+                    <th style="border: 1px solid black; width: 10%; text-align: center;">Selesai</th>
+                </tr>
+
+
+            <?php 
+                //INI CODE PHP UNTUK LOOPING BERITANYA. LAKUKAN DI TABEL2 LAINN
+                $sql = "SELECT * FROM penyelamatan_januari";
+
+                if ($result = mysqli_query($con, $sql)) {
+                    // Fetch one and one row
+                    while ($row = mysqli_fetch_row($result)) {
+            ?>
+            <table>
+                <tr>
+                    <th rowspan="2" style="width: 5%; text-align: center; color: white;;">No</th>
+                    <th rowspan="2" style="text-align: center; color: white;;">Hari/Tanggal</th>
+                    <th colspan="3" style="text-align: center; color: white;;">Penyelamatan</th>
+                    <th rowspan="2" style="width: 10%; text-align: center; color: white;;">Pemilik</th>
+                    <th rowspan="2" style="width: 10%; text-align: center; color: white;;">Alamat Pemilik</th>
+                    <th rowspan="2" style="width: 10%; text-align: center; color: white;;">No.HP Pengguna Layanan</th>
+                    <th rowspan="2" style="width: 10%; text-align: center; color: white;;">Jumlah Unit</th>
+                    <th rowspan="2" style="width: 10%; text-align: center; color: white;;">Jenis Objek Evakuasi</th>
+                    <th rowspan="2" style="width: 10%; text-align: center; color: white;;">Hasil Pelaksanaan</th>
+                    <th colspan="2" style="width: 10%; text-align: center; color: white;;">Waktu pelaksanaan</th>
+                    <th rowspan="2" style="width: 10%; text-align: center; color: white;;">Keterangan</th>
+                </tr>
+                <tr>
+                    <th style="width: 10%; text-align: center; color: white;;">Hewan Berbisa</th>
+                    <th style="width: 10%; text-align: center; color: white;;">Evakuasi</th>
+                    <th style="width: 10%; text-align: center; color: white;;">Lain-lain</th>
+                    <th style="width: 10%; text-align: center; color: white;;">Mulai</th>
+                    <th style="width: 10%; text-align: center; color: white;;">Selesai</th>
+                </tr>
+            
+
+
+                <tr style="height: 40px;">
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[0];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[1];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[2];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[3];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[4];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[5];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[6];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[7];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[8];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[9];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[10];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[11];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[12];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[13];?></td>
+                </tr>
+            </table>
+
+            <?php
+                }
+                //mysqli_free_result($result);
+            }
+            ?>
+
+            <!-- <div class="row">
                 <div class="graph">
                     <img src="./image/fuji-famous.jpg" class="data-img d-block mx-auto" alt="">
                 </div>
-            </div>
+            </div> -->
         </div>
 
+       
 
+
+        
         <?php
 
 // $akses_database = mysqli_connect("localhost", "root", "", "database_ugi");
@@ -216,25 +305,9 @@
 //     print("Database berhasil diakses . . .<br><br>");
     
 // }
-
-
-
-
-
-
 ?>
 
-
-
-
-
-
-
-
-
 <?php
-
-
 // $akses_tabel = mysqli_query($akses_database, "SELECT Id, Negara, jmlh_penduduk FROM data_grafik_batang_1");
 
 
@@ -247,23 +320,9 @@
 //     print("Tabel berhasil diakses . . .<br><br>");
     
 // }
-
-
 ?>
 
-
-
-
-
-
-
-
-
-
-
 <?php
-
-
 $sumbu_y = 'Jumlah Penduduk';
 
 
@@ -290,10 +349,6 @@ $sumbu_y = 'Jumlah Penduduk';
     
 
 ?>
-
-
-
-
 <script>
 /*window.onload = function () {
 
@@ -328,7 +383,10 @@ chart.render();
 }*/
 </script> 
 
-        <div id="data2" class="container" style="margin-bottom: 200px;">
+
+
+
+        <!-- <div id="data2" class="container" style="margin-bottom: 200px;">
             <h5 class="data-content text-center fw-bold mt-5 mb-4" style="font-size: 24px; font-family: sans-serif;">JUMLAH PENGUNJUNG WISATA EDUKASI BERDASARKAN JENIS KELAMIN</h5>
             <div class="row">
                 <div class="graph">
@@ -353,7 +411,7 @@ chart.render();
                     <img src="./image/fuji-famous.jpg" class="data-img d-block mx-auto" alt="">
                 </div>
             </div>
-        </div>
+        </div> -->
     </section>
     <!-- ========== Data End ========== -->
 

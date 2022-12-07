@@ -190,12 +190,12 @@ include_once 'koneksi.php';
             <div class="row">
 
                 <?php 
-                //INI CODE PHP UNTUK LOOPING BERITANYA. LAKUKAN DI TABEL2 LAINN
-                $sql = "SELECT * FROM berita";
+                    //INI CODE PHP UNTUK LOOPING BERITANYA. LAKUKAN DI TABEL2 LAINN
+                    $sql = "SELECT * FROM berita";
 
-                if ($result = mysqli_query($con, $sql)) {
-                    // Fetch one and one row
-                    while ($row = mysqli_fetch_row($result)) {
+                    if ($result = mysqli_query($con, $sql)) {
+                        // Fetch one and one row
+                        while ($row = mysqli_fetch_row($result)) {
                 ?>
 
 

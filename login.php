@@ -28,7 +28,7 @@
                 <div class="card rounded-3">
                     <div class="card-body p-4">
                         <div class="img col-lg-12 col-sm-12 col-12">
-                            <img src="./image/logo-pemadam1.png" class="logo-pemadam w-25 "  alt="">
+                            <img src="./image/logo-pemadam3.png" class="logo-pemadam w-25 "  alt="">
                         </div>
                     <h4 class="text-center mt-2 mb-3">Login</h4>
                     
