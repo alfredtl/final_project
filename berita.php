@@ -1,5 +1,5 @@
 <?php
-include_once 'config/koneksi.php';
+include_once 'koneksi.php';
 ?>
 
 <!DOCTYPE html>
@@ -190,12 +190,14 @@ include_once 'config/koneksi.php';
             <div class="row">
 
                 <?php 
+                //INI CODE PHP UNTUK LOOPING BERITANYA. LAKUKAN DI TABEL2 LAINN
                 $sql = "SELECT * FROM berita";
 
                 if ($result = mysqli_query($con, $sql)) {
                     // Fetch one and one row
                     while ($row = mysqli_fetch_row($result)) {
                 ?>
+
 
                 <!-- berita 1 -->
                 <div id="berita1" class="box-box mx-auto py-5" style="margin-bottom: 200px; border-radius: 25px; background-color:rgb(218, 37, 29);" >
@@ -204,11 +206,12 @@ include_once 'config/koneksi.php';
                             <div class="p-3 text-center">
                                 <h1 class="text-gradient">
                                     <a href="data-kebakaran.html" class="text-light" style="text-decoration: none;">
-                                        <img src="./image/berita1.png" class="rounded text-start" style="width: 250px;" alt="">
+                                        <img src="./image/<?=$row['7']?>" class="rounded text-start" style="width: 250px;" alt="" >
                                         
-                                        <p class="" style="font-size: 14px; margin-top: 10px; font-family: sans-serif; color: rgba(198, 196, 196, 1);">Senin, 15 Februari 2022</p>
-                                        <p class="" style="font-size: 14px; margin-top: 10px; font-family: sans-serif; color: rgba(198, 196, 196, 1);">Tonsaru jalan baru,</p>
-                                        <p class="" style="font-size: 14px; margin-top: 10px; font-family: sans-serif; color: rgba(198, 196, 196, 1);">No.187, kab. Minahasa</p>
+                                        
+                                        <p class="" style="font-size: 14px; margin-top: 10px; font-family: sans-serif; color: rgba(198, 196, 196, 1);"><?= $row[4];?></p>
+                                        <p class="" style="font-size: 14px; margin-top: 10px; font-family: sans-serif; color: rgba(198, 196, 196, 1);"><?= $row[3];?></p>
+                                    
                                 
                                     </a>
                                 </h1>
@@ -219,11 +222,11 @@ include_once 'config/koneksi.php';
                                 <h1 class="text-gradient">
                                     <a href="#" class="text-light" style="text-decoration: none;">
                                         <p class="mt-2 mb-0" style="font-size: 24px; font-family: sans-serif; text-align: justify; font-weight: 600;"><?= $row[1];?></p>
-                                        <p class="lh-lg mb-0" style="font-size: 16px; margin-top: 10px; font-family: sans-serif; text-align: justify; color: rgba(198, 196, 196, 1);"><?= $row[4];?></p>
+                                        <p class="lh-lg mb-0" style="font-size: 16px; margin-top: 10px; font-family: sans-serif; text-align: justify; color: rgba(198, 196, 196, 1);"><?= $row[5];?></p>
                                     </a>
-                                    <p class="lead text-end mb-0">
+                                    <!-- <p class="lead text-end mb-0">
                                         <a href="./about.html" class="btn btn-lg btn-secondary fw-bold border-black" style="margin-bottom: 100px; color: white; background-color:rgb(51, 33, 117);">Learn more ></a>
-                                    </p>
+                                    </p> -->
                                 </h1>
                             </div>
                         </div>

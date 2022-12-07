@@ -182,6 +182,18 @@
     <!-- ========== Data ========== -->
     <section class="data">
         <div id="data1" class="container" style="margin-bottom: 200px;">
+            <h5 class="data-content text-center fw-bold mt-5 mb-4" style="font-size: 24px; font-family: sans-serif;">Data Kebakaran Tahun 2021</h5>
+
+            <p class="text-center"><a href="https://docs.google.com/spreadsheets/d/1V5BsI2NlaLqLNvIH1uOAGr_veG8WvUTZvXiTgW-IX6E/edit?usp=sharing">Bulan Januari</a></p>
+            <p class="text-center"><a href="https://docs.google.com/spreadsheets/d/14wG_lOhGSqlsZS8wcroVH6agcfdkvrslYSLS_c4oE_0/edit?usp=sharing">Bulan Februari</a></p>
+            <p class="text-center"><a href="https://docs.google.com/spreadsheets/d/1XXW-KG2z1EJsAJ736BhaaPAEMjtDhIWvuxOtZ-VRqpI/edit?usp=sharing">Bulan Maret</a></p>
+            <p class="text-center"><a href="https://docs.google.com/spreadsheets/d/1jL2vBhhxsjER_43qLBfQGEwOZbW7XoNyETC7RbP1Wy8/edit?usp=sharing">Bulan April</a></p>
+            <p class="text-center"><a href="https://docs.google.com/spreadsheets/d/1Nc7t3Y7mwsxgaf8XFSmlnFV20ua92AdNGkNdVLGf4gk/edit?usp=sharing">Bulan Mei</a></p>
+            <p class="text-center"><a href="https://docs.google.com/spreadsheets/d/1kcwI71bsnxsxBkX10iqtEu6Zsk-KoMvW6wBa7nXMoOo/edit?usp=sharing">Bulan Juni</a></p>
+            <p class="text-center"><a href="https://docs.google.com/spreadsheets/d/16McdP-aJHylAogYrk9eHr-VJs1tKePUrRICyZgEeDhg/edit?usp=sharing">Bulan Juli</a></p>
+            <p class="text-center"><a href="https://docs.google.com/spreadsheets/d/1f86CPQny1tXRtwk8T5w_S2x3OblMI0IhVj1Hae_T1bs/edit?usp=sharing">Bulan Agustus</a></p>
+
+
             <h5 class="data-content text-center fw-bold mt-5 mb-4" style="font-size: 24px; font-family: sans-serif;">JUMLAH PENGUJUNG WISATA EDUKASI</h5>
             <div class="row">
                 <div class="graph">

@@ -18,7 +18,7 @@ CREATE TABLE berita (
 
 CREATE DATABASE mydb.data-kebakaran;
  
-CREATE TABLE data-kebakaran (
+CREATE TABLE data_kebakaran (
     id varchar(100) NOT NULL,
     judul varchar(100) NOT NULL,
     slug varchar(100) DEFAULT NULL,
@@ -31,3 +31,7 @@ CREATE TABLE data-kebakaran (
     ) ENGINE=InnoDB DEFAULT 
     CHARSET=utf8mb4 ;
     COLLATE=utf8mb4_0900_ai_ci;
+
+
+ALTER TABLE berita ADD gambar BLOB NOT NULL;
+ALTER TABLE user ADD photo_link VARCHAR (60) NOT NULL;
