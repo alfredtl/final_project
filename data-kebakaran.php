@@ -200,8 +200,22 @@ include_once 'koneksi.php';
 
             
             <h5 class="data-content text-center fw-bold mb-4" style="font-size: 24px; font-family: sans-serif; margin-top: 100px;">Data Evakuasi Bulan Januari</h5>
-            
 
+
+            <?php 
+                //INI CODE PHP UNTUK LOOPING BERITANYA. LAKUKAN DI TABEL2 LAINN
+                $data_kebakaran = [];
+                $sql = "SELECT * FROM penyelamatan_januari";
+
+                if ($result = mysqli_query($con, $sql)) {
+                    // Fetch one and one row
+                    while ($row = mysqli_fetch_row($result)) {
+                    $data_kebakaran[] = $row;
+                    }
+                    //mysqli_free_result($result);
+                }
+            ?>
+            
             <table>
                 <tr>
                     <th rowspan="2" style="border: 1px solid black; width: 5%; text-align: center;">No</th>
@@ -223,39 +237,9 @@ include_once 'koneksi.php';
                     <th style="border: 1px solid black; width: 10%; text-align: center;">Mulai</th>
                     <th style="border: 1px solid black; width: 10%; text-align: center;">Selesai</th>
                 </tr>
-
-
-            <?php 
-                //INI CODE PHP UNTUK LOOPING BERITANYA. LAKUKAN DI TABEL2 LAINN
-                $sql = "SELECT * FROM penyelamatan_januari";
-
-                if ($result = mysqli_query($con, $sql)) {
-                    // Fetch one and one row
-                    while ($row = mysqli_fetch_row($result)) {
-            ?>
-            <table>
-                <tr>
-                    <th rowspan="2" style="width: 5%; text-align: center; color: white;;">No</th>
-                    <th rowspan="2" style="text-align: center; color: white;;">Hari/Tanggal</th>
-                    <th colspan="3" style="text-align: center; color: white;;">Penyelamatan</th>
-                    <th rowspan="2" style="width: 10%; text-align: center; color: white;;">Pemilik</th>
-                    <th rowspan="2" style="width: 10%; text-align: center; color: white;;">Alamat Pemilik</th>
-                    <th rowspan="2" style="width: 10%; text-align: center; color: white;;">No.HP Pengguna Layanan</th>
-                    <th rowspan="2" style="width: 10%; text-align: center; color: white;;">Jumlah Unit</th>
-                    <th rowspan="2" style="width: 10%; text-align: center; color: white;;">Jenis Objek Evakuasi</th>
-                    <th rowspan="2" style="width: 10%; text-align: center; color: white;;">Hasil Pelaksanaan</th>
-                    <th colspan="2" style="width: 10%; text-align: center; color: white;;">Waktu pelaksanaan</th>
-                    <th rowspan="2" style="width: 10%; text-align: center; color: white;;">Keterangan</th>
-                </tr>
-                <tr>
-                    <th style="width: 10%; text-align: center; color: white;;">Hewan Berbisa</th>
-                    <th style="width: 10%; text-align: center; color: white;;">Evakuasi</th>
-                    <th style="width: 10%; text-align: center; color: white;;">Lain-lain</th>
-                    <th style="width: 10%; text-align: center; color: white;;">Mulai</th>
-                    <th style="width: 10%; text-align: center; color: white;;">Selesai</th>
-                </tr>
             
 
+            <?php foreach ($data_kebakaran as $row): ?>
 
                 <tr style="height: 40px;">
                     <td style="border: 1px solid black; text-align: center;"><?= $row[0];?></td>
@@ -273,14 +257,12 @@ include_once 'koneksi.php';
                     <td style="border: 1px solid black; text-align: center;"><?= $row[12];?></td>
                     <td style="border: 1px solid black; text-align: center;"><?= $row[13];?></td>
                 </tr>
+            <?php endforeach; ?>
             </table>
+            
 
-            <?php
-                }
-                //mysqli_free_result($result);
-            }
-            ?>
 
+            
             <!-- <div class="row">
                 <div class="graph">
                     <img src="./image/fuji-famous.jpg" class="data-img d-block mx-auto" alt="">
