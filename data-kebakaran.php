@@ -204,13 +204,13 @@ include_once 'koneksi.php';
 
             <?php 
                 //INI CODE PHP UNTUK LOOPING BERITANYA. LAKUKAN DI TABEL2 LAINN
-                $data_kebakaran = [];
+                $item = [];
                 $sql = "SELECT * FROM penyelamatan_januari";
 
                 if ($result = mysqli_query($con, $sql)) {
                     // Fetch one and one row
                     while ($row = mysqli_fetch_row($result)) {
-                    $data_kebakaran[] = $row;
+                    $item[] = $row;
                     }
                     //mysqli_free_result($result);
                 }
@@ -239,7 +239,7 @@ include_once 'koneksi.php';
                 </tr>
             
 
-            <?php foreach ($data_kebakaran as $row): ?>
+            <?php foreach ($item as $row): ?>
 
                 <tr style="height: 40px;">
                     <td style="border: 1px solid black; text-align: center;"><?= $row[0];?></td>
