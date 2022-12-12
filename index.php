@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./dist/css/style.css">
     <title>Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
     <!-- icon bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     
@@ -169,7 +170,7 @@
                     <div class="text-header col-lg-6 col-sm-12 col-12">
                         <p class="text-moto text-white fw-bolder text-align-sm-center" >Selamat Datang Di Website Damkar Minahasa</p>
                         <p class="text-moto2 text-align-md-center">Tetap jaga kesehatan dan selalu waspada terhadap bahaya kebakaran</p>
-                        <button type="button" class="btn text-white rounded mt-4 me-2"><i class="bi bi-telephone-fill" style="color: rgb(51, 33, 117); margin-right: 10px;"></i> EMERGENCY CALL (0431) 321001</button>
+                        <a href="tel:+62 431 321001"> <button type="button" class="btn text-white rounded mt-4 me-2"><i class="bi bi-telephone-fill" style="color: rgb(51, 33, 117); margin-right: 10px;"></i> EMERGENCY CALL (0431) 321001</button> </a>
                     </div>
                     <div class="img col-lg-6 col-sm-12 col-12">
                         <img src="./image/Logo-pemadam2.jpeg" class="logo-pemadam"  alt="">
@@ -180,7 +181,7 @@
     </header>
     <!-- =========== Nav Baru End =========== -->
 
-    
+ 
 
     <!-- =========== Box =========== -->
     <section class="box pt-3 pb-4">
@@ -228,8 +229,13 @@
     </section>
     <!-- =========== Box End =========== -->
 
+    <div class="float-start">
+            <h1>
+                <a class="" style="display: scroll; width: 60px; position: fixed; bottom: 25px; left: 25px; color: rgb(49, 203, 81); " href="https://wa.me/message/XUYOEQ6PQY7SF1" title="Whatsapp"><button class="" style="background-color: rgb(49, 203, 81); height: 65px; width: 80px; border: none; border-radius: 5px;"> <img class="bi bi-whatsapp" src="" alt="" style="color: white;"/></button></a>
+            </h1>
+    </div>
 
-
+    <!-- background-color: rgb(49, 203, 81); -->
     <!-- ========== Nav lama ========== -->
     <!-- <header>
     <div class="container-fluid sticky-top">
