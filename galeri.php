@@ -298,73 +298,73 @@
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 
-    <!-- ========== footer ========== -->
-    <div class="container-fluid bg-light">
-        <footer class="footer py-5 " style="font-family: sans-serif;">
-            <div class="row">
-                <div class="justify-content-between col-12 col-md-4 mb-3">
-                    <div class="row">
-                        <a class="navbar-brand navbar-dark d-flex p-0 align-items-center text-dark w-75 fs-5 ms-sm-3 col-6 col-md-4 me-6 mb-4" href="./darmisa.php"></svg><img class="logo-darmisa text-dark" src="./image/logo-seal.jpeg" alt="" title="Social Economic Accelerator Lab"><span class="fw-bold mx-4" title="DarMisa">DarMisa</span></a>
-                    </div>
-                    
-                    <p class="mb-4">Damkar Information And Reporting Website</p>
-                    <p class="fw-bold mb-1">Follow Us</p>
-                    <ul class="nav list-unstyled">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"></a></li>
-                        <li class=""><a class="text-muted mb-2" href="#"><i class="bi bi-facebook" title="facebook"></i></a></li>
-                        <li class="ms-2"><a class="text-muted mb-1" href="#"><i class="bi bi-whatsapp" title="Whatsapp"></i></a></li>
-                        <li class="ms-2"><a class="text-muted mb-1" href="#"><i class="bi bi-instagram" title="instagram"></i></a></li>
-                        <li class="ms-2"><a class="text-muted mb-1" href="#"><i class="bi bi-youtube" title="Youtube"></i></a></li>
-                    </ul>
-                </div>
-      
-                <div class="justify-content-center col-12 col-md-4 mb-3">
-                    <h5 class="mb-4">Contact Us</h5>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted lh-lg mb-3 me-4"><i class="bi bi-geo-alt"></i> 8W77+JJ, Kembuan, Kec. Tondano Utara, Kabupaten Minahasa, Sulawesi utara</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted mb-3"><i class="bi bi-telephone"></i> (0431) 321001</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><i class="bi bi-envelope"></i> darmisa@gmail.com</a></li>
-                    </ul>
-                </div>
-
-                <!-- <div class="col-12 col-md-3 mb-3">
-                    <h5 class="mb-4">Ikuti Akun Sosmed Kami</h5>
-                    <ul class="nav list-unstyled">
-                        <li class=""><a class="text-muted mb-2" href="#"><i class="bi bi-facebook"></i></a></li>
-                        <li class="ms-2"><a class="text-muted mb-1" href="#"><i class="bi bi-whatsapp"></i></a></li>
-                        <li class="ms-2"><a class="text-muted mb-1" href="#"><i class="bi bi-instagram"></i></a></li>
-                        <li class="ms-2"><a class="text-muted mb-1" href="#"><i class="bi bi-youtube"></i></a></li>
-                    </ul>
-                </div> -->
-      
-                <div class="justify-content-end col-12 col-md-4 mb-3">
-                    <form>
-                    <h5 class="mb-4">Critism And Suggestion</h5>
-                        <div class="d-flex flex-column flex-sm-row list-unstyled w-100 gap-2">
-                            <label for="newsletter1" class="visually-hidden">comment</label>
-                            <input type="text" class="footer-form text-center" style="border-radius: 25px 0 0 25px;" placeholder="Text Here">
-                            <button class="btn btn-white bg-dark text-white" style="border-radius: 0 25px 25px 0; margin-left: -10px;" type="button"><a class="text-muted mb-2" href="#"></a><i class="bi bi-send"></i></button>
+     <!-- ========== footer ========== -->
+     <div class="container-fluid bg-light">
+            <footer class="footer py-5 " style="font-family: sans-serif;">
+                <div class="row">
+                    <div class="justify-content-between col-12 col-md-4 mb-3">
+                        <div class="row">
+                            <a class="navbar-brand navbar-dark d-flex p-0 align-items-center text-dark w-75 fs-5 ms-sm-3 col-6 col-md-4 me-6 mb-4" href="darmisa.php"></svg><img class="logo-darmisa text-dark" src="./image/logo-seal.jpeg" alt="" title="Social Economic Accelerator Lab"><span a class="fw-bold mx-4" title="DarMisa">DarMisa</span></a>
                         </div>
-                    </form>
+                        
+                        <p class="mb-4">Damkar Information And Reporting Website</p>
+                        <p class="fw-bold mb-1">Follow Us</p>
+                        <ul class="nav list-unstyled">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"></a></li>
+                            <li class=""><a class="text-muted mb-2" href="https://web.facebook.com/dinasdamkar.kabupatenminahasa"><i class="bi bi-facebook" title="facebook"></i></a></li>
+                            <!-- <li class="ms-2"><a class="text-muted mb-1" href="https://wa.me/message/XUYOEQ6PQY7SF1"><i class="bi bi-whatsapp" title="Whatsapp"></i></a></li> -->
+                            <li class="ms-2"><a class="text-muted mb-1" href="#"><i class="bi bi-instagram" title="instagram"></i></a></li>
+                            <li class="ms-2"><a class="text-muted mb-1" href="#"><i class="bi bi-youtube" title="Youtube"></i></a></li>
+                        </ul>
+                    </div>
+          
+                    <div class="justify-content-center col-12 col-md-4 mb-3">
+                        <h5 class="mb-4">Contact Us</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted lh-lg mb-3 me-4"><i class="bi bi-geo-alt"></i> 8W77+JJ, Kembuan, Kec. Tondano Utara, Kabupaten Minahasa, Sulawesi utara</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted mb-3"><i class="bi bi-telephone"></i> (0431) 321001</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><i class="bi bi-envelope"></i> darmisa.minahasa@gmail.com</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- <div class="col-12 col-md-3 mb-3">
+                        <h5 class="mb-4">Ikuti Akun Sosmed Kami</h5>
+                        <ul class="nav list-unstyled">
+                            <li class=""><a class="text-muted mb-2" href="#"><i class="bi bi-facebook"></i></a></li>
+                            <li class="ms-2"><a class="text-muted mb-1" href="#"><i class="bi bi-whatsapp"></i></a></li>
+                            <li class="ms-2"><a class="text-muted mb-1" href="#"><i class="bi bi-instagram"></i></a></li>
+                            <li class="ms-2"><a class="text-muted mb-1" href="#"><i class="bi bi-youtube"></i></a></li>
+                        </ul>
+                    </div> -->
+          
+                    <div class="justify-content-end col-12 col-md-4 mb-3">
+                        <form action="mailto:darmisa.minahasa@gmail.com" enctype="text/plain" method="post">                        
+                            <h5 class="mb-4">Critism And Suggestion</h5>
+                            <div class="d-flex flex-column flex-sm-row list-unstyled w-100 gap-2 w-100">
+                                <label for="newsletter1" class="visually-hidden">comment</label>
+                                <!-- <input type="text" class="footer-form text-center" style="border-radius: 25px 0 0 25px;" placeholder="Text Here"> -->
+                                <button type="submit" class="btn btn-white bg-dark text-white w-50" style="border-radius: 25px 25px 25px 25px; margin-left: -10px;"><a class="text-muted mb-2" href="alfrdt87@gmail.com"></a>Send <i class="bi bi-send"></i></button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-            </div>
-        </footer>
-    </div>
+            </footer>
+        </div>
 
-    <div class="container-fluid p-0">
-        <footer class="border-bottom border-danger"></footer>
-    </div>
+        <div class="container-fluid p-0">
+            <footer class="border-bottom border-danger"></footer>
+        </div>
 
-    <div class="container-fluid p-0" style="font-family: sans-serif;">
-        <footer class="bottom">
-            <div class="copy flex-column flex-sm-row justify-content-center align-middle text-bg-dark p-3 py-1 my-0 border-top border-danger">
-                <p>&copy; 2022 DarMisa. All rights reserved.</p>
-            </div>
-        </footer>
-    </div>
-      
-      
-    <!-- ========== footer End ========== -->
+        <div class="container-fluid p-0" style="font-family: sans-serif;">
+            <footer class="bottom">
+                <div class="copy flex-column flex-sm-row justify-content-center align-middle text-bg-dark p-3 py-1 my-0 border-top border-danger">
+                    <p>&copy; 2022 DarMisa. All rights reserved.</p>
+                </div>
+            </footer>
+        </div>
+          
+          
+        <!-- ========== footer End ========== -->
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 
