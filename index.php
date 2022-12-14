@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./dist/css/style.css">
+    <link rel="stylesheet" href="./style.css" type="text/css">
     <title>Home</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
     <!-- icon bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     
@@ -43,7 +42,366 @@
 
     <div class="b-example-divider"></div>
 
+    <!-- <style type="text/css">
+        /*#nav{
+        height: 650vh;
+        transition: all 0.5s ease;
+        } */
+        body{
+            font-family: sans-serif;
+        }
+        p{
+            transition: all 0.5 ease;
+        }
+        header{
+            top: 0;
+            padding: 0;
+            width: 100%;
+            height: 35rem;
+            background-image: url('./image/image-home.jpg');
+            background-image: url('') ;
+            background-image: /*linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),*/ url('');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            transition: all 0.5s ease;
+        }
+        .navbar .navbar-brand .logo-darmisa{
+            display: flex;
+            margin: auto;
+        }
+        .navbar .nav-content .nav{
+            display: flex;
+        }
+        /* .navbar .text-logo{
+            margin-left: 70px;
+            margin-right: 70px;
+        } */
+        .navbar .collapse .nav-link{
+            color: rgb(181, 174, 205);
+            transition: all 0.3s ease;
+        }
+        .navbar .collapse .nav-link:hover{
+            color: whitesmoke;
+        }
+        .navbar .btn-small{
+            display: none;
+        }
+        .navbar .btn-login{
+            display: flex;
+        }
+        .nav .nav-link{
+            color: rgb(181, 174, 205);
+            transition: all 0.3s ease;
+        }
+        .nav .nav-link:hover{
+            color: whitesmoke;
+        }
+        .container{
+            width: 100%;
+        }
+        .container .container{
+            margin: auto;
+        }
+        .container .container .img .logo-pemadam{
+            width: 45%; 
+            margin-left: 210px; 
+            margin-top: 100px;
+            transition: all 0.5s ease;
+        }
+        .container .container .text-header .text-moto{
+            margin-top: 100px;  
+            font-size: 48px; 
+        }
+        .container .container .text-header .text-moto2{
+            text-align: justify;
+            /*color: rgb(133, 129, 147);*/ 
+            color: rgba(198, 196, 196, 1);
+        }
+        .container .container .text-header .btn{
+            background-color:rgb(218, 37, 29); 
+            width: 320px; 
+        }
+        .box .box-box{
+            width: 95%;
+        }
+        .data-content{
+            margin-top: 20px;
+            transition: all 0.5s ease;
+        }
+        .graph .data-img{
+            width: 700px;
+            transition: all 0.5 ease;
+        }
+        .img-news{
+            height: 200px;
+            object-fit: cover;
+            transition: all 0.5s ease;
+        }
+        .link-terkait{
+            width: 100%;
+            height: 80vh;
+            background-image: /*linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),*/ url('../../image/image-link.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            transition: all 0.5s ease;
+        }
+        .link-terkait .logo-link{
+            margin-top: 100px;
+            transition: all 0.5s ease;
+        }
+        .link-terkait .logo-link .logo{
+            width: 200px;
+            margin: auto;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.5s ease;
+        }
+        .logo-darmisa{
+            width: 30px;
+        }
+        .bottom{
+            border: 10px red;
+            border-radius: 10%;
+            transition: all 0.5s ease;
+        }
+        .btn{
+            color: white;
+            transition: all 0.5s ease;
+        }
+        .footer{
+            padding: 170px;
+        }
+        .copy{
+            display: flex;
+        }
 
+        @media (min-width: 0px) and (max-width: 992px) {
+            header{
+                height: 100vh;
+                transition: all 0.5s ease;
+            }
+            /* #nav{
+                height: 650vh;
+                transition: all 0.5 ease;
+            } */
+            .container .navbar .nav-content .nav{
+                flex-direction: column;
+                display: none;
+                transition: all 0.5s ease;
+            }
+            .container .navbar .btn-login{
+                display: none;
+                transition: all 0.5s ease;
+            }
+            .container .container .text-header .text-moto{
+                margin-top: 120px; 
+                font-size: 48px; 
+                transition: all 0.5s ease;
+            }
+            .container .container .text-header .btn{
+                margin-top: 10px;
+                margin-bottom: 0;
+                transition: all 0.5s ease;
+            }
+            .container .container .img .logo-pemadam{
+                display: flex;
+                margin: auto;
+                margin-top: 30px;
+                width: 200px;
+                display: none;
+            }
+            .graph .data-img{
+                width: 500px;
+                transition: all 0.5 ease;
+            }
+            .graph .img-news{
+                height: 200px;
+                width: 100%;
+                object-fit: cover;
+                text-align: center;
+                transition: all 0.5s ease;
+            }
+            .link-terkait{
+                height: 40vh;
+                transition: all 0.5s ease;
+            }
+            .link-terkait .logo-link .logo{
+                width: 80px;
+            }
+            .link-terkait .logo-link{
+                margin-top: 30px;
+                transition: all 0.5s ease;
+            }
+            .navbar .btn-login{
+                display: none;
+                transition: all 0.5s ease;
+            }
+            .navbar .btn-small{
+                display: block;
+                transition: all 0.5s ease;
+            }
+        }
+        @media (max-width: 767px) {
+            /* #nav{
+                height: 850vh;
+                transition: all 0.5 ease;
+            } */
+            .container .container .img .logo-pemadam{
+                display: flex;
+                margin-top: 30px;
+                width: 150px;
+                transition: all 0.5s ease;
+                display: none;
+            }
+        }
+        @media (max-width: 500px) {
+            .navbar .navbar-brand .logo-darmisa{
+                margin-right: 35px;
+                transition: all 0.5s ease;
+            }
+            /* .navbar .text-logo{
+                margin-left: 20px;
+            } */
+            .container .container .text-header .text-moto{
+                margin-top: 100px;
+                font-size: 40px;
+                transition: all 0.5s ease;
+            }
+            .container .container .text-header .text-moto2{
+                transition: all 0.5s ease;
+            }
+            .container .container .text-header .btn{
+                transition: all 0.5s ease;
+            }
+            .graph .data-img{
+                width: 400px;
+                transition: all 0.5 ease;
+            }
+            .footer{
+                padding: 100px;
+                transition: all 0.5s ease;
+            }
+            .copy{
+                text-align: center;
+                transition: all 0.5s ease;
+            }
+        }
+
+        @media (min-width: 993px) and (max-width: 1199px) {
+            .navbar .navbar-brand .logo-darmisa{
+                margin-left: 35px;
+                transition: all 0.5s ease;
+            }
+            .container .container .text-header .text-moto{
+                margin-top: 60px;
+                margin-left: 35px;
+                line-height: 60px;
+                transition: all 0.5s ease; 
+            }
+            .container .container .text-header .text-moto2{
+                margin-left: 35px; 
+                transition: all 0.5s ease;
+            }
+            .container .container .text-header .btn{
+                margin-left: 35px; 
+                transition: all 0.5s ease;
+            }
+            .box .box-box{
+                width: 90%;
+                transition: all 0.5s ease;
+            }
+            .container .container .img .logo-pemadam{
+                margin-left: 150px;
+                margin-top: 130px;
+            }
+            .container .container .navbar .btn-login{
+                margin-right: 20px;
+            }
+            .graph .img-news{
+                height: 200px;
+                width: 100%;
+                object-fit: cover;
+                text-align: center;
+                transition: all 0.5s ease;
+            }
+
+        }
+
+        @media (min-width:  1200px) and (max-width: 1399px) {
+            .navbar .navbar-brand .logo-darmisa{
+                margin-left: 85px;
+                transition: all 0.5s ease;
+            }
+            .container .container .text-header .text-moto{
+                margin-top: 60px;
+                margin-left: 85px;
+                transition: all 0.5s ease; 
+            }
+            .container .container .text-header .text-moto2{
+                margin-left: 85px; 
+                transition: all 0.5s ease;
+            }
+            .container .container .text-header .btn{
+                margin-left: 85px; 
+                transition: all 0.5s ease;
+            }
+            .container .container .img .logo-pemadam{
+                width: 45%; 
+                margin-left: 200px; 
+                margin-top: 120px;
+                transition: all 0.5s ease;
+            }
+            .box .box-box{
+                width: 83%;
+                transition: all 0.5s ease;
+            }
+            .graph .img-news{
+                height: 200px;
+                width: 100%;
+                object-fit: cover;
+                text-align: center;
+                transition: all 0.5s ease;
+            }
+        }
+        @media (min-width:  1400px) {
+            .navbar .navbar-brand .logo-darmisa{
+                margin-left: 85px;
+                transition: all 0.5s ease;
+            }
+            .container .container .text-header .text-moto{
+                margin-top: 80px;
+                margin-left: 85px;
+                transition: all 0.5s ease; 
+            }
+            .container .container .text-header .text-moto2{
+                margin-left: 85px; 
+                transition: all 0.5s ease;
+            }
+            .container .container .text-header .btn{
+                margin-left: 85px; 
+                transition: all 0.5s ease;
+            }
+            .container .container .img .logo-pemadam{
+                width: 45%; 
+                margin-left: 250px; 
+                margin-top: 90px;
+                transition: all 0.5s ease;
+            }
+            .box .box-box{
+                width: 83%;
+                transition: all 0.5s ease;
+            }
+            .graph .img-news{
+                height: 200px;
+                width: 100%;
+                object-fit: cover;
+                text-align: center;
+                transition: all 0.5s ease;
+            }
+        }
+    </style> -->
     <!-- coba -->
     <!-- <header>
         <div id="nav" class="container" style="font-family: sans-serif;">
@@ -139,8 +497,9 @@
 
     
     <!-- =========== Nav Baru =========== -->
+    
     <header>
-        <div id="nav" class="container" style="font-family: sans-serif;">
+        <div id="nav" class="container" style="font-family: sans-serif; ">
             <!-- <div class="row g-0 text-center sticky-top">
                 <div class="col-12">
                     <nav class="navbar d-flex navbar-expand-lg rounded-pill top-0 shadow position-absolute justify-content-between p-5 my-3 py-2 start-0 end-0 mx-4 p-5" style="background-color:rgb(51, 33, 117);">
@@ -214,7 +573,7 @@
                         <div class="col-md-4 position-relative">
                             <div class="p-3 text-center">
                                 <h1 class="text-gradient text primary">
-                                    <a href="./peralatan-kebakaran.php" class="text-light" style="text-decoration: none;">
+                                    <a href="./peralatan-kebakaran.html" class="text-light" style="text-decoration: none;">
                                         <img src="./image/icon-3.jpg" class="rounded-circle" style="width: 70px;" alt="">
                                         <p class="mt-2" style="font-size: 20px; font-family: sans-serif;">Peralatan Kebakaran</p>
                                         <p class="text-secondary" style="font-size: 14px; margin-top: 10px; font-family: sans-serif;">Peralatan-peralatan yang terkait dengan Safety dan Kebakaran</p>
@@ -432,7 +791,7 @@
                             <div class="d-flex flex-column flex-sm-row list-unstyled w-100 gap-2">
                                 <label for="newsletter1" class="visually-hidden">comment</label>
                                 <input type="text" class="footer-form text-center" style="border-radius: 25px 0 0 25px;" placeholder="Text Here">
-                                <button class="btn btn-white bg-dark text-white" style="border-radius: 0 25px 25px 0; margin-left: -10px;" type="button"><a class="text-muted mb-2" href="#"></a><i class="bi bi-send"></i></button>
+                                <button class="btn btn-white bg-dark text-white" style="border-radius: 0 25px 25px 0; margin-left: -10px;" type="button"><a class="text-muted mb-2" href="alfrdt87@gmail.com"></a><i class="bi bi-send"></i></button>
                             </div>
                         </form>
                     </div>

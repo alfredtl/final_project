@@ -52,15 +52,7 @@ header{
 .text-dh{
     text-align: justify;
 }
-.box .box-content{
-    background-color: rgba(105, 105, 105, 0.5);
-}
-.box .box-content-ch{
-    background-color: rgba(67, 67, 67, 0.6);
-}
-.box .box-content-st{
-    background-color: rgba(194, 188, 183, 0.75);
-}
+
 .text-title{
     margin-left: 100px; 
 }
