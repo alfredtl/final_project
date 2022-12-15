@@ -1,3 +1,73 @@
+<?php
+
+if(isset($_GET['id'])){
+    // ambil id dari url atau method get
+    $id = $_GET['id'];
+
+    // Buat koneksi dengan MySQL
+    $con = mysqli_connect("localhost","root","","db_berita");
+
+    // Check connection
+    if (mysqli_connect_errno()) {
+        echo "Failed to connect to MySQL: " . mysqli_connect_error();
+        exit();
+    }else{
+        echo '<br>koneksi berhasil';
+    }
+
+    $sql = "SELECT * FROM berita WHERE id='$id'";
+
+    if ($result = mysqli_query($con, $sql)) {
+        echo "<br>data tersedia";
+        while($user_data = mysqli_fetch_assoc($result)) {
+            $judul = $_POST['judul'];
+            $tempat_kejadian = $_POST['tempat_kejadian'];
+            $tanggal = $_POST['tanggal'];
+            $isi_berita = $_POST['isi_berita'];
+            $publish_id = $_POST['publish_id'];
+            $photo_link = $_POST['photo_link'];
+        }
+    } else {
+        echo "Error: " . $sql . "<br>" . mysqli_error($con);
+    }
+
+    mysqli_close($con);
+}
+
+if (isset($_POST['submit'])){
+    //var_dump($_POST);
+    $judul = $_POST['judul'];
+    $tempat_kejadian = $_POST['tempat_kejadian'];
+    $tanggal = $_POST['tanggal'];
+    $isi_berita = $_POST['isi_berita'];
+    $publish_id = $_POST['publish_id'];
+    $photo_link = $_POST['photo_link'];
+
+    // Buat koneksi dengan MySQL
+    $con = mysqli_connect("localhost","root","","db_berita");
+
+    // Check connection
+    if (mysqli_connect_errno()) {
+        echo "Failed to connect to MySQL: " . mysqli_connect_error();
+        exit();
+    }else{
+        echo '<br>koneksi berhasil';
+    }
+
+    $sql = "UPDATE berita SET judul='$judul',tempat_kejadian='$tempat_kejadian',tanggal='$tanggal',isi_berita='$isi_berita',
+    publish_id='$publish_id',photo_link='$photo_link' WHERE id='$id' ";
+
+    if (mysqli_query($con, $sql)) {
+        echo "<br>Data berhasil diupdate";
+    } else {
+        echo "Error: " . $sql . "<br>" . mysqli_error($con);
+    }
+      
+    mysqli_close($con);
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -135,8 +205,10 @@
                     <div class="card rounded-3">
                         <div class="card-body p-4">
                             <h2>UPDATE BERITA</h2>
-                            <form action="action.php?p=aman" method="post" enctype="multipart/form-data">
-                                <label for="exampleFormControlInput1" class="form-label">Id :</label><br>
+
+                            <?php if(isset($_GET['id'])): ?>
+                            <form action="" method="post" enctype="multipart/form-data">
+                                <!-- <label for="exampleFormControlInput1" class="form-label">Id :</label><br>
                                 <input type="radio" id="berita1" name="fav_language" value="berita1">
                                 <label for="berita1">Berita 1</label><br>
                                 
@@ -159,29 +231,32 @@
                                 <label for="berita7">Berita 7</label><br>
 
                                 <input type="radio" id="berita8" name="fav_language" value="berita1">
-                                <label for="berita8">Berita 8</label><br>
+                                <label for="berita8">Berita 8</label><br> -->
 
 
 
                                 <label for="exampleFormControlInput1" class="form-label mt-3">Judul :</label>
-                                <input type="text" name="judul kegiatan" class="form-control mb-3">
+                                <input type="text" name="judul kegiatan" class="form-control mb-3" value="<?php echo $judul; ?>">
 
                                 <label for="exampleFormControlInput1" class="form-label">Isi Berita :</label>
-                                <input type="text" name="Isi Berita" class="form-control mb-3">
+                                <input type="text" name="Isi Berita" class="form-control mb-3" value="<?php echo $isi_berita; ?>">
 
                                 <label for="exampleFormControlInput1" class="form-label">Tanggal :</label>
-                                <input type="text" name="tanggal kegiatan" class="form-control mb-3">
+                                <input type="text" name="tanggal kegiatan" class="form-control mb-3" value="<?php echo $tanggal; ?>">
 
                                 <label for="exampleFormControlInput1" class="form-label">Tempat Kejadian :</label>
-                                <input type="text" name="tempat kejadian" class="form-control mb-3">
+                                <input type="text" name="tempat kejadian" class="form-control mb-3" value="<?php echo $tempat_kejadian; ?>">
 
                                 <label for="exampleFormControlInput1" class="form-label">Upload Foto :</label><br>
-                                <input type="file" name="berkas" class="mb-5"><br>
+                                <input type="file" name="berkas" class="mb-5" value="<?php echo $photo_link; ?>"><br>
 
                                 <input class="btn btn-danger me-3" type="reset" name="submit" value="Reset">
                                 <input class="btn btn-primary" type="submit" name="submit" value="Submit">
                                 
                             </form>
+
+                            <?php endif; ?>
+
                         </div>
                     </div>
                 </div>

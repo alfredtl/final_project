@@ -188,7 +188,7 @@
     </section>
 
 <!-- =========== Foto Rapat =========== -->
-    <section class="pt-3 pb-4" style="font-family: sans-serif;">
+    <!-- <section class="pt-3 pb-4" style="font-family: sans-serif;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 text-light mx-auto py-4" style="margin-bottom: 100px; border-radius: 25px; background-color:rgb(218, 37, 29);" >
@@ -238,7 +238,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- =========== Foto Kerja Bakti =========== -->
     <section class="pt-3 pb-4" style="font-family: sans-serif;">

@@ -189,6 +189,8 @@ include_once 'koneksi.php';
         <div class="container">
             <div class="row">
 
+
+
                 <?php 
                     //INI CODE PHP UNTUK LOOPING BERITANYA. LAKUKAN DI TABEL2 LAINN
                     $sql = "SELECT * FROM berita";
@@ -198,6 +200,8 @@ include_once 'koneksi.php';
                         while ($row = mysqli_fetch_row($result)) {
                 ?>
 
+
+                
 
                 <!-- berita 1 -->
                 <div id="berita1" class="box-box mx-auto py-5" style="margin-bottom: 200px; border-radius: 25px; background-color:rgb(218, 37, 29);" >
@@ -212,7 +216,6 @@ include_once 'koneksi.php';
                                         <p class="" style="font-size: 14px; margin-top: 10px; font-family: sans-serif; color: rgba(198, 196, 196, 1);"><?= $row[4];?></p>
                                         <p class="" style="font-size: 14px; margin-top: 10px; font-family: sans-serif; color: rgba(198, 196, 196, 1);"><?= $row[3];?></p>
                                     
-                                
                                     </a>
                                 </h1>
                             </div>
@@ -224,20 +227,21 @@ include_once 'koneksi.php';
                                         <p class="mt-2 mb-0" style="font-size: 24px; font-family: sans-serif; text-align: justify; font-weight: 600;"><?= $row[1];?></p>
                                         <p class="lh-lg mb-0" style="font-size: 16px; margin-top: 10px; font-family: sans-serif; text-align: justify; color: rgba(198, 196, 196, 1);"><?= $row[5];?></p>
                                     </a>
-                                    <!-- <p class="lead text-end mb-0">
-                                        <a href="./about.html" class="btn btn-lg btn-secondary fw-bold border-black" style="margin-bottom: 100px; color: white; background-color:rgb(51, 33, 117);">Learn more ></a>
-                                    </p> -->
+                                    <p class="lead text-end mb-0">
+                                        <a href="./update.php?id=<?= $row['id'] ?>" class="btn btn-lg btn-secondary fw-bold border-black" style="margin-bottom: 100px; color: white; background-color:rgb(51, 33, 117);">ubah</a>
+                                    </p>
                                 </h1>
                             </div>
                         </div>
                     </div>
                 </div>
-
+                            
                 <?php
                     }
                     //mysqli_free_result($result);
                 }
                 ?>
+
 
 
             </div>

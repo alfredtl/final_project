@@ -200,8 +200,8 @@ include_once 'koneksi.php';
 
 
 
-            <!-- Penyelamatan Januari -->
-            <h5 class="data-content text-center fw-bold mb-4" style="font-size: 24px; font-family: sans-serif; margin-top: 100px;">Data Penyelamatan Bulan Januari</h5>
+            <!-- Pemyelamatan Januari -->
+            <h5 class="data-content text-center fw-bold mb-4" style="font-size: 24px; font-family: sans-serif; margin-top: 100px;">Data Penyelamatan Bulan januari</h5>
 
 
             <?php 
@@ -229,22 +229,18 @@ include_once 'koneksi.php';
                     <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Jumlah Unit</th>
                     <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Jenis Objek Evakuasi</th>
                     <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Hasil Pelaksanaan</th>
-                    <th colspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Waktu pelaksanaan</th>
                     <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Keterangan</th>
                 </tr>
                 <tr>
                     <th style="border: 1px solid black; width: 10%; text-align: center;">Hewan Berbisa</th>
                     <th style="border: 1px solid black; width: 10%; text-align: center;">Evakuasi</th>
                     <th style="border: 1px solid black; width: 10%; text-align: center;">Lain-lain</th>
-                    <th style="border: 1px solid black; width: 10%; text-align: center;">Mulai</th>
-                    <th style="border: 1px solid black; width: 10%; text-align: center;">Selesai</th>
                 </tr>
             
 
             <?php foreach ($item as $row): ?>
 
                 <tr style="height: 40px;">
-                    <td style="border: 1px solid black; text-align: center;"><?= $row[0];?></td>
                     <td style="border: 1px solid black; text-align: center;"><?= $row[1];?></td>
                     <td style="border: 1px solid black; text-align: center;"><?= $row[2];?></td>
                     <td style="border: 1px solid black; text-align: center;"><?= $row[3];?></td>
@@ -256,11 +252,11 @@ include_once 'koneksi.php';
                     <td style="border: 1px solid black; text-align: center;"><?= $row[9];?></td>
                     <td style="border: 1px solid black; text-align: center;"><?= $row[10];?></td>
                     <td style="border: 1px solid black; text-align: center;"><?= $row[11];?></td>
-                    <td style="border: 1px solid black; text-align: center;"><?= $row[12];?></td>
-                    <td style="border: 1px solid black; text-align: center;"><?= $row[13];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[14];?></td>
                 </tr>
             <?php endforeach; ?>
             </table>
+            
 
 
             <!-- Pemadaman Januari -->
