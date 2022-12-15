@@ -1,3 +1,10 @@
+<?php
+include_once 'koneksi.php';
+
+$con = mysqli_connect("localhost","root","","db_berita");
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -623,21 +630,44 @@
 
 
         <!-- ========== Data ========== -->
-    
+
+        <h5 class="data-content text-center fw-bold mt-5 mb-4" style="font-size: 24px; font-family: sans-serif;">DATA PEMADAMAN DAN PENYELAMATAN TAHUN 2022</h5>
+
+        <?php 
+            //INI CODE PHP UNTUK LOOPING BERITANYA. LAKUKAN DI TABEL2 LAINN
+            $sql = "SELECT * FROM diagram_pemadaman_penyelamatan";
+
+            if ($result = mysqli_query($con, $sql)) {
+                // Fetch one and one row
+                while ($row = mysqli_fetch_row($result)) {
+        ?>
+
         <section class="data">
         <div id="data1" class="container" style="margin-bottom: 200px;">
-            <h5 class="data-content text-center fw-bold mt-5 mb-4" style="font-size: 24px; font-family: sans-serif;">JUMLAH PENGUJUNG WISATA EDUKASI</h5>
+            <!-- <h5 class="data-content text-center fw-bold mt-5 mb-4" style="font-size: 24px; font-family: sans-serif;">JUMLAH PENGUJUNG WISATA EDUKASI</h5> -->
             <div class="row">
                 <div class="graph">
-                    <img src="./image/fuji-famous.jpg" class="data-img d-block mx-auto" alt="">
+                    <!-- <img src="./image/fuji-famous.jpg" class="data-img d-block mx-auto" alt=""> -->
+                    <img src="./image/<?=$row['2']?>" class="data-img d-block mx-auto rounded" alt="" >
+
                 </div>
             </div>
-        <div id="data2" class="container" style="margin-bottom: 200px; margin-top: 200px;">
+        </div>
+
+        <?php
+            }
+            //mysqli_free_result($result);
+        }
+        ?>
+        
+        <!-- <div id="data2" class="container" style="margin-bottom: 200px; margin-top: 200px;">
             <h5 class="data-content text-center fw-bold mt-5 mb-4" style="font-size: 24px; font-family: sans-serif;">JUMLAH PENGUNJUNG WISATA EDUKASI BERDASARKAN JENIS KELAMIN</h5>
             <div class="row">
                 <div class="graph">
                     <img src="./image/everest-famous.jpg" class="data-img d-block mx-auto" alt="">
-                </div>
+                </div> -->
+
+
                 <!-- <div class="graph d-flex mx-auto text-center justify-content-center align-items-center">
                     <div id="piechart"></div>
                     <div class="chart">
@@ -672,7 +702,7 @@
             </div>
         </div>
 
-        <div id="data3" class="container" style="margin-bottom: 200px;">
+        <!-- <div id="data3" class="container" style="margin-bottom: 200px;">
             <h5 class="data-content text-center fw-bold mt-5 mb-4" style="font-size: 24px; font-family: sans-serif;">LAPORAN BULANAN PEMADAM OLEH REDKAR TAHUN 2022</h5>
             <div class="row">
                 <div class="graph">
@@ -688,7 +718,7 @@
                     <img src="./image/fuji-famous.jpg" class="data-img d-block mx-auto" alt="">
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <div id="data5" class="container berita mx-auto" style="padding-left: 36px; padding-right: 42px;">
             <h5 class="data-content text-center fw-bold mt-5 mb-4" style="font-size: 24px; font-family: sans-serif;">BREAKING NEWS</h5>
