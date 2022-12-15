@@ -481,7 +481,7 @@
                         <a class="nav-link" aria-current="page" href="./personil.php">Personil & Unit</a>
                     </li>
                     <li class="nav-item me-3">
-                        <a class="nav-link" aria-current="page" href="./kontak.php">Hubungi Kami</a>
+                        <a class="nav-link" aria-current="page" href="./kontak.html">Hubungi Kami</a>
                     </li>
                     <li class="nav-item me-3">
                         <a class="nav-link" aria-current="page" href="./update.php">Edit</a>
