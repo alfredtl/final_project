@@ -187,7 +187,7 @@ include_once 'koneksi.php';
     <!-- ========== Data ========== -->
     <section class="data">
         <div id="data1" class="container" style="margin-bottom: 200px;">
-            <h5 class="data-content text-center fw-bold mt-5 mb-4" style="font-size: 24px; font-family: sans-serif;">Data Kebakaran Tahun 2021</h5>
+            <h5 class="data-content text-center fw-bold mt-5 mb-4" style="font-size: 24px; font-family: sans-serif;">Data Kebakaran Tahun 2022</h5>
 
             <p class="text-center"><a href="https://docs.google.com/spreadsheets/d/1V5BsI2NlaLqLNvIH1uOAGr_veG8WvUTZvXiTgW-IX6E/edit?usp=sharing">Bulan Januari</a></p>
             <p class="text-center"><a href="https://docs.google.com/spreadsheets/d/14wG_lOhGSqlsZS8wcroVH6agcfdkvrslYSLS_c4oE_0/edit?usp=sharing">Bulan Februari</a></p>
@@ -198,8 +198,10 @@ include_once 'koneksi.php';
             <p class="text-center"><a href="https://docs.google.com/spreadsheets/d/16McdP-aJHylAogYrk9eHr-VJs1tKePUrRICyZgEeDhg/edit?usp=sharing">Bulan Juli</a></p>
             <p class="text-center"><a href="https://docs.google.com/spreadsheets/d/1f86CPQny1tXRtwk8T5w_S2x3OblMI0IhVj1Hae_T1bs/edit?usp=sharing">Bulan Agustus</a></p>
 
-            
-            <h5 class="data-content text-center fw-bold mb-4" style="font-size: 24px; font-family: sans-serif; margin-top: 100px;">Data Evakuasi Bulan Januari</h5>
+
+
+            <!-- Penyelamatan Januari -->
+            <h5 class="data-content text-center fw-bold mb-4" style="font-size: 24px; font-family: sans-serif; margin-top: 100px;">Data Penyelamatan Bulan Januari</h5>
 
 
             <?php 
@@ -259,7 +261,1128 @@ include_once 'koneksi.php';
                 </tr>
             <?php endforeach; ?>
             </table>
+
+
+            <!-- Pemadaman Januari -->
+            <h5 class="data-content text-center fw-bold mb-4" style="font-size: 24px; font-family: sans-serif; margin-top: 100px;">Data Pemadaman Bulan Januari</h5>
+
+            <?php 
+                //INI CODE PHP UNTUK LOOPING BERITANYA. LAKUKAN DI TABEL2 LAINN
+                $item = [];
+                $sql = "SELECT * FROM pemadaman_januari";
+
+                if ($result = mysqli_query($con, $sql)) {
+                    // Fetch one and one row
+                    while ($row = mysqli_fetch_row($result)) {
+                    $item[] = $row;
+                    }
+                    //mysqli_free_result($result);
+                }
+            ?>
             
+            <table>
+                <tr>
+                    <th rowspan="2" style="border: 1px solid black; width: 5%; text-align: center;">No</th>
+                    <th rowspan="2" style="border: 1px solid black; text-align: center;">Hari/Tanggal</th>
+                    <th colspan="3" rowspan="2" style="border: 1px solid black; text-align: center;">Pemadaman</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Pemilik</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Alamat Pemilik</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Nomor</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">No.HP Pengguna Layanan</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Jumlah Unit</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Jenis Objek Evakuasi</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Keterangan</th>
+
+                </tr>
+                <tr>
+                    
+                </tr>
+            
+
+            <?php foreach ($item as $row): ?>
+
+                <tr style="height: 40px;">
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[1];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[2];?></td>
+                    <td style="border: 1px solid black; text-align: center;" colspan="3"><?= $row[3];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[4];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[5];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[6];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[7];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[8];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[9];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[10];?></td>
+                </tr>
+            <?php endforeach; ?>
+            </table>
+
+
+            <!-- Pemyelamatan Februari -->
+            <h5 class="data-content text-center fw-bold mb-4" style="font-size: 24px; font-family: sans-serif; margin-top: 100px;">Data Penyelamatan Bulan Februari</h5>
+
+
+            <?php 
+                //INI CODE PHP UNTUK LOOPING BERITANYA. LAKUKAN DI TABEL2 LAINN
+                $item = [];
+                $sql = "SELECT * FROM penyelamatan_februari";
+
+                if ($result = mysqli_query($con, $sql)) {
+                    // Fetch one and one row
+                    while ($row = mysqli_fetch_row($result)) {
+                    $item[] = $row;
+                    }
+                    //mysqli_free_result($result);
+                }
+            ?>
+            
+            <table>
+                <tr>
+                    <th rowspan="2" style="border: 1px solid black; width: 5%; text-align: center;">No</th>
+                    <th rowspan="2" style="border: 1px solid black; text-align: center;">Hari/Tanggal</th>
+                    <th colspan="3" style="border: 1px solid black; text-align: center;">Penyelamatan</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Pemilik</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Alamat Pemilik</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">No.HP Pengguna Layanan</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Jumlah Unit</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Jenis Objek Evakuasi</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Hasil Pelaksanaan</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Keterangan</th>
+                </tr>
+                <tr>
+                    <th style="border: 1px solid black; width: 10%; text-align: center;">Hewan Berbisa</th>
+                    <th style="border: 1px solid black; width: 10%; text-align: center;">Evakuasi</th>
+                    <th style="border: 1px solid black; width: 10%; text-align: center;">Lain-lain</th>
+                </tr>
+            
+
+            <?php foreach ($item as $row): ?>
+
+                <tr style="height: 40px;">
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[1];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[2];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[3];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[4];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[5];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[6];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[7];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[8];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[9];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[10];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[11];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[12];?></td>
+                </tr>
+            <?php endforeach; ?>
+            </table>
+
+
+            <!-- Pemadaman Februari -->
+            <h5 class="data-content text-center fw-bold mb-4" style="font-size: 24px; font-family: sans-serif; margin-top: 100px;">Data Pemadaman Bulan Februari</h5>
+
+            <?php 
+                //INI CODE PHP UNTUK LOOPING BERITANYA. LAKUKAN DI TABEL2 LAINN
+                $item = [];
+                $sql = "SELECT * FROM pemadaman_februari";
+
+                if ($result = mysqli_query($con, $sql)) {
+                    // Fetch one and one row
+                    while ($row = mysqli_fetch_row($result)) {
+                    $item[] = $row;
+                    }
+                    //mysqli_free_result($result);
+                }
+            ?>
+            
+            <table>
+                <tr>
+                    <th rowspan="2" style="border: 1px solid black; width: 5%; text-align: center;">No</th>
+                    <th rowspan="2" style="border: 1px solid black; text-align: center;">Hari/Tanggal</th>
+                    <th colspan="3" rowspan="2" style="border: 1px solid black; text-align: center;">Pemadaman</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Pemilik</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Alamat Pemilik</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Nomor</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">No.HP Pengguna Layanan</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Jumlah Unit</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Jenis Objek Evakuasi</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Keterangan</th>
+
+                </tr>
+                <tr>
+                    
+                </tr>
+            
+
+            <?php foreach ($item as $row): ?>
+
+                <tr style="height: 40px;">
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[1];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[2];?></td>
+                    <td style="border: 1px solid black; text-align: center;" colspan="3"><?= $row[3];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[4];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[5];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[6];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[7];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[8];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[9];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[10];?></td>
+                </tr>
+            <?php endforeach; ?>
+            </table>
+            
+
+            <!-- Pemyelamatan Maret -->
+            <h5 class="data-content text-center fw-bold mb-4" style="font-size: 24px; font-family: sans-serif; margin-top: 100px;">Data Penyelamatan Bulan Maret</h5>
+
+
+            <?php 
+                //INI CODE PHP UNTUK LOOPING BERITANYA. LAKUKAN DI TABEL2 LAINN
+                $item = [];
+                $sql = "SELECT * FROM penyelamatan_maret";
+
+                if ($result = mysqli_query($con, $sql)) {
+                    // Fetch one and one row
+                    while ($row = mysqli_fetch_row($result)) {
+                    $item[] = $row;
+                    }
+                    //mysqli_free_result($result);
+                }
+            ?>
+            
+            <table>
+                <tr>
+                    <th rowspan="2" style="border: 1px solid black; width: 5%; text-align: center;">No</th>
+                    <th rowspan="2" style="border: 1px solid black; text-align: center;">Hari/Tanggal</th>
+                    <th colspan="3" style="border: 1px solid black; text-align: center;">Penyelamatan</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Pemilik</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Alamat Pemilik</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">No.HP Pengguna Layanan</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Jumlah Unit</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Jenis Objek Evakuasi</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Hasil Pelaksanaan</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Keterangan</th>
+                </tr>
+                <tr>
+                    <th style="border: 1px solid black; width: 10%; text-align: center;">Hewan Berbisa</th>
+                    <th style="border: 1px solid black; width: 10%; text-align: center;">Evakuasi</th>
+                    <th style="border: 1px solid black; width: 10%; text-align: center;">Lain-lain</th>
+                </tr>
+            
+
+            <?php foreach ($item as $row): ?>
+
+                <tr style="height: 40px;">
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[1];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[2];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[3];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[4];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[5];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[6];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[7];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[8];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[9];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[10];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[11];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[12];?></td>
+                </tr>
+            <?php endforeach; ?>
+            </table>
+
+
+            <!-- Pemadaman Maret -->
+            <h5 class="data-content text-center fw-bold mb-4" style="font-size: 24px; font-family: sans-serif; margin-top: 100px;">Data Pemadaman Bulan Maret</h5>
+
+            <?php 
+                //INI CODE PHP UNTUK LOOPING BERITANYA. LAKUKAN DI TABEL2 LAINN
+                $item = [];
+                $sql = "SELECT * FROM pemadaman_maret";
+
+                if ($result = mysqli_query($con, $sql)) {
+                    // Fetch one and one row
+                    while ($row = mysqli_fetch_row($result)) {
+                    $item[] = $row;
+                    }
+                    //mysqli_free_result($result);
+                }
+            ?>
+            
+            <table>
+                <tr>
+                    <th rowspan="2" style="border: 1px solid black; width: 5%; text-align: center;">No</th>
+                    <th rowspan="2" style="border: 1px solid black; text-align: center;">Hari/Tanggal</th>
+                    <th colspan="3" rowspan="2" style="border: 1px solid black; text-align: center;">Pemadaman</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Pemilik</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Alamat Pemilik</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Nomor</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">No.HP Pengguna Layanan</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Jumlah Unit</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Jenis Objek Evakuasi</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Keterangan</th>
+
+                </tr>
+                <tr>
+                    
+                </tr>
+            
+
+            <?php foreach ($item as $row): ?>
+
+                <tr style="height: 40px;">
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[1];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[2];?></td>
+                    <td style="border: 1px solid black; text-align: center;" colspan="3"><?= $row[3];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[4];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[5];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[6];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[7];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[8];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[9];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[10];?></td>
+                </tr>
+            <?php endforeach; ?>
+            </table>
+
+
+            <!-- Pemyelamatan April -->
+            <h5 class="data-content text-center fw-bold mb-4" style="font-size: 24px; font-family: sans-serif; margin-top: 100px;">Data Penyelamatan Bulan April</h5>
+
+
+            <?php 
+                //INI CODE PHP UNTUK LOOPING BERITANYA. LAKUKAN DI TABEL2 LAINN
+                $item = [];
+                $sql = "SELECT * FROM penyelamatan_april";
+
+                if ($result = mysqli_query($con, $sql)) {
+                    // Fetch one and one row
+                    while ($row = mysqli_fetch_row($result)) {
+                    $item[] = $row;
+                    }
+                    //mysqli_free_result($result);
+                }
+            ?>
+            
+            <table>
+                <tr>
+                    <th rowspan="2" style="border: 1px solid black; width: 5%; text-align: center;">No</th>
+                    <th rowspan="2" style="border: 1px solid black; text-align: center;">Hari/Tanggal</th>
+                    <th colspan="3" style="border: 1px solid black; text-align: center;">Penyelamatan</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Pemilik</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Alamat Pemilik</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">No.HP Pengguna Layanan</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Jumlah Unit</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Jenis Objek Evakuasi</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Hasil Pelaksanaan</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Keterangan</th>
+                </tr>
+                <tr>
+                    <th style="border: 1px solid black; width: 10%; text-align: center;">Hewan Berbisa</th>
+                    <th style="border: 1px solid black; width: 10%; text-align: center;">Evakuasi</th>
+                    <th style="border: 1px solid black; width: 10%; text-align: center;">Lain-lain</th>
+                </tr>
+            
+
+            <?php foreach ($item as $row): ?>
+
+                <tr style="height: 40px;">
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[1];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[2];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[3];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[4];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[5];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[6];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[7];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[8];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[9];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[10];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[11];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[12];?></td>
+                </tr>
+            <?php endforeach; ?>
+            </table>
+            
+
+            <!-- Pemadaman April -->
+            <h5 class="data-content text-center fw-bold mb-4" style="font-size: 24px; font-family: sans-serif; margin-top: 100px;">Data Pemadaman Bulan April</h5>
+
+            <?php 
+                //INI CODE PHP UNTUK LOOPING BERITANYA. LAKUKAN DI TABEL2 LAINN
+                $item = [];
+                $sql = "SELECT * FROM pemadaman_april";
+
+                if ($result = mysqli_query($con, $sql)) {
+                    // Fetch one and one row
+                    while ($row = mysqli_fetch_row($result)) {
+                    $item[] = $row;
+                    }
+                    //mysqli_free_result($result);
+                }
+            ?>
+            
+            <table>
+                <tr>
+                    <th rowspan="2" style="border: 1px solid black; width: 5%; text-align: center;">No</th>
+                    <th rowspan="2" style="border: 1px solid black; text-align: center;">Hari/Tanggal</th>
+                    <th colspan="3" rowspan="2" style="border: 1px solid black; text-align: center;">Pemadaman</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Pemilik</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Alamat Pemilik</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Nomor</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">No.HP Pengguna Layanan</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Jumlah Unit</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Jenis Objek Evakuasi</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Keterangan</th>
+
+                </tr>
+                <tr>
+                    
+                </tr>
+            
+
+            <?php foreach ($item as $row): ?>
+
+                <tr style="height: 40px;">
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[1];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[2];?></td>
+                    <td style="border: 1px solid black; text-align: center;" colspan="3"><?= $row[3];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[4];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[5];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[6];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[7];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[8];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[9];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[10];?></td>
+                </tr>
+            <?php endforeach; ?>
+            </table>
+
+
+            <!-- Pemyelamatan Mei -->
+            <h5 class="data-content text-center fw-bold mb-4" style="font-size: 24px; font-family: sans-serif; margin-top: 100px;">Data Penyelamatan Bulan Mei</h5>
+
+
+            <?php 
+                //INI CODE PHP UNTUK LOOPING BERITANYA. LAKUKAN DI TABEL2 LAINN
+                $item = [];
+                $sql = "SELECT * FROM penyelamatan_mei";
+
+                if ($result = mysqli_query($con, $sql)) {
+                    // Fetch one and one row
+                    while ($row = mysqli_fetch_row($result)) {
+                    $item[] = $row;
+                    }
+                    //mysqli_free_result($result);
+                }
+            ?>
+            
+            <table>
+                <tr>
+                    <th rowspan="2" style="border: 1px solid black; width: 5%; text-align: center;">No</th>
+                    <th rowspan="2" style="border: 1px solid black; text-align: center;">Hari/Tanggal</th>
+                    <th colspan="3" style="border: 1px solid black; text-align: center;">Penyelamatan</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Pemilik</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Alamat Pemilik</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">No.HP Pengguna Layanan</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Jumlah Unit</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Jenis Objek Evakuasi</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Hasil Pelaksanaan</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Keterangan</th>
+                </tr>
+                <tr>
+                    <th style="border: 1px solid black; width: 10%; text-align: center;">Hewan Berbisa</th>
+                    <th style="border: 1px solid black; width: 10%; text-align: center;">Evakuasi</th>
+                    <th style="border: 1px solid black; width: 10%; text-align: center;">Lain-lain</th>
+                </tr>
+            
+
+            <?php foreach ($item as $row): ?>
+
+                <tr style="height: 40px;">
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[1];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[2];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[3];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[4];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[5];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[6];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[7];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[8];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[9];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[10];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[11];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[12];?></td>
+                </tr>
+            <?php endforeach; ?>
+            </table>
+
+
+            <!-- Pemadaman Mei -->
+            <h5 class="data-content text-center fw-bold mb-4" style="font-size: 24px; font-family: sans-serif; margin-top: 100px;">Data Pemadaman Bulan Mei</h5>
+
+            <?php 
+                //INI CODE PHP UNTUK LOOPING BERITANYA. LAKUKAN DI TABEL2 LAINN
+                $item = [];
+                $sql = "SELECT * FROM pemadaman_mei";
+
+                if ($result = mysqli_query($con, $sql)) {
+                    // Fetch one and one row
+                    while ($row = mysqli_fetch_row($result)) {
+                    $item[] = $row;
+                    }
+                    //mysqli_free_result($result);
+                }
+            ?>
+            
+            <table>
+                <tr>
+                    <th rowspan="2" style="border: 1px solid black; width: 5%; text-align: center;">No</th>
+                    <th rowspan="2" style="border: 1px solid black; text-align: center;">Hari/Tanggal</th>
+                    <th colspan="3" rowspan="2" style="border: 1px solid black; text-align: center;">Pemadaman</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Pemilik</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Alamat Pemilik</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Nomor</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">No.HP Pengguna Layanan</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Jumlah Unit</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Jenis Objek Evakuasi</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Keterangan</th>
+
+                </tr>
+                <tr>
+                    
+                </tr>
+            
+
+            <?php foreach ($item as $row): ?>
+
+                <tr style="height: 40px;">
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[1];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[2];?></td>
+                    <td style="border: 1px solid black; text-align: center;" colspan="3"><?= $row[3];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[4];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[5];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[6];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[7];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[8];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[9];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[10];?></td>
+                </tr>
+            <?php endforeach; ?>
+            </table>
+
+
+            <!-- Pemyelamatan Juni -->
+            <h5 class="data-content text-center fw-bold mb-4" style="font-size: 24px; font-family: sans-serif; margin-top: 100px;">Data Penyelamatan Bulan Juni</h5>
+
+
+            <?php 
+                //INI CODE PHP UNTUK LOOPING BERITANYA. LAKUKAN DI TABEL2 LAINN
+                $item = [];
+                $sql = "SELECT * FROM penyelamatan_juni";
+
+                if ($result = mysqli_query($con, $sql)) {
+                    // Fetch one and one row
+                    while ($row = mysqli_fetch_row($result)) {
+                    $item[] = $row;
+                    }
+                    //mysqli_free_result($result);
+                }
+            ?>
+            
+            <table>
+                <tr>
+                    <th rowspan="2" style="border: 1px solid black; width: 5%; text-align: center;">No</th>
+                    <th rowspan="2" style="border: 1px solid black; text-align: center;">Hari/Tanggal</th>
+                    <th colspan="3" style="border: 1px solid black; text-align: center;">Penyelamatan</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Pemilik</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Alamat Pemilik</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">No.HP Pengguna Layanan</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Jumlah Unit</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Jenis Objek Evakuasi</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Hasil Pelaksanaan</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Keterangan</th>
+                </tr>
+                <tr>
+                    <th style="border: 1px solid black; width: 10%; text-align: center;">Hewan Berbisa</th>
+                    <th style="border: 1px solid black; width: 10%; text-align: center;">Evakuasi</th>
+                    <th style="border: 1px solid black; width: 10%; text-align: center;">Lain-lain</th>
+                </tr>
+            
+
+            <?php foreach ($item as $row): ?>
+
+                <tr style="height: 40px;">
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[1];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[2];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[3];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[4];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[5];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[6];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[7];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[8];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[9];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[10];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[11];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[12];?></td>
+                </tr>
+            <?php endforeach; ?>
+            </table>
+
+
+            <!-- Pemadaman Juni -->
+            <h5 class="data-content text-center fw-bold mb-4" style="font-size: 24px; font-family: sans-serif; margin-top: 100px;">Data Pemadaman Bulan Juni</h5>
+
+            <?php 
+                //INI CODE PHP UNTUK LOOPING BERITANYA. LAKUKAN DI TABEL2 LAINN
+                $item = [];
+                $sql = "SELECT * FROM pemadaman_juni";
+
+                if ($result = mysqli_query($con, $sql)) {
+                    // Fetch one and one row
+                    while ($row = mysqli_fetch_row($result)) {
+                    $item[] = $row;
+                    }
+                    //mysqli_free_result($result);
+                }
+            ?>
+            
+            <table>
+                <tr>
+                    <th rowspan="2" style="border: 1px solid black; width: 5%; text-align: center;">No</th>
+                    <th rowspan="2" style="border: 1px solid black; text-align: center;">Hari/Tanggal</th>
+                    <th colspan="3" rowspan="2" style="border: 1px solid black; text-align: center;">Pemadaman</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Pemilik</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Alamat Pemilik</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Nomor</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">No.HP Pengguna Layanan</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Jumlah Unit</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Jenis Objek Evakuasi</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Keterangan</th>
+
+                </tr>
+                <tr>
+                    
+                </tr>
+            
+
+            <?php foreach ($item as $row): ?>
+
+                <tr style="height: 40px;">
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[1];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[2];?></td>
+                    <td style="border: 1px solid black; text-align: center;" colspan="3"><?= $row[3];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[4];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[5];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[6];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[7];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[8];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[9];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[10];?></td>
+                </tr>
+            <?php endforeach; ?>
+            </table>
+
+
+            <!-- Pemyelamatan Juli -->
+            <h5 class="data-content text-center fw-bold mb-4" style="font-size: 24px; font-family: sans-serif; margin-top: 100px;">Data Penyelamatan Bulan Juli</h5>
+
+
+            <?php 
+                //INI CODE PHP UNTUK LOOPING BERITANYA. LAKUKAN DI TABEL2 LAINN
+                $item = [];
+                $sql = "SELECT * FROM penyelamatan_juli";
+
+                if ($result = mysqli_query($con, $sql)) {
+                    // Fetch one and one row
+                    while ($row = mysqli_fetch_row($result)) {
+                    $item[] = $row;
+                    }
+                    //mysqli_free_result($result);
+                }
+            ?>
+            
+            <table>
+                <tr>
+                    <th rowspan="2" style="border: 1px solid black; width: 5%; text-align: center;">No</th>
+                    <th rowspan="2" style="border: 1px solid black; text-align: center;">Hari/Tanggal</th>
+                    <th colspan="3" style="border: 1px solid black; text-align: center;">Penyelamatan</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Pemilik</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Alamat Pemilik</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">No.HP Pengguna Layanan</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Jumlah Unit</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Jenis Objek Evakuasi</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Hasil Pelaksanaan</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Keterangan</th>
+                </tr>
+                <tr>
+                    <th style="border: 1px solid black; width: 10%; text-align: center;">Hewan Berbisa</th>
+                    <th style="border: 1px solid black; width: 10%; text-align: center;">Evakuasi</th>
+                    <th style="border: 1px solid black; width: 10%; text-align: center;">Lain-lain</th>
+                </tr>
+            
+
+            <?php foreach ($item as $row): ?>
+
+                <tr style="height: 40px;">
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[1];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[2];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[3];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[4];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[5];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[6];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[7];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[8];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[9];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[10];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[11];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[12];?></td>
+                </tr>
+            <?php endforeach; ?>
+            </table>
+
+
+            <!-- Pemadaman Juli -->
+            <h5 class="data-content text-center fw-bold mb-4" style="font-size: 24px; font-family: sans-serif; margin-top: 100px;">Data Pemadaman Bulan Juli</h5>
+
+            <?php 
+                //INI CODE PHP UNTUK LOOPING BERITANYA. LAKUKAN DI TABEL2 LAINN
+                $item = [];
+                $sql = "SELECT * FROM pemadaman_juli";
+
+                if ($result = mysqli_query($con, $sql)) {
+                    // Fetch one and one row
+                    while ($row = mysqli_fetch_row($result)) {
+                    $item[] = $row;
+                    }
+                    //mysqli_free_result($result);
+                }
+            ?>
+            
+            <table>
+                <tr>
+                    <th rowspan="2" style="border: 1px solid black; width: 5%; text-align: center;">No</th>
+                    <th rowspan="2" style="border: 1px solid black; text-align: center;">Hari/Tanggal</th>
+                    <th colspan="3" rowspan="2" style="border: 1px solid black; text-align: center;">Pemadaman</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Pemilik</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Alamat Pemilik</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Nomor</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">No.HP Pengguna Layanan</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Jumlah Unit</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Jenis Objek Evakuasi</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Keterangan</th>
+
+                </tr>
+                <tr>
+                    
+                </tr>
+            
+
+            <?php foreach ($item as $row): ?>
+
+                <tr style="height: 40px;">
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[1];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[2];?></td>
+                    <td style="border: 1px solid black; text-align: center;" colspan="3"><?= $row[3];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[4];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[5];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[6];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[7];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[8];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[9];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[10];?></td>
+                </tr>
+            <?php endforeach; ?>
+            </table>
+
+
+            <!-- Pemyelamatan Agustus -->
+            <h5 class="data-content text-center fw-bold mb-4" style="font-size: 24px; font-family: sans-serif; margin-top: 100px;">Data Penyelamatan Bulan Agustus</h5>
+
+
+            <?php 
+                //INI CODE PHP UNTUK LOOPING BERITANYA. LAKUKAN DI TABEL2 LAINN
+                $item = [];
+                $sql = "SELECT * FROM penyelamatan_agustus";
+
+                if ($result = mysqli_query($con, $sql)) {
+                    // Fetch one and one row
+                    while ($row = mysqli_fetch_row($result)) {
+                    $item[] = $row;
+                    }
+                    //mysqli_free_result($result);
+                }
+            ?>
+            
+            <table>
+                <tr>
+                    <th rowspan="2" style="border: 1px solid black; width: 5%; text-align: center;">No</th>
+                    <th rowspan="2" style="border: 1px solid black; text-align: center;">Hari/Tanggal</th>
+                    <th colspan="3" style="border: 1px solid black; text-align: center;">Penyelamatan</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Pemilik</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Alamat Pemilik</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">No.HP Pengguna Layanan</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Jumlah Unit</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Jenis Objek Evakuasi</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Hasil Pelaksanaan</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Keterangan</th>
+                </tr>
+                <tr>
+                    <th style="border: 1px solid black; width: 10%; text-align: center;">Hewan Berbisa</th>
+                    <th style="border: 1px solid black; width: 10%; text-align: center;">Evakuasi</th>
+                    <th style="border: 1px solid black; width: 10%; text-align: center;">Lain-lain</th>
+                </tr>
+            
+
+            <?php foreach ($item as $row): ?>
+
+                <tr style="height: 40px;">
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[1];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[2];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[3];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[4];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[5];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[6];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[7];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[8];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[9];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[10];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[11];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[12];?></td>
+                </tr>
+            <?php endforeach; ?>
+            </table>
+
+
+            <!-- Pemyelamatan September -->
+            <h5 class="data-content text-center fw-bold mb-4" style="font-size: 24px; font-family: sans-serif; margin-top: 100px;">Data Penyelamatan Bulan September</h5>
+
+
+            <?php 
+                //INI CODE PHP UNTUK LOOPING BERITANYA. LAKUKAN DI TABEL2 LAINN
+                $item = [];
+                $sql = "SELECT * FROM penyelamatan_september";
+
+                if ($result = mysqli_query($con, $sql)) {
+                    // Fetch one and one row
+                    while ($row = mysqli_fetch_row($result)) {
+                    $item[] = $row;
+                    }
+                    //mysqli_free_result($result);
+                }
+            ?>
+            
+            <table>
+                <tr>
+                    <th rowspan="2" style="border: 1px solid black; width: 5%; text-align: center;">No</th>
+                    <th rowspan="2" style="border: 1px solid black; text-align: center;">Hari/Tanggal</th>
+                    <th colspan="3" style="border: 1px solid black; text-align: center;">Penyelamatan</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Pemilik</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Alamat Pemilik</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">No.HP Pengguna Layanan</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Jumlah Unit</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Jenis Objek Evakuasi</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Hasil Pelaksanaan</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Keterangan</th>
+                </tr>
+                <tr>
+                    <th style="border: 1px solid black; width: 10%; text-align: center;">Hewan Berbisa</th>
+                    <th style="border: 1px solid black; width: 10%; text-align: center;">Evakuasi</th>
+                    <th style="border: 1px solid black; width: 10%; text-align: center;">Lain-lain</th>
+                </tr>
+            
+
+            <?php foreach ($item as $row): ?>
+
+                <tr style="height: 40px;">
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[1];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[2];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[3];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[4];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[5];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[6];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[7];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[8];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[9];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[10];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[11];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[12];?></td>
+                </tr>
+            <?php endforeach; ?>
+            </table>
+
+
+            <!-- Pemadaman September -->
+            <h5 class="data-content text-center fw-bold mb-4" style="font-size: 24px; font-family: sans-serif; margin-top: 100px;">Data Pemadaman Bulan September</h5>
+
+            <?php 
+                //INI CODE PHP UNTUK LOOPING BERITANYA. LAKUKAN DI TABEL2 LAINN
+                $item = [];
+                $sql = "SELECT * FROM pemadaman_september";
+
+                if ($result = mysqli_query($con, $sql)) {
+                    // Fetch one and one row
+                    while ($row = mysqli_fetch_row($result)) {
+                    $item[] = $row;
+                    }
+                    //mysqli_free_result($result);
+                }
+            ?>
+            
+            <table>
+                <tr>
+                    <th rowspan="2" style="border: 1px solid black; width: 5%; text-align: center;">No</th>
+                    <th rowspan="2" style="border: 1px solid black; text-align: center;">Hari/Tanggal</th>
+                    <th colspan="3" rowspan="2" style="border: 1px solid black; text-align: center;">Pemadaman</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Pemilik</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Alamat Pemilik</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Nomor</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">No.HP Pengguna Layanan</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Jumlah Unit</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Jenis Objek Evakuasi</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Keterangan</th>
+
+                </tr>
+                <tr>
+                    
+                </tr>
+            
+
+            <?php foreach ($item as $row): ?>
+
+                <tr style="height: 40px;">
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[1];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[2];?></td>
+                    <td style="border: 1px solid black; text-align: center;" colspan="3"><?= $row[3];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[4];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[5];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[6];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[7];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[8];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[9];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[10];?></td>
+                </tr>
+            <?php endforeach; ?>
+            </table>
+
+
+            <!-- Pemyelamatan Oktober -->
+            <h5 class="data-content text-center fw-bold mb-4" style="font-size: 24px; font-family: sans-serif; margin-top: 100px;">Data Penyelamatan Bulan Oktober</h5>
+
+
+            <?php 
+                //INI CODE PHP UNTUK LOOPING BERITANYA. LAKUKAN DI TABEL2 LAINN
+                $item = [];
+                $sql = "SELECT * FROM penyelamatan_oktober";
+
+                if ($result = mysqli_query($con, $sql)) {
+                    // Fetch one and one row
+                    while ($row = mysqli_fetch_row($result)) {
+                    $item[] = $row;
+                    }
+                    //mysqli_free_result($result);
+                }
+            ?>
+            
+            <table>
+                <tr>
+                    <th rowspan="2" style="border: 1px solid black; width: 5%; text-align: center;">No</th>
+                    <th rowspan="2" style="border: 1px solid black; text-align: center;">Hari/Tanggal</th>
+                    <th colspan="3" style="border: 1px solid black; text-align: center;">Penyelamatan</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Pemilik</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Alamat Pemilik</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">No.HP Pengguna Layanan</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Jumlah Unit</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Jenis Objek Evakuasi</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Hasil Pelaksanaan</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Keterangan</th>
+                </tr>
+                <tr>
+                    <th style="border: 1px solid black; width: 10%; text-align: center;">Hewan Berbisa</th>
+                    <th style="border: 1px solid black; width: 10%; text-align: center;">Evakuasi</th>
+                    <th style="border: 1px solid black; width: 10%; text-align: center;">Lain-lain</th>
+                </tr>
+            
+
+            <?php foreach ($item as $row): ?>
+
+                <tr style="height: 40px;">
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[1];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[2];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[3];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[4];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[5];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[6];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[7];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[8];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[9];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[10];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[11];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[12];?></td>
+                </tr>
+            <?php endforeach; ?>
+            </table>
+
+
+            <!-- Pemadaman Oktober -->
+            <h5 class="data-content text-center fw-bold mb-4" style="font-size: 24px; font-family: sans-serif; margin-top: 100px;">Data Pemadaman Bulan Oktober</h5>
+
+            <?php 
+                //INI CODE PHP UNTUK LOOPING BERITANYA. LAKUKAN DI TABEL2 LAINN
+                $item = [];
+                $sql = "SELECT * FROM pemadaman_oktober";
+
+                if ($result = mysqli_query($con, $sql)) {
+                    // Fetch one and one row
+                    while ($row = mysqli_fetch_row($result)) {
+                    $item[] = $row;
+                    }
+                    //mysqli_free_result($result);
+                }
+            ?>
+            
+            <table>
+                <tr>
+                    <th rowspan="2" style="border: 1px solid black; width: 5%; text-align: center;">No</th>
+                    <th rowspan="2" style="border: 1px solid black; text-align: center;">Hari/Tanggal</th>
+                    <th colspan="3" rowspan="2" style="border: 1px solid black; text-align: center;">Pemadaman</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Pemilik</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Alamat Pemilik</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Nomor</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">No.HP Pengguna Layanan</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Jumlah Unit</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Jenis Objek Evakuasi</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Keterangan</th>
+
+                </tr>
+                <tr>
+                    
+                </tr>
+            
+
+            <?php foreach ($item as $row): ?>
+
+                <tr style="height: 40px;">
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[1];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[2];?></td>
+                    <td style="border: 1px solid black; text-align: center;" colspan="3"><?= $row[3];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[4];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[5];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[6];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[7];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[8];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[9];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[10];?></td>
+                </tr>
+            <?php endforeach; ?>
+            </table>
+
+
+            <!-- Pemyelamatan November -->
+            <h5 class="data-content text-center fw-bold mb-4" style="font-size: 24px; font-family: sans-serif; margin-top: 100px;">Data Penyelamatan Bulan November</h5>
+
+
+            <?php 
+                //INI CODE PHP UNTUK LOOPING BERITANYA. LAKUKAN DI TABEL2 LAINN
+                $item = [];
+                $sql = "SELECT * FROM penyelamatan_november";
+
+                if ($result = mysqli_query($con, $sql)) {
+                    // Fetch one and one row
+                    while ($row = mysqli_fetch_row($result)) {
+                    $item[] = $row;
+                    }
+                    //mysqli_free_result($result);
+                }
+            ?>
+            
+            <table>
+                <tr>
+                    <th rowspan="2" style="border: 1px solid black; width: 5%; text-align: center;">No</th>
+                    <th rowspan="2" style="border: 1px solid black; text-align: center;">Hari/Tanggal</th>
+                    <th colspan="3" style="border: 1px solid black; text-align: center;">Penyelamatan</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Pemilik</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Alamat Pemilik</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">No.HP Pengguna Layanan</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Jumlah Unit</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Jenis Objek Evakuasi</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Hasil Pelaksanaan</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Keterangan</th>
+                </tr>
+                <tr>
+                    <th style="border: 1px solid black; width: 10%; text-align: center;">Hewan Berbisa</th>
+                    <th style="border: 1px solid black; width: 10%; text-align: center;">Evakuasi</th>
+                    <th style="border: 1px solid black; width: 10%; text-align: center;">Lain-lain</th>
+                </tr>
+            
+
+            <?php foreach ($item as $row): ?>
+
+                <tr style="height: 40px;">
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[1];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[2];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[3];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[4];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[5];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[6];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[7];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[8];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[9];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[10];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[11];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[12];?></td>
+                </tr>
+            <?php endforeach; ?>
+            </table>
+
+
+            <!-- Pemadaman November -->
+            <h5 class="data-content text-center fw-bold mb-4" style="font-size: 24px; font-family: sans-serif; margin-top: 100px;">Data Pemadaman Bulan November</h5>
+
+            <?php 
+                //INI CODE PHP UNTUK LOOPING BERITANYA. LAKUKAN DI TABEL2 LAINN
+                $item = [];
+                $sql = "SELECT * FROM pemadaman_november";
+
+                if ($result = mysqli_query($con, $sql)) {
+                    // Fetch one and one row
+                    while ($row = mysqli_fetch_row($result)) {
+                    $item[] = $row;
+                    }
+                    //mysqli_free_result($result);
+                }
+            ?>
+            
+            <table>
+                <tr>
+                    <th rowspan="2" style="border: 1px solid black; width: 5%; text-align: center;">No</th>
+                    <th rowspan="2" style="border: 1px solid black; text-align: center;">Hari/Tanggal</th>
+                    <th colspan="3" rowspan="2" style="border: 1px solid black; text-align: center;">Pemadaman</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Pemilik</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Alamat Pemilik</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Nomor</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">No.HP Pengguna Layanan</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Jumlah Unit</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Jenis Objek Evakuasi</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Keterangan</th>
+
+                </tr>
+                <tr>
+                    
+                </tr>
+            
+
+            <?php foreach ($item as $row): ?>
+
+                <tr style="height: 40px;">
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[1];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[2];?></td>
+                    <td style="border: 1px solid black; text-align: center;" colspan="3"><?= $row[3];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[4];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[5];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[6];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[7];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[8];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[9];?></td>
+                    <td style="border: 1px solid black; text-align: center;"><?= $row[10];?></td>
+                </tr>
+            <?php endforeach; ?>
+            </table>
+
+
 
 
             
