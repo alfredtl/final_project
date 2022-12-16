@@ -1,3 +1,7 @@
+<?php
+include_once 'koneksi.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -371,8 +375,166 @@
 
                             <p class="text-tf mb-5">Berdasarkan data kepegawaian Dinas Pemadam Kebakaran jumlah
                                 pegawai seluruhnya sebanyak 91 orang, sebagaimana tabel berikut:</p>
-                            <h5 class="text-center"> Komposisi Pegawai Menurut Jenjang Pendidikan</h5>
-                            <table border="1" class="text-center" style="border: 1px solid white; width: 100%;">
+
+
+                            <!-- Komposisi Pegawai Menurut Jenjang Pendidikan -->
+                            <h5 class="text-center mb-3"> Komposisi Pegawai Menurut Jenjang Pendidikan</h5>
+
+                            <?php 
+                                //INI CODE PHP UNTUK LOOPING BERITANYA. LAKUKAN DI TABEL2 LAINN
+                                $item = [];
+                                $sql = "SELECT * FROM kp_jenjangpendidikan";
+
+                                if ($result = mysqli_query($con, $sql)) {
+                                    // Fetch one and one row
+                                    while ($row = mysqli_fetch_row($result)) {
+                                    $item[] = $row;
+                                    }
+                                    //mysqli_free_result($result);
+                                }
+                            ?>
+
+                            <table>
+                                <tr>
+                                    <th style="border: 1px solid white; width: 5%; text-align: center;">No</th>
+                                    <th style="border: 1px solid white; width: 20%; text-align: center;">Jenjang Pendidikan</th>
+                                    <th style="border: 1px solid white; width: 10%; text-align: center;">Jumlah (Orang)</th>
+                                    <th style="border: 1px solid white; width: 10%; text-align: center;">Presentase (%)</th>
+                                </tr>
+                            
+
+                            <?php foreach ($item as $row): ?>
+
+                                <tr style="height: 40px;">
+                                    <td style="border: 1px solid white; text-align: center;"><?= $row[1];?></td>
+                                    <td style="border: 1px solid white; text-align: center;"><?= $row[2];?></td>
+                                    <td style="border: 1px solid white; text-align: center;"><?= $row[3];?></td>
+                                    <td style="border: 1px solid white; text-align: center;"><?= $row[4];?></td>
+                                </tr>
+                            <?php endforeach; ?>
+                            </table>
+
+
+                            <!-- Komposisi Pegawai Menurut Status Kepegawaian -->
+                            <h5 class="text-center mt-5 mb-3"> Komposisi Pegawai Menurut Status Kepegawaian</h5>
+
+                            <?php 
+                                //INI CODE PHP UNTUK LOOPING BERITANYA. LAKUKAN DI TABEL2 LAINN
+                                $item = [];
+                                $sql = "SELECT * FROM kp_statuskepegawaian";
+
+                                if ($result = mysqli_query($con, $sql)) {
+                                    // Fetch one and one row
+                                    while ($row = mysqli_fetch_row($result)) {
+                                    $item[] = $row;
+                                    }
+                                    //mysqli_free_result($result);
+                                }
+                            ?>
+
+                            <table>
+                                <tr>
+                                    <th style="border: 1px solid white; width: 5%; text-align: center;">No</th>
+                                    <th style="border: 1px solid white; width: 20%; text-align: center;">Status Kepegawaian</th>
+                                    <th style="border: 1px solid white; width: 10%; text-align: center;">Jumlah (Orang)</th>
+                                    <th style="border: 1px solid white; width: 10%; text-align: center;">Presentase (%)</th>
+                                </tr>
+                            
+
+                            <?php foreach ($item as $row): ?>
+
+                                <tr style="height: 40px;">
+                                    <td style="border: 1px solid white; text-align: center;"><?= $row[1];?></td>
+                                    <td style="border: 1px solid white; text-align: center;"><?= $row[2];?></td>
+                                    <td style="border: 1px solid white; text-align: center;"><?= $row[3];?></td>
+                                    <td style="border: 1px solid white; text-align: center;"><?= $row[4];?></td>
+                                </tr>
+                            <?php endforeach; ?>
+                            </table>
+
+
+                            <!-- Komposisi Pegawai Menurut Jabatan/Bidang Tugas -->
+                            <h5 class="text-center mt-5 mb-3"> Komposisi Pegawai Menurut Jabatan/Bidang Tugas</h5>
+
+                            <?php 
+                                //INI CODE PHP UNTUK LOOPING BERITANYA. LAKUKAN DI TABEL2 LAINN
+                                $item = [];
+                                $sql = "SELECT * FROM kp_jbt";
+
+                                if ($result = mysqli_query($con, $sql)) {
+                                    // Fetch one and one row
+                                    while ($row = mysqli_fetch_row($result)) {
+                                    $item[] = $row;
+                                    }
+                                    //mysqli_free_result($result);
+                                }
+                            ?>
+
+                            <table>
+                                <tr>
+                                    <th style="border: 1px solid white; width: 5%; text-align: center;">No</th>
+                                    <th style="border: 1px solid white; width: 20%; text-align: center;">Jenjang Pendidikan</th>
+                                    <th style="border: 1px solid white; width: 10%; text-align: center;">Jumlah (Orang)</th>
+                                </tr>
+                            
+
+                            <?php foreach ($item as $row): ?>
+
+                                <tr style="height: 40px;">
+                                    <td style="border: 1px solid white; text-align: center;"><?= $row[1];?></td>
+                                    <td style="border: 1px solid white; text-align: center;"><?= $row[2];?></td>
+                                    <td style="border: 1px solid white; text-align: center;"><?= $row[3];?></td>
+                                </tr>
+                            <?php endforeach; ?>
+                            </table>
+
+
+                            <!-- Jumlah dan kondisi armada Dinas Pemadam kebakaran Kabupatem Minahasa -->
+                            <h5 class="text-center mt-5 mb-3"> Jumlah dan Kondisi Armada Dinas Pemadam kebakaran Kabupatem Minahasa</h5>
+
+                            <?php 
+                                //INI CODE PHP UNTUK LOOPING BERITANYA. LAKUKAN DI TABEL2 LAINN
+                                $item = [];
+                                $sql = "SELECT * FROM jumlah_kondisiarmada";
+
+                                if ($result = mysqli_query($con, $sql)) {
+                                    // Fetch one and one row
+                                    while ($row = mysqli_fetch_row($result)) {
+                                    $item[] = $row;
+                                    }
+                                    //mysqli_free_result($result);
+                                }
+                            ?>
+
+                            <table>
+                                <tr>
+                                    <th rowspan="2" style="border: 1px solid white; width: 10%; text-align: center;">Jenis</th>
+                                    <th rowspan="2" style="border: 1px solid white; width: 10%; text-align: center;">Jumlah (unit/buah)</th>
+                                    <th colspan="3" style="border: 1px solid white; width: 10%; text-align: center;">Kondisi Sekarang</th>
+                                    <th rowspan="2" style="border: 1px solid white; width: 10%; text-align: center;">Yang Diharapkan Jumlah (unit/buah)</th>
+                                </tr>
+                                <tr>
+                                <th style="border: 1px solid white; width: 10%; text-align: center;">Baik</th>
+                                <th style="border: 1px solid white; width: 10%; text-align: center;">Rusak Ringan / Layak Pakai</th>
+                                <th style="border: 1px solid white; width: 10%; text-align: center;">Rusak Berat</th>
+                                </tr>
+                            
+
+                            <?php foreach ($item as $row): ?>
+
+                                <tr style="height: 40px;">
+                                    <td style="border: 1px solid white; text-align: center;"><?= $row[1];?></td>
+                                    <td style="border: 1px solid white; text-align: center;"><?= $row[2];?></td>
+                                    <td style="border: 1px solid white; text-align: center;"><?= $row[3];?></td>
+                                    <td style="border: 1px solid white; text-align: center;"><?= $row[4];?></td>
+                                    <td style="border: 1px solid white; text-align: center;"><?= $row[5];?></td>
+                                    <td style="border: 1px solid white; text-align: center;"><?= $row[6];?></td>
+                                </tr>
+                            <?php endforeach; ?>
+                            </table>
+
+
+                            <!-- <table border="1" class="text-center" style="border: 1px solid white; width: 100%;">
                                 <tr>
                                     <th style="border: 1px solid white; width: 10%;">No</th>
                                     <th style="border: 1px solid white; width: 30%;">Jenjang Pendidikan</th>
@@ -562,7 +724,7 @@
                                     <td style="border: 1px solid white; text-align: center;">-</td>
                                     <td style="border: 1px solid white; text-align: center;">2</td>
                                 </tr>
-                            </table>
+                            </table> -->
 
                     <!-- <p class="mb-5"></p> 
                     <p class="text-tf mb-3">2. Sarana dan prasarana</p>
