@@ -195,13 +195,22 @@ include_once 'koneksi.php';
                     //INI CODE PHP UNTUK LOOPING BERITANYA. LAKUKAN DI TABEL2 LAINN
                     $sql = "SELECT * FROM berita";
 
+                    $berita = [];
+                    if ($result = mysqli_query($con, $sql)) {
+                        // tampilkan satu per satu
+                        while ($row = mysqli_fetch_assoc($result)) {
+                            $berita[] = $row;
+                        }
+                        mysqli_free_result($result);
+                    }
+                    
+                    
                     if ($result = mysqli_query($con, $sql)) {
                         // Fetch one and one row
                         while ($row = mysqli_fetch_row($result)) {
                 ?>
 
-
-                
+                <?php foreach ($berita as $row): ?>
 
                 <!-- berita 1 -->
                 <div id="berita1" class="box-box mx-auto py-5" style="margin-bottom: 200px; border-radius: 25px; background-color:rgb(218, 37, 29);" >
@@ -210,11 +219,11 @@ include_once 'koneksi.php';
                             <div class="p-3 text-center">
                                 <h1 class="text-gradient">
                                     <a href="data-kebakaran.html" class="text-light" style="text-decoration: none;">
-                                        <img src="./image/<?=$row['7']?>" class="rounded text-start" style="width: 250px;" alt="" >
+                                        <img src="./image/<?=$row['photo_link']?>" class="rounded text-start" style="width: 250px;" alt="" >
                                         
                                         
-                                        <p class="" style="font-size: 14px; margin-top: 10px; font-family: sans-serif; color: rgba(198, 196, 196, 1);"><?= $row[4];?></p>
-                                        <p class="" style="font-size: 14px; margin-top: 10px; font-family: sans-serif; color: rgba(198, 196, 196, 1);"><?= $row[3];?></p>
+                                        <p class="" style="font-size: 14px; margin-top: 10px; font-family: sans-serif; color: rgba(198, 196, 196, 1);"><?= $row['tanggal'];?></p>
+                                        <p class="" style="font-size: 14px; margin-top: 10px; font-family: sans-serif; color: rgba(198, 196, 196, 1);"><?= $row['tempat_kejadian'];?></p>
                                     
                                     </a>
                                 </h1>
@@ -224,8 +233,8 @@ include_once 'koneksi.php';
                             <div class="p-3">
                                 <h1 class="text-gradient">
                                     <a href="#" class="text-light" style="text-decoration: none;">
-                                        <p class="mt-2 mb-0" style="font-size: 24px; font-family: sans-serif; text-align: justify; font-weight: 600;"><?= $row[1];?></p>
-                                        <p class="lh-lg mb-0" style="font-size: 16px; margin-top: 10px; font-family: sans-serif; text-align: justify; color: rgba(198, 196, 196, 1);"><?= $row[5];?></p>
+                                        <p class="mt-2 mb-0" style="font-size: 24px; font-family: sans-serif; text-align: justify; font-weight: 600;"><?= $row['judul'];?></p>
+                                        <p class="lh-lg mb-0" style="font-size: 16px; margin-top: 10px; font-family: sans-serif; text-align: justify; color: rgba(198, 196, 196, 1);"><?= $row['isi_berita'];?></p>
                                     </a>
                                     <p class="lead text-end mb-0">
                                         <a href="./update.php?id=<?= $row['id'] ?>" class="btn btn-lg btn-secondary fw-bold border-black" style="margin-bottom: 100px; color: white; background-color:rgb(51, 33, 117);">ubah</a>
@@ -235,12 +244,20 @@ include_once 'koneksi.php';
                         </div>
                     </div>
                 </div>
-                            
+                
+                
+                <?php endforeach;?>
+
                 <?php
                     }
                     //mysqli_free_result($result);
                 }
+                // tutup koneksi
+                mysqli_close($con);
                 ?>
+                
+
+
 
 
 

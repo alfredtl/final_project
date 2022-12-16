@@ -15,17 +15,17 @@ if(isset($_GET['id'])){
         echo '<br>koneksi berhasil';
     }
 
+    // TABEL BERITA
     $sql = "SELECT * FROM berita WHERE id='$id'";
 
     if ($result = mysqli_query($con, $sql)) {
         echo "<br>data tersedia";
         while($user_data = mysqli_fetch_assoc($result)) {
-            $judul = $_POST['judul'];
-            $tempat_kejadian = $_POST['tempat_kejadian'];
-            $tanggal = $_POST['tanggal'];
-            $isi_berita = $_POST['isi_berita'];
-            $publish_id = $_POST['publish_id'];
-            $photo_link = $_POST['photo_link'];
+            $judul = $user_data['judul'];
+            $tempat_kejadian = $user_data['tempat_kejadian'];
+            $tanggal = $user_data['tanggal'];
+            $isi_berita = $user_data['isi_berita'];
+            $photo_link = $user_data['photo_link'];
         }
     } else {
         echo "Error: " . $sql . "<br>" . mysqli_error($con);
@@ -40,7 +40,6 @@ if (isset($_POST['submit'])){
     $tempat_kejadian = $_POST['tempat_kejadian'];
     $tanggal = $_POST['tanggal'];
     $isi_berita = $_POST['isi_berita'];
-    $publish_id = $_POST['publish_id'];
     $photo_link = $_POST['photo_link'];
 
     // Buat koneksi dengan MySQL
@@ -55,7 +54,7 @@ if (isset($_POST['submit'])){
     }
 
     $sql = "UPDATE berita SET judul='$judul',tempat_kejadian='$tempat_kejadian',tanggal='$tanggal',isi_berita='$isi_berita',
-    publish_id='$publish_id',photo_link='$photo_link' WHERE id='$id' ";
+    photo_link='$photo_link' WHERE id='$id' ";
 
     if (mysqli_query($con, $sql)) {
         echo "<br>Data berhasil diupdate";
@@ -236,19 +235,22 @@ if (isset($_POST['submit'])){
 
 
                                 <label for="exampleFormControlInput1" class="form-label mt-3">Judul :</label>
-                                <input type="text" name="judul kegiatan" class="form-control mb-3" value="<?php echo $judul; ?>">
+                                <input type="text" name="judul" class="form-control mb-3" value="<?php echo $judul; ?>">
 
                                 <label for="exampleFormControlInput1" class="form-label">Isi Berita :</label>
-                                <input type="text" name="Isi Berita" class="form-control mb-3" value="<?php echo $isi_berita; ?>">
+                                <input type="text" name="isi_berita" class="form-control mb-3" value="<?php echo $isi_berita; ?>">
 
                                 <label for="exampleFormControlInput1" class="form-label">Tanggal :</label>
-                                <input type="text" name="tanggal kegiatan" class="form-control mb-3" value="<?php echo $tanggal; ?>">
+                                <input type="text" name="tanggal" class="form-control mb-3" value="<?php echo $tanggal; ?>">
 
                                 <label for="exampleFormControlInput1" class="form-label">Tempat Kejadian :</label>
-                                <input type="text" name="tempat kejadian" class="form-control mb-3" value="<?php echo $tempat_kejadian; ?>">
+                                <input type="text" name="tempat_kejadian" class="form-control mb-3" value="<?php echo $tempat_kejadian; ?>">
 
-                                <label for="exampleFormControlInput1" class="form-label">Upload Foto :</label><br>
-                                <input type="file" name="berkas" class="mb-5" value="<?php echo $photo_link; ?>"><br>
+                                <!-- <label for="exampleFormControlInput1" class="form-label">Upload Foto :</label><br>
+                                <input type="file" name="berkas" class="mb-5" value="<?php echo $photo_link; ?>"><br> -->
+
+                                <label for="exampleFormControlInput1" class="form-label">link foto :</label>
+                                <input type="text" name="photo_link" class="form-control mb-3" value="<?php echo $photo_link; ?>">
 
                                 <input class="btn btn-danger me-3" type="reset" name="submit" value="Reset">
                                 <input class="btn btn-primary" type="submit" name="submit" value="Submit">
