@@ -413,7 +413,7 @@ include_once 'koneksi.php';
                                     <td style="border: 1px solid white; text-align: center;"><?= $row['3'];?></td>
                                     <td style="border: 1px solid white; text-align: center;"><?= $row['4'];?></td>
                                     <td style="border: 1px solid white; text-align: center;">
-                                        <a href="./update.php?id=<? $row['id'] ?>">Edit</a>
+                                        <a href="./update_jp.php?id=<? $row['id'] ?>">Edit</a>
                                     </td>
                                 </tr>
                             <?php endforeach; ?>

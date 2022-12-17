@@ -7,30 +7,6 @@ if(isset($_GET['id'])){
     // Buat koneksi dengan MySQL
     $con = mysqli_connect("localhost","root","","db_berita");
 
-    // Check connection
-    // if (mysqli_connect_errno()) {
-    //     echo "Failed to connect to MySQL: " . mysqli_connect_error();
-    //     exit();
-    // }else{
-    //     echo '<br>koneksi berhasil';
-    // }
-
-    // TABEL BERITA
-    $sql = "SELECT * FROM berita WHERE id='$id'";
-
-    if ($result = mysqli_query($con, $sql)) {
-        // echo "<br>data tersedia";
-        while($user_data = mysqli_fetch_assoc($result)) {
-            $judul = $user_data['judul'];
-            $tempat_kejadian = $user_data['tempat_kejadian'];
-            $tanggal = $user_data['tanggal'];
-            $isi_berita = $user_data['isi_berita'];
-            $photo_link = $user_data['photo_link'];
-        }
-    } else {
-        echo "Error: " . $sql . "<br>" . mysqli_error($con);
-    }
-
     // TABEL jenjang pendidikan
     $sql = "SELECT * FROM kp_jenjangpendidikan WHERE id='$id'";
 
@@ -46,20 +22,15 @@ if(isset($_GET['id'])){
         echo "Error: " . $sql . "<br>" . mysqli_error($con);
     }
     
-
     mysqli_close($con);
-
-
-    
 }
 
 if (isset($_POST['submit'])){
     //var_dump($_POST);
-    $judul = $_POST['judul'];
-    $tempat_kejadian = $_POST['tempat_kejadian'];
-    $tanggal = $_POST['tanggal'];
-    $isi_berita = $_POST['isi_berita'];
-    $photo_link = $_POST['photo_link'];
+    $no = $_POST['no_'];
+    $jenjang_pendidikan = $_POST['jenjang_pendidikan'];
+    $jumlah = $_POST['jumlah'];
+    $presentase = $_POST['presentase'];
 
     // Buat koneksi dengan MySQL
     $con = mysqli_connect("localhost","root","","db_berita");
@@ -72,8 +43,8 @@ if (isset($_POST['submit'])){
     //     echo '<br>koneksi berhasil';
     // }
 
-    $sql = "UPDATE berita SET judul='$judul',tempat_kejadian='$tempat_kejadian',tanggal='$tanggal',isi_berita='$isi_berita',
-    photo_link='$photo_link' WHERE id='$id' ";
+    $sql = "UPDATE kp_jenjangpendidikan SET no_='$no_',jenjang_pendidikan='$jenjang_pendidikan',jumlah='$jumlah',presentase='$presentase', 
+    WHERE id='$id' ";
 
     if (mysqli_query($con, $sql)) {
         echo "<br>Data berhasil diupdate";
@@ -121,37 +92,7 @@ if (isset($_POST['submit'])){
 
 //     mysqli_close($con);
 // }
-
-// if (isset($_POST['submit'])){
-//     //var_dump($_POST);
-//     $no = $_POST['no_'];
-//     $jenjang_pendidikan = $_POST['jenjang_pendidikan'];
-//     $jumlah = $_POST['jumlah'];
-//     $presentase = $_POST['presentase'];
-
-//     // Buat koneksi dengan MySQL
-//     $con = mysqli_connect("localhost","root","","db_berita");
-
-//     // Check connection
-//     // if (mysqli_connect_errno()) {
-//     //     echo "Failed to connect to MySQL: " . mysqli_connect_error();
-//     //     exit();
-//     // }else{
-//     //     echo '<br>koneksi berhasil';
-//     // }
-
-//     $sql = "UPDATE kp_jenjangpendidikan SET no_='$no_',jenjang_pendidikan='$jenjang_pendidikan',jumlah='$jumlah',presentase='$presentase', 
-//     WHERE id='$id' ";
-
-//     if (mysqli_query($con, $sql)) {
-//         echo "<br>Data berhasil diupdate";
-//     } else {
-//         echo "Error: " . $sql . "<br>" . mysqli_error($con);
-//     }
-      
-//     mysqli_close($con);
-// }
-// ?>
+?>
 
 
 
@@ -262,6 +203,168 @@ if (isset($_POST['submit'])){
         </div>
     </nav>
     <!-- =========== Navbar Baru Lagi End =========== -->
+
+
+
+    <section class="vh-5" style="padding-top: 80px; background-color: #eee;">
+        <div class="container py-1 h-50">
+            <div class="row d-flex justify-content-center align-items-center h-50">
+                <div class="col col-lg-9 col-xl-7">
+                    <div class="card rounded-3">
+                        <div class="card-body p-4">
+                            <h2>UPDATE DATA PEMADAMAN</h2>
+                            <form action="action.php?p=gambar" method="post" enctype="multipart/form-data">
+                                <label for="exampleFormControlInput1" class="form-label">Tanggal</label>
+                                <input type="text" name="tanggal" class="form-control mb-3">
+
+                                <label for="exampleFormControlInput1" class="form-label">Upload Foto :</label><br>
+                                <input type="file" name="berkas" class="mb-5"><br>
+                        
+                                <div class="row justify-content-between">
+                                    <a href="./index.php" class="btn btn-success col-md-4 col-sm-12" style="width: 90px;">Kembali</a>
+                                    <input class="btn btn-danger ms-2 col-md-4 col-sm-12" style="width: 90px;" type="reset" name="submit" value="Reset">
+                                    <input class="btn btn-primary ms-2 col-md-4 col-sm-12" style="width: 90px;" type="submit" name="submit" value="Submit">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="vh-2" style="background-color: #eee;">
+        <div class="container py-1 h-50">
+            <div class="row d-flex justify-content-center align-items-center h-50">
+                <div class="col col-lg-9 col-xl-7">
+                    <div class="card rounded-3">
+                        <div class="card-body p-4">
+                            <h2>UPDATE DATA PENYELAMATAN</h2>
+                            <form action="action.php?p=gambar" method="post" enctype="multipart/form-data">
+                                <label for="exampleFormControlInput1" class="form-label">Judul :</label>
+                                <input type="text" name="judul kejadian" class="form-control mb-3">
+
+                                <label for="exampleFormControlInput1" class="form-label">Tanggal :</label>
+                                <input type="text" name="tanggal kejadian" class="form-control mb-3">
+
+                                <label for="exampleFormControlInput1" class="form-label">Upload foto :</label><br>
+                                <input type="file" name="berkas" class="mb-5"><br>
+
+
+                                <div class="row justify-content-between">
+                                    <a href="./index.php" class="btn btn-success col-md-4 col-sm-12" style="width: 90px;">Kembali</a>
+                                    <input class="btn btn-danger ms-2 col-md-4 col-sm-12" style="width: 90px;" type="reset" name="submit" value="Reset">
+                                    <input class="btn btn-primary ms-2 col-md-4 col-sm-12" style="width: 90px;" type="submit" name="submit" value="Submit">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="vh-2" style="background-color: #eee;">
+        <div class="container py-1 h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col col-lg-9 col-xl-7">
+                    <div class="card rounded-3">
+                        <div class="card-body p-4">
+                            <h2>UPDATE GALERI</h2>
+                            <form action="action.php?p=gambar" method="post" enctype="multipart/form-data">
+                                <label for="exampleFormControlInput1" class="form-label">Judul :</label>
+                                <input type="text" name="judul kegiatan" class="form-control mb-3">
+
+                                <label for="exampleFormControlInput1" class="form-label">Tanggal :</label>
+                                <input type="text" name="tanggal kegiatan" class="form-control mb-3">
+
+                                <label for="exampleFormControlInput1" class="form-label ">Upload Multiple Foto :</label><br>
+                                <div class="mb-0">
+                                    <input class="form-control mb-5" name="berkas" type="file" id="formFileMultiple" multiple> 
+                                </div>
+                                <div class="row justify-content-between">
+                                    <a href="./galeri.php" class="btn btn-success col-md-4 col-sm-12" style="width: 90px;">Kembali</a>
+                                    <input class="btn btn-danger ms-2 col-md-4 col-sm-12" style="width: 90px;" type="reset" name="submit" value="Reset">
+                                    <input class="btn btn-primary ms-2 col-md-4 col-sm-12" style="width: 90px;" type="submit" name="submit" value="Submit">
+                                </div>
+                                    
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="vh-2" style="padding-bottom: 80px; background-color: #eee;">
+        <div class="container py-1 h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col col-lg-9 col-xl-7">
+                    <div class="card rounded-3">
+                        <div class="card-body p-4">
+                            <h2>UPDATE BERITA</h2>
+
+                            <?php if(isset($_GET['id'])): ?>
+                            <form action="" method="post" enctype="multipart/form-data">
+                                <!-- <label for="exampleFormControlInput1" class="form-label">Id :</label><br>
+                                <input type="radio" id="berita1" name="fav_language" value="berita1">
+                                <label for="berita1">Berita 1</label><br>
+                                
+                                <input type="radio" id="berita2" name="fav_language" value="berita1">
+                                <label for="berita2">Berita 2</label><br>
+
+                                <input type="radio" id="berita3" name="fav_language" value="berita1">
+                                <label for="berita3">Berita 3</label><br>
+
+                                <input type="radio" id="berita4" name="fav_language" value="berita1">
+                                <label for="berita4">Berita 4</label><br>
+
+                                <input type="radio" id="berita5" name="fav_language" value="berita1">
+                                <label for="berita5">Berita 5</label><br>
+
+                                <input type="radio" id="berita6" name="fav_language" value="berita1">
+                                <label for="berita6">Berita 6</label><br>
+
+                                <input type="radio" id="berita7" name="fav_language" value="berita1">
+                                <label for="berita7">Berita 7</label><br>
+
+                                <input type="radio" id="berita8" name="fav_language" value="berita1">
+                                <label for="berita8">Berita 8</label><br> -->
+
+
+
+                                <label for="exampleFormControlInput1" class="form-label mt-3">Judul :</label>
+                                <input type="text" name="judul" class="form-control mb-3" value="<?php echo $judul; ?>">
+
+                                <label for="exampleFormControlInput1" class="form-label">Isi Berita :</label>
+                                <input type="text" name="isi_berita" class="form-control mb-3" value="<?php echo $isi_berita; ?>">
+
+                                <label for="exampleFormControlInput1" class="form-label">Tanggal :</label>
+                                <input type="text" name="tanggal" class="form-control mb-3" value="<?php echo $tanggal; ?>">
+
+                                <label for="exampleFormControlInput1" class="form-label">Tempat Kejadian :</label>
+                                <input type="text" name="tempat_kejadian" class="form-control mb-3" value="<?php echo $tempat_kejadian; ?>">
+
+                                <!-- <label for="exampleFormControlInput1" class="form-label">Upload Foto :</label><br>
+                                <input type="file" name="berkas" class="mb-5" value="<?php echo $photo_link; ?>"><br> -->
+
+                                <label for="exampleFormControlInput1" class="form-label">link foto :</label>
+                                <input type="text" name="photo_link" class="form-control mb-3" value="<?php echo $photo_link; ?>">
+
+                                <div class="row justify-content-between">
+                                    <a href="./berita.php" class="btn btn-success col-md-4 col-sm-12" style="width: 90px;">Kembali</a>
+                                    <input class="btn btn-danger ms-2 col-md-4 col-sm-12" style="width: 90px;" type="reset" name="submit" value="Reset">
+                                    <input class="btn btn-primary ms-2 col-md-4 col-sm-12" style="width: 90px;" type="submit" name="submit" value="Submit">
+                                </div>
+                                    
+                                    
+                            </form>
+
+                            <?php endif; ?>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <section class="vh-2" style="padding-bottom: 80px; background-color: #eee;">
