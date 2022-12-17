@@ -64,8 +64,78 @@ if (isset($_POST['submit'])){
       
     mysqli_close($con);
 }
-
 ?>
+
+<!-- ==================== Personil & Unit ==================== -->
+
+<?php
+
+if(isset($_GET['id'])){
+    // ambil id dari url atau method get
+    $id = $_GET['id'];
+
+    // Buat koneksi dengan MySQL
+    $con = mysqli_connect("localhost","root","","db_berita");
+
+    // Check connection
+    // if (mysqli_connect_errno()) {
+    //     echo "Failed to connect to MySQL: " . mysqli_connect_error();
+    //     exit();
+    // }else{
+    //     echo '<br>koneksi berhasil';
+    // }
+
+    // TABEL BERITA
+    $sql = "SELECT * FROM kp_jenjangpendidikan WHERE id='$id'";
+
+    if ($result = mysqli_query($con, $sql)) {
+        // echo "<br>data tersedia";
+        while($user_data = mysqli_fetch_assoc($result)) {
+            $no = $user_data['no'];
+            $jenjang_pendidikan = $user_data['jenjang_pendidikan'];
+            $jumlah = $user_data['jumlah'];
+            $presentase = $user_data['presentase'];
+        }
+    } else {
+        echo "Error: " . $sql . "<br>" . mysqli_error($con);
+    }
+
+    mysqli_close($con);
+}
+
+if (isset($_POST['submit'])){
+    //var_dump($_POST);
+    $no = ['no'];
+    $jenjang_pendidikan = ['jenjang_pendidikan'];
+    $jumlah = ['jumlah'];
+    $presentase = ['presentase'];
+
+    // Buat koneksi dengan MySQL
+    $con = mysqli_connect("localhost","root","","db_berita");
+
+    // Check connection
+    // if (mysqli_connect_errno()) {
+    //     echo "Failed to connect to MySQL: " . mysqli_connect_error();
+    //     exit();
+    // }else{
+    //     echo '<br>koneksi berhasil';
+    // }
+
+    $sql = "UPDATE kp_jenjangpendidikan SET no='$no',jenjang_pendidikan='$jenjang_pendidikan',jumlah='$jumlah',presentase='$presentase', 
+    WHERE id='$id' ";
+
+    if (mysqli_query($con, $sql)) {
+        echo "<br>Data berhasil diupdate";
+    } else {
+        echo "Error: " . $sql . "<br>" . mysqli_error($con);
+    }
+      
+    mysqli_close($con);
+}
+?>
+
+
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -190,10 +260,10 @@ if (isset($_POST['submit'])){
                                 <label for="exampleFormControlInput1" class="form-label">Upload Foto :</label><br>
                                 <input type="file" name="berkas" class="mb-5"><br>
                         
-                                <div class="row">
-                                    <input class="btn btn-danger me-2 ms-2 col-2" type="reset" name="submit" value="Reset">
-                                    <input class="btn btn-primary col-2" type="submit" name="submit" value="Submit">
-                                    <a href="./index.php" class="btn btn-success col-3 offset-4">Kembali</a>
+                                <div class="row justify-content-between">
+                                    <a href="./index.php" class="btn btn-success col-md-4 col-sm-12" style="width: 90px;">Kembali</a>
+                                    <input class="btn btn-danger ms-2 col-md-4 col-sm-12" style="width: 90px;" type="reset" name="submit" value="Reset">
+                                    <input class="btn btn-primary ms-2 col-md-4 col-sm-12" style="width: 90px;" type="submit" name="submit" value="Submit">
                                 </div>
                             </form>
                         </div>
@@ -220,10 +290,10 @@ if (isset($_POST['submit'])){
                                 <input type="file" name="berkas" class="mb-5"><br>
 
 
-                                <div class="row">
-                                    <input class="btn btn-danger me-2 ms-2 col-2" type="reset" name="submit" value="Reset">
-                                    <input class="btn btn-primary col-2" type="submit" name="submit" value="Submit">
-                                    <a href="./index.php" class="btn btn-success col-3 offset-4">Kembali</a>
+                                <div class="row justify-content-between">
+                                    <a href="./index.php" class="btn btn-success col-md-4 col-sm-12" style="width: 90px;">Kembali</a>
+                                    <input class="btn btn-danger ms-2 col-md-4 col-sm-12" style="width: 90px;" type="reset" name="submit" value="Reset">
+                                    <input class="btn btn-primary ms-2 col-md-4 col-sm-12" style="width: 90px;" type="submit" name="submit" value="Submit">
                                 </div>
                             </form>
                         </div>
@@ -250,10 +320,10 @@ if (isset($_POST['submit'])){
                                 <div class="mb-0">
                                     <input class="form-control mb-5" name="berkas" type="file" id="formFileMultiple" multiple> 
                                 </div>
-                                <div class="row">
-                                    <input class="btn btn-danger me-2 ms-2 col-2" type="reset" name="submit" value="Reset">
-                                    <input class="btn btn-primary col-2" type="submit" name="submit" value="Submit">
-                                    <a href="./galeri.php" class="btn btn-success col-3 offset-4">Kembali</a>
+                                <div class="row justify-content-between">
+                                    <a href="./galeri.php" class="btn btn-success col-md-4 col-sm-12" style="width: 90px;">Kembali</a>
+                                    <input class="btn btn-danger ms-2 col-md-4 col-sm-12" style="width: 90px;" type="reset" name="submit" value="Reset">
+                                    <input class="btn btn-primary ms-2 col-md-4 col-sm-12" style="width: 90px;" type="submit" name="submit" value="Submit">
                                 </div>
                                     
                             </form>
@@ -322,7 +392,6 @@ if (isset($_POST['submit'])){
                                     <a href="./berita.php" class="btn btn-success col-md-4 col-sm-12" style="width: 90px;">Kembali</a>
                                     <input class="btn btn-danger ms-2 col-md-4 col-sm-12" style="width: 90px;" type="reset" name="submit" value="Reset">
                                     <input class="btn btn-primary ms-2 col-md-4 col-sm-12" style="width: 90px;" type="submit" name="submit" value="Submit">
-                                    
                                 </div>
                                     
                                     

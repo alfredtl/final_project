@@ -1,8 +1,6 @@
 <?php
 include_once 'koneksi.php';
 
-$con = mysqli_connect("localhost","root","","db_berita");
-
 ?>
 
 <!DOCTYPE html>
@@ -490,9 +488,9 @@ $con = mysqli_connect("localhost","root","","db_berita");
                     <li class="nav-item me-3">
                         <a class="nav-link" aria-current="page" href="./kontak.html">Hubungi Kami</a>
                     </li>
-                    <li class="nav-item me-3">
+                    <!-- <li class="nav-item me-3">
                         <a class="nav-link" aria-current="page" href="./update.php">Edit</a>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
             <div class="btn-login col-md-2 col-lg-2 text-end">
@@ -649,7 +647,6 @@ $con = mysqli_connect("localhost","root","","db_berita");
                 <div class="graph">
                     <!-- <img src="./image/fuji-famous.jpg" class="data-img d-block mx-auto" alt=""> -->
                     <img src="./image/<?=$row['2']?>" class="data-img d-block mx-auto rounded" alt="" >
-
                 </div>
             </div>
         </div>
