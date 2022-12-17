@@ -8,18 +8,18 @@ if(isset($_GET['id'])){
     $con = mysqli_connect("localhost","root","","db_berita");
 
     // Check connection
-    if (mysqli_connect_errno()) {
-        echo "Failed to connect to MySQL: " . mysqli_connect_error();
-        exit();
-    }else{
-        echo '<br>koneksi berhasil';
-    }
+    // if (mysqli_connect_errno()) {
+    //     echo "Failed to connect to MySQL: " . mysqli_connect_error();
+    //     exit();
+    // }else{
+    //     echo '<br>koneksi berhasil';
+    // }
 
     // TABEL BERITA
     $sql = "SELECT * FROM berita WHERE id='$id'";
 
     if ($result = mysqli_query($con, $sql)) {
-        echo "<br>data tersedia";
+        // echo "<br>data tersedia";
         while($user_data = mysqli_fetch_assoc($result)) {
             $judul = $user_data['judul'];
             $tempat_kejadian = $user_data['tempat_kejadian'];
@@ -46,12 +46,12 @@ if (isset($_POST['submit'])){
     $con = mysqli_connect("localhost","root","","db_berita");
 
     // Check connection
-    if (mysqli_connect_errno()) {
-        echo "Failed to connect to MySQL: " . mysqli_connect_error();
-        exit();
-    }else{
-        echo '<br>koneksi berhasil';
-    }
+    // if (mysqli_connect_errno()) {
+    //     echo "Failed to connect to MySQL: " . mysqli_connect_error();
+    //     exit();
+    // }else{
+    //     echo '<br>koneksi berhasil';
+    // }
 
     $sql = "UPDATE berita SET judul='$judul',tempat_kejadian='$tempat_kejadian',tanggal='$tanggal',isi_berita='$isi_berita',
     photo_link='$photo_link' WHERE id='$id' ";
@@ -318,14 +318,14 @@ if (isset($_POST['submit'])){
                                 <label for="exampleFormControlInput1" class="form-label">link foto :</label>
                                 <input type="text" name="photo_link" class="form-control mb-3" value="<?php echo $photo_link; ?>">
 
-                                <div class="row">
-                                    <input class="btn btn-danger me-2 ms-2 col-2" type="reset" name="submit" value="Reset">
-                                    <input class="btn btn-primary col-2" type="submit" name="submit" value="Submit">
-                                    <a href="./berita.php" class="btn btn-success col-3 offset-4">Kembali</a>
+                                <div class="row justify-content-between">
+                                    <a href="./berita.php" class="btn btn-success col-md-4 col-sm-12" style="width: 90px;">Kembali</a>
+                                    <input class="btn btn-danger ms-2 col-md-4 col-sm-12" style="width: 90px;" type="reset" name="submit" value="Reset">
+                                    <input class="btn btn-primary ms-2 col-md-4 col-sm-12" style="width: 90px;" type="submit" name="submit" value="Submit">
+                                    
                                 </div>
                                     
-                                
-                                
+                                    
                             </form>
 
                             <?php endif; ?>
