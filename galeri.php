@@ -106,7 +106,7 @@
                               </div>
                           </div>
                           <div class="col">
-                            One of three columns
+                            <!-- One of three columns -->
                           </div>
                           <div class="col">
                             <a href=""><img src="./image/fotobersama5.jpg" class="mt-5" style="width: 200px; height: 140px; border-radius: 25px;" alt=""> </a>
@@ -114,13 +114,13 @@
                         </div>
                         <div class="row align-items-end">
                           <div class="col">
-                            One of three columns
+                            <!-- One of three columns -->
                           </div>
                           <div class="col">
-                            One of three columns
+                            <!-- One of three columns -->
                           </div>
                           <div class="col">
-                            One of three columns
+                            <!-- One of three columns -->
                           </div>
                         </div>
                       </div>
@@ -167,13 +167,13 @@
                           </div>
                         <div class="row align-items-end">
                           <div class="col">
-                            One of three columns
+                            <!-- One of three columns -->
                           </div>
                           <div class="col">
                             <a href=""><img src="./image/fotosaatbertugas7.jpg" class="mt-5" style="width: 200px; border-radius: 25px;" alt=""> </a>
                           </div>
                           <div class="col">
-                            One of three columns
+                            <!-- One of three columns -->
                           </div>
                         </div>
                       </div>
@@ -241,7 +241,7 @@
     </section> -->
 
     <!-- =========== Foto Kerja Bakti =========== -->
-    <section class="pt-3 pb-4" style="font-family: sans-serif;">
+    <!-- <section class="pt-3 pb-4" style="font-family: sans-serif;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 text-light mx-auto py-4" style="margin-bottom: 100px; border-radius: 25px; background-color:rgb(51, 33, 117);" >
@@ -291,7 +291,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
 
 
