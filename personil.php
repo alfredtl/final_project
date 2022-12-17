@@ -382,15 +382,16 @@ include_once 'koneksi.php';
 
                             <?php 
                                 //INI CODE PHP UNTUK LOOPING BERITANYA. LAKUKAN DI TABEL2 LAINN
-                                $item = [];
+                                
                                 $sql = "SELECT * FROM kp_jenjangpendidikan";
-
+                                
+                                $item = [];
                                 if ($result = mysqli_query($con, $sql)) {
                                     // Fetch one and one row
                                     while ($row = mysqli_fetch_row($result)) {
                                     $item[] = $row;
                                     }
-                                    //mysqli_free_result($result);
+                                    mysqli_free_result($result);
                                 }
                             ?>
 
@@ -411,11 +412,12 @@ include_once 'koneksi.php';
                                     <td style="border: 1px solid white; text-align: center;"><?= $row['2'];?></td>
                                     <td style="border: 1px solid white; text-align: center;"><?= $row['3'];?></td>
                                     <td style="border: 1px solid white; text-align: center;"><?= $row['4'];?></td>
-                                    <td>
-                                        <a href="update.php?id=<?= $row['id'] ?>" >Edit</a> | 
+                                    <td style="border: 1px solid white; text-align: center;">
+                                        <a href="./update.php?id=<? $row['id'] ?>">Edit</a>
                                     </td>
                                 </tr>
                             <?php endforeach; ?>
+
                             </table>
 
 

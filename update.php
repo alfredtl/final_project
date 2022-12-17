@@ -30,8 +30,12 @@ if(isset($_GET['id'])){
     } else {
         echo "Error: " . $sql . "<br>" . mysqli_error($con);
     }
+    
 
     mysqli_close($con);
+
+
+    
 }
 
 if (isset($_POST['submit'])){
@@ -85,7 +89,7 @@ if(isset($_GET['id'])){
     //     echo '<br>koneksi berhasil';
     // }
 
-    // TABEL BERITA
+    // TABEL jenjang pendidikan
     $sql = "SELECT * FROM kp_jenjangpendidikan WHERE id='$id'";
 
     if ($result = mysqli_query($con, $sql)) {
@@ -417,32 +421,6 @@ if (isset($_POST['submit'])){
 
                             <?php if(isset($_GET['id'])): ?>
                             <form action="" method="post" enctype="multipart/form-data">
-                                <!-- <label for="exampleFormControlInput1" class="form-label">Id :</label><br>
-                                <input type="radio" id="berita1" name="fav_language" value="berita1">
-                                <label for="berita1">Berita 1</label><br>
-                                
-                                <input type="radio" id="berita2" name="fav_language" value="berita1">
-                                <label for="berita2">Berita 2</label><br>
-
-                                <input type="radio" id="berita3" name="fav_language" value="berita1">
-                                <label for="berita3">Berita 3</label><br>
-
-                                <input type="radio" id="berita4" name="fav_language" value="berita1">
-                                <label for="berita4">Berita 4</label><br>
-
-                                <input type="radio" id="berita5" name="fav_language" value="berita1">
-                                <label for="berita5">Berita 5</label><br>
-
-                                <input type="radio" id="berita6" name="fav_language" value="berita1">
-                                <label for="berita6">Berita 6</label><br>
-
-                                <input type="radio" id="berita7" name="fav_language" value="berita1">
-                                <label for="berita7">Berita 7</label><br>
-
-                                <input type="radio" id="berita8" name="fav_language" value="berita1">
-                                <label for="berita8">Berita 8</label><br> -->
-
-
 
                                 <label for="exampleFormControlInput1" class="form-label mt-3">No :</label>
                                 <input type="text" name="no" class="form-control mb-3" value="<?php echo $no; ?>">
@@ -457,7 +435,7 @@ if (isset($_POST['submit'])){
                                 <input type="text" name="presentase" class="form-control mb-3" value="<?php echo $presentase; ?>">
 
                                 <div class="row justify-content-between">
-                                    <a href="./berita.php" class="btn btn-success col-md-4 col-sm-12" style="width: 90px;">Kembali</a>
+                                    <a href="./personil.php" class="btn btn-success col-md-4 col-sm-12" style="width: 90px;">Kembali</a>
                                     <input class="btn btn-danger ms-2 col-md-4 col-sm-12" style="width: 90px;" type="reset" name="submit" value="Reset">
                                     <input class="btn btn-primary ms-2 col-md-4 col-sm-12" style="width: 90px;" type="submit" name="submit" value="Submit">
                                 </div>
