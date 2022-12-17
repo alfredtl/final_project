@@ -394,25 +394,30 @@ include_once 'koneksi.php';
                                 }
                             ?>
 
-                            <table>
+                            <table style="border: 1px solid white; text-align: center;">
                                 <tr>
                                     <th style="border: 1px solid white; width: 5%; text-align: center;">No</th>
                                     <th style="border: 1px solid white; width: 20%; text-align: center;">Jenjang Pendidikan</th>
                                     <th style="border: 1px solid white; width: 10%; text-align: center;">Jumlah (Orang)</th>
                                     <th style="border: 1px solid white; width: 10%; text-align: center;">Presentase (%)</th>
+                                    <a href=""></a>
                                 </tr>
                             
 
                             <?php foreach ($item as $row): ?>
 
                                 <tr style="height: 40px;">
-                                    <td style="border: 1px solid white; text-align: center;"><?= $row[1];?></td>
-                                    <td style="border: 1px solid white; text-align: center;"><?= $row[2];?></td>
-                                    <td style="border: 1px solid white; text-align: center;"><?= $row[3];?></td>
-                                    <td style="border: 1px solid white; text-align: center;"><?= $row[4];?></td>
+                                    <td style="border: 1px solid white; text-align: center;"><?= $row['1'];?></td>
+                                    <td style="border: 1px solid white; text-align: center;"><?= $row['2'];?></td>
+                                    <td style="border: 1px solid white; text-align: center;"><?= $row['3'];?></td>
+                                    <td style="border: 1px solid white; text-align: center;"><?= $row['4'];?></td>
+                                    <td>
+                                        <a href="update.php?id=<?= $row['id'] ?>" >Edit</a> | 
+                                    </td>
                                 </tr>
                             <?php endforeach; ?>
                             </table>
+
 
 
                             <!-- Komposisi Pegawai Menurut Status Kepegawaian -->

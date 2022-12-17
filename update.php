@@ -105,10 +105,10 @@ if(isset($_GET['id'])){
 
 if (isset($_POST['submit'])){
     //var_dump($_POST);
-    $no = ['no'];
-    $jenjang_pendidikan = ['jenjang_pendidikan'];
-    $jumlah = ['jumlah'];
-    $presentase = ['presentase'];
+    $no = $_POST['no'];
+    $jenjang_pendidikan = $_POST['jenjang_pendidikan'];
+    $jumlah = $_POST['jumlah'];
+    $presentase = $_POST['presentase'];
 
     // Buat koneksi dengan MySQL
     $con = mysqli_connect("localhost","root","","db_berita");
@@ -387,6 +387,74 @@ if (isset($_POST['submit'])){
 
                                 <label for="exampleFormControlInput1" class="form-label">link foto :</label>
                                 <input type="text" name="photo_link" class="form-control mb-3" value="<?php echo $photo_link; ?>">
+
+                                <div class="row justify-content-between">
+                                    <a href="./berita.php" class="btn btn-success col-md-4 col-sm-12" style="width: 90px;">Kembali</a>
+                                    <input class="btn btn-danger ms-2 col-md-4 col-sm-12" style="width: 90px;" type="reset" name="submit" value="Reset">
+                                    <input class="btn btn-primary ms-2 col-md-4 col-sm-12" style="width: 90px;" type="submit" name="submit" value="Submit">
+                                </div>
+                                    
+                                    
+                            </form>
+
+                            <?php endif; ?>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="vh-2" style="padding-bottom: 80px; background-color: #eee;">
+        <div class="container py-1 h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col col-lg-9 col-xl-7">
+                    <div class="card rounded-3">
+                        <div class="card-body p-4">
+                            <h2>KOMPOSISI PEGAWAI MENURUT JENJANG PENDIDIKAN</h2>
+
+                            <?php if(isset($_GET['id'])): ?>
+                            <form action="" method="post" enctype="multipart/form-data">
+                                <!-- <label for="exampleFormControlInput1" class="form-label">Id :</label><br>
+                                <input type="radio" id="berita1" name="fav_language" value="berita1">
+                                <label for="berita1">Berita 1</label><br>
+                                
+                                <input type="radio" id="berita2" name="fav_language" value="berita1">
+                                <label for="berita2">Berita 2</label><br>
+
+                                <input type="radio" id="berita3" name="fav_language" value="berita1">
+                                <label for="berita3">Berita 3</label><br>
+
+                                <input type="radio" id="berita4" name="fav_language" value="berita1">
+                                <label for="berita4">Berita 4</label><br>
+
+                                <input type="radio" id="berita5" name="fav_language" value="berita1">
+                                <label for="berita5">Berita 5</label><br>
+
+                                <input type="radio" id="berita6" name="fav_language" value="berita1">
+                                <label for="berita6">Berita 6</label><br>
+
+                                <input type="radio" id="berita7" name="fav_language" value="berita1">
+                                <label for="berita7">Berita 7</label><br>
+
+                                <input type="radio" id="berita8" name="fav_language" value="berita1">
+                                <label for="berita8">Berita 8</label><br> -->
+
+
+
+                                <label for="exampleFormControlInput1" class="form-label mt-3">No :</label>
+                                <input type="text" name="no" class="form-control mb-3" value="<?php echo $no; ?>">
+
+                                <label for="exampleFormControlInput1" class="form-label">Jenjang Pendidikan :</label>
+                                <input type="text" name="jenjang_pendidikan" class="form-control mb-3" value="<?php echo $jenjang_pendidikan; ?>">
+
+                                <label for="exampleFormControlInput1" class="form-label">Jumlah :</label>
+                                <input type="text" name="jumlah" class="form-control mb-3" value="<?php echo $jumlah; ?>">
+
+                                <label for="exampleFormControlInput1" class="form-label">Presentase :</label>
+                                <input type="text" name="presentase" class="form-control mb-3" value="<?php echo $presentase; ?>">
 
                                 <div class="row justify-content-between">
                                     <a href="./berita.php" class="btn btn-success col-md-4 col-sm-12" style="width: 90px;">Kembali</a>
