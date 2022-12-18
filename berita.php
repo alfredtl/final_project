@@ -241,8 +241,7 @@ include_once 'koneksi.php';
                         </div>
                         <p class="lead text-end">
                             <a href="./update.php?id=<?= $row['id'] ?>" class="btn btn-lg btn-secondary fw-bold border-black me-3"  style="margin-bottom: -15px; color: white; background-color:rgb(51, 33, 117);">Ubah</a>
-                            <a href="update.php?id=<?= $row['id'] ?>" class="btn btn-lg btn-secondary fw-bold border-black me-3"  style="margin-bottom: -15px; color: white; background-color:rgb(51, 33, 117);">Edit</a>
-
+                            <a href="update_jp.php?id=<?= $row['id'] ?>" class="btn btn-lg btn-secondary fw-bold border-black me-3"  style="margin-bottom: -15px; color: white; background-color:rgb(51, 33, 117);">Edit</a>
                         </p>
                         
                     </div>
