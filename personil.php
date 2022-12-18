@@ -408,10 +408,10 @@ include_once 'koneksi.php';
                             <?php foreach ($item as $row): ?>
 
                                 <tr style="height: 40px;">
-                                    <td style="border: 1px solid white; text-align: center;"><?= $row['1'];?></td>
-                                    <td style="border: 1px solid white; text-align: center;"><?= $row['2'];?></td>
-                                    <td style="border: 1px solid white; text-align: center;"><?= $row['3'];?></td>
-                                    <td style="border: 1px solid white; text-align: center;"><?= $row['4'];?></td>
+                                    <td style="border: 1px solid white; text-align: center;"><?= $row[1];?></td>
+                                    <td style="border: 1px solid white; text-align: center;"><?= $row[2];?></td>
+                                    <td style="border: 1px solid white; text-align: center;"><?= $row[3];?></td>
+                                    <td style="border: 1px solid white; text-align: center;"><?= $row[4];?></td>
                                     <td style="border: 1px solid white; text-align: center; width: 5%;">
                                         <a href="./update_jp.php?id=<? $row['id'] ?>">Edit</a>
                                     </td>

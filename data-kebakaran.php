@@ -216,6 +216,7 @@ include_once 'koneksi.php';
                     }
                     //mysqli_free_result($result);
                 }
+
             ?>
             
             <table>
@@ -230,6 +231,7 @@ include_once 'koneksi.php';
                     <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Jenis Objek Evakuasi</th>
                     <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Hasil Pelaksanaan</th>
                     <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Keterangan</th>
+                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;"></th>                    
                 </tr>
                 <tr>
                     <th style="border: 1px solid black; width: 10%; text-align: center;">Hewan Berbisa</th>
@@ -253,10 +255,15 @@ include_once 'koneksi.php';
                     <td style="border: 1px solid black; text-align: center;"><?= $row[10];?></td>
                     <td style="border: 1px solid black; text-align: center;"><?= $row[11];?></td>
                     <td style="border: 1px solid black; text-align: center;"><?= $row[14];?></td>
+                   
+                    <td style="border: 1px solid black; text-align: center; ">
+                        <a href="./update_peny_jan.php?id=<?= $row['id'] ?>" >Ubah</a> 
+                    </td>
                 </tr>
             <?php endforeach; ?>
-            </table>
             
+            </table>
+
 
 
             <!-- Pemadaman Januari -->
@@ -1376,6 +1383,7 @@ include_once 'koneksi.php';
                     <td style="border: 1px solid black; text-align: center;"><?= $row[10];?></td>
                 </tr>
             <?php endforeach; ?>
+
             </table>
 
 
@@ -1388,102 +1396,6 @@ include_once 'koneksi.php';
                 </div>
             </div> -->
         </div>
-
-       
-
-
-        
-        <?php
-
-// $akses_database = mysqli_connect("localhost", "root", "", "database_ugi");
-
-// if(!$akses_database)
-// {
-//     die("Databse tidak berhasil diakses . . .<br>");
-// }
-// else
-// {
-//     print("Database berhasil diakses . . .<br><br>");
-    
-// }
-?>
-
-<?php
-// $akses_tabel = mysqli_query($akses_database, "SELECT Id, Negara, jmlh_penduduk FROM data_grafik_batang_1");
-
-
-// if(!$akses_tabel)
-// {
-//     die("Tabel tidak berhasil diakses . . .<br>");
-// }
-// else
-// {
-//     print("Tabel berhasil diakses . . .<br><br>");
-    
-// }
-?>
-
-<?php
-$sumbu_y = 'Jumlah Penduduk';
-
-
-    
-    $k = -1;
-    
-    
-    // while($row = mysqli_fetch_array($akses_tabel))  
-    //                     {  
-                    
-                            
-    //                         $y = $row["jmlh_penduduk"];
-    //                         $negara = $row["Negara"];
-                            
-                            
-                            
-    //                         $k = $k + 1;
-                            
-                            
-    //                         $dataPoints[$k] = array("y"=> $y, "label"=> $negara);
-                                            
-    //                         }
-                            
-    
-
-?>
-<script>
-/*window.onload = function () {
-
-var chart = new CanvasJS.Chart("chartContainer", {
-    animationEnabled: true,
-    theme: "light2", // "light1", "light2", "dark1", "dark2"
-    title:{
-        text: <?php print json_encode($sumbu_y . " Dunia Naruto"); ?>
-    },
-    axisY:{
-        title: <?php print json_encode($sumbu_y); ?>
-    },
-    data: [{        
-        type: "column",  
-        showInLegend: true, 
-        legendMarkerColor: "grey",
-        legendText: <?php print json_encode("Negara"); ?>,
-        dataPoints: <?php echo json_encode($dataPoints, JSON_NUMERIC_CHECK); ?>
-    }]
-    
-    
-    
-    
-    
-    
-    
-    
-    
-});
-chart.render();
-
-}*/
-</script> 
-
 
 
 
