@@ -47,6 +47,14 @@ include_once 'koneksi.php';
 
     <div class="b-example-divider"></div>
 
+    <style>
+        .container .container .img .logo-pemadam{
+            width: 55%; 
+            margin-left: 210px; 
+            margin-top: 80px;
+            transition: all 0.5s ease;
+        }
+    </style>
     <!-- <style type="text/css">
         /*#nav{
         height: 650vh;
@@ -109,7 +117,7 @@ include_once 'koneksi.php';
             margin: auto;
         }
         .container .container .img .logo-pemadam{
-            width: 45%; 
+            width: 55%; 
             margin-left: 210px; 
             margin-top: 100px;
             transition: all 0.5s ease;
@@ -407,6 +415,7 @@ include_once 'koneksi.php';
             }
         }
     </style> -->
+
     <!-- coba -->
     <!-- <header>
         <div id="nav" class="container" style="font-family: sans-serif;">
@@ -467,7 +476,7 @@ include_once 'koneksi.php';
         <div class="container">
             <a class="navbar-brand navbar-dark d-flex  align-items-center text-white  ms-sm-3 col-6 col-md-4 me-6" aria-label="Bootstrap" href="#"></svg><img class="logo-darmisa text-dark rounded-circle" src="./image/logo_DarMisa.jpg" alt="" title="DarMisa"><span class="fw-bold" style="margin-right: 100px;">DarMisa</span></a>
             
-            <a href="./login.php" class="btn-small btn btn-sm rounded-pill text-white mb-0 ms-auto me-2" title="Login" style="background-color:rgb(218, 37, 29); width: 80px;">Login</a>
+            <!-- <a href="./login.php" class="btn-small btn btn-sm rounded-pill text-white mb-0 ms-auto me-2" title="Login" style="background-color:rgb(218, 37, 29); width: 80px;">Login</a> -->
             
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <i class="list-burger bi bi-list d-lg-none ms-0 text-end" style="color: white; cursor: pointer;"></i></button>
@@ -493,9 +502,9 @@ include_once 'koneksi.php';
                     </li> -->
                 </ul>
             </div>
-            <div class="btn-login col-md-2 col-lg-2 text-end">
+            <!-- <div class="btn-login col-md-2 col-lg-2 text-end">
                 <a class="w-50" href="./login.php"><button type="button" class="btn text-white rounded-pill w-100 me-2" title="Login" style="background-color:rgb(218, 37, 29);">Login</button></a> 
-            </div>
+            </div> -->
         </div>
     </nav>
     <!-- =========== Navbar Baru Lagi End =========== -->
@@ -537,7 +546,7 @@ include_once 'koneksi.php';
                         <a href="tel:+62 431 321001"> <button type="button" class="btn text-white rounded mt-4 me-2"><i class="bi bi-telephone-fill" style="color: rgb(51, 33, 117); margin-right: 10px;"></i> EMERGENCY CALL (0431) 321001</button> </a>
                     </div>
                     <div class="img col-lg-6 col-sm-12 col-12">
-                        <img src="./image/Logo-pemadam2.jpeg" class="logo-pemadam"  alt="">
+                        <img src="./image/logo-pemadam4.png" class="logo-pemadam"  alt="">
                     </div>
                 </div>
             </div>
@@ -721,28 +730,28 @@ include_once 'koneksi.php';
             <h5 class="data-content text-center fw-bold mt-5 mb-4" style="font-size: 24px; font-family: sans-serif;">BREAKING NEWS</h5>
             <div class="row">
                 <div class="graph col-12 col-md-6 col-lg-3">
-                    <a href="./berita.php"><img src="./image/berita1.png" class="img-news rounded mb-3" alt=""></a>
+                    <a href="./berita.php"><img src="./image/berita-1.jpg" class="img-news rounded mb-3" alt=""></a>
                 </div>
                 <div class="graph col-12 col-md-6 col-lg-3">
-                    <a href="./berita.php"><img src="./image/berita2.png" class="img-news rounded mb-3" alt=""></a>
+                    <a href="./berita.php"><img src="./image/berita-2.jpg" class="img-news rounded mb-3" alt=""></a>
                 </div>
                 <div class="graph col-12 col-md-6 col-lg-3">
-                    <a href="./berita.php"><img src="./image/berita3.png" class="img-news rounded mb-3" alt=""></a>
+                    <a href="./berita.php"><img src="./image/berita-3.jpg" class="img-news rounded mb-3" alt=""></a>
                 </div>
                 <div class="graph col-12 col-md-6 col-lg-3">
-                    <a href="./berita.php"><img src="./image/berita4.png" class="img-news rounded mb-3" alt=""></a>
+                    <a href="./berita.php"><img src="./image/berita-4.jpg" class="img-news rounded mb-3" alt=""></a>
                 </div>
                 <div class="graph col-12 col-md-6 col-lg-3">
-                    <a href="./berita.php"><img src="./image/berita5.png" class="img-news rounded mb-3" alt=""></a>
+                    <a href="./berita.php"><img src="./image/berita-5.jpg" class="img-news rounded mb-3" alt=""></a>
                 </div>
                 <div class="graph col-12 col-md-6 col-lg-3">
-                    <a href="./berita.php"><img src="./image/berita6.png" class="img-news rounded mb-3" alt=""></a>
+                    <a href="./berita.php"><img src="./image/berita-6.jpg" class="img-news rounded mb-3" alt=""></a>
                 </div>
                 <div class="graph col-12 col-md-6 col-lg-3">
-                    <a href="./berita.php"><img src="./image/berita7.png" class="img-news rounded mb-3" alt=""></a>
+                    <a href="./berita.php"><img src="./image/berita-7.jpg" class="img-news rounded mb-3" alt=""></a>
                 </div>
                 <div class="graph col-12 col-md-6 col-lg-3">
-                    <a href="./berita.php"><img src="./image/berita8.png" class="img-news rounded mb-3" alt=""></a>
+                    <a href="./berita.php"><img src="./image/berita-8.jpg" class="img-news rounded mb-3" alt=""></a>
                 </div>
             </div>
         </div>
@@ -761,10 +770,10 @@ include_once 'koneksi.php';
                         <a href="https://minahasa.go.id/situs/"><img src="./image/logo-link1.png" class="logo" alt=""></a>
                     </div>
                     <div class="logo-link text-center col-4 col-md-4">
-                        <a href="https://bnpb.go.id/"><img src="./image/logo-link2.png" class="logo" alt=""></a>
+                        <a href="https://bnpb.go.id/berita/bpbd-kota-manado"><img src="./image/logo-link2.png" class="logo" alt=""></a>
                     </div>
                     <div class="logo-link text-center col-4 col-md-4">
-                        <a href="#"><img src="./image/logo-link3.png" class="logo" alt=""></a>
+                        <a href="https://sippn.menpan.go.id/pelayanan-publik/wilayah/pemerintah-provinsi-sulawesi-utara/pemerintah-kabupaten-minahasa/rumah-sakit-umum-daerah-dr-sam-ratulangi-tondano"><img src="./image/logo-link3.png" class="logo" alt=""></a>
                     </div>
                 </div>
             </div>

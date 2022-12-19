@@ -231,7 +231,7 @@ include_once 'koneksi.php';
                     <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Jenis Objek Evakuasi</th>
                     <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Hasil Pelaksanaan</th>
                     <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Keterangan</th>
-                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;"></th>                    
+                    <!-- <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;"></th>                     -->
                 </tr>
                 <tr>
                     <th style="border: 1px solid black; width: 10%; text-align: center;">Hewan Berbisa</th>
@@ -256,9 +256,9 @@ include_once 'koneksi.php';
                     <td style="border: 1px solid black; text-align: center;"><?= $row[11];?></td>
                     <td style="border: 1px solid black; text-align: center;"><?= $row[14];?></td>
                    
-                    <td style="border: 1px solid black; text-align: center; ">
+                    <!-- <td style="border: 1px solid black; text-align: center; ">
                         <a href="./update_peny_jan.php?id=<?= $row['id'] ?>" >Ubah</a> 
-                    </td>
+                    </td> -->
                 </tr>
             <?php endforeach; ?>
             

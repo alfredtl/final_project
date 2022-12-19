@@ -112,21 +112,21 @@
     <section class="pt-3 pb-4" style="font-family: sans-serif;">
         <div class="container">
             <div class="row">
-                <div class="col-lg-10 text-light mx-auto py-4" style="margin-bottom: 100px; border-radius: 25px; background-color: rgb(51, 33, 117);" >
-                    <h1 class="text-center text-light fw-bold" style="margin-bottom: 80px;">VISI MISI</h1>
+                <div class="col-lg-10 text-light mx-auto py-4" style="margin-bottom: 100px; border-radius: 25px; background-color: rgb(51, 33, 117); background-color: #eee;" >
+                    <h1 class="text-center fw-bold" style="margin-bottom: 80px; color: rgb(218, 37, 29);">VISI MISI</h1>
                     <div class="container col-10" style="margin-bottom: 100px;">
-                        <h1 class="text-center text-light fw-bold">VISI</h1>
-                        <p class="text-seal text-center text-light lh-lg mb-5">Dinas Pemadam Kebakaran Kabupaten Minahasa</p>
-                        <p class="text-seal text-center text-light lh-lg">"Terciptanya Aparatur Penanggulangan Kebakaran dan Rescue Yang Handal, Beretika dan Profesional Dalam Memajukan Kabupaten Minahasa"</p>
+                        <h1 class="text-center fw-bold" style="color: rgb(51, 33, 117);">VISI</h1>
+                        <p class="text-seal text-center text-dark lh-lg mb-5">Dinas Pemadam Kebakaran Kabupaten Minahasa</p>
+                        <p class="text-seal text-center text-dark lh-lg">"Terciptanya Aparatur Penanggulangan Kebakaran dan Rescue Yang Handal, Beretika dan Profesional Dalam Memajukan Kabupaten Minahasa"</p>
                     </div>
                     <div class="container col-10 mb-5 ">
-                        <h1 class="text-center text-light fw-bold">MISI</h1>
-                        <p class="text-seal text-center text-light lh-lg mb-5">Dinas Pemadam Kebakaran Kabupaten Minahasa</p>
-                        <p class="text-seal text-center text-light lh-lg">
+                        <h1 class="text-center  fw-bold" style="color: rgb(51, 33, 117);">MISI</h1>
+                        <p class="text-seal text-center text-dark lh-lg mb-5">Dinas Pemadam Kebakaran Kabupaten Minahasa</p>
+                        <p class="text-seal text-center text-dark lh-lg">
                             <ul class="text-center mx-auto">
-                                <li>Membangun sistem penanggulangan kebakaran dan rescue yang handal, terencana, terpadu, terkoordinasi, dan menyeluruh.</li>
-                                <li>Meningkatkan kualitas sumber daya aparatur dalam penanggulangan kebakaran.</li>
-                                <li>Menciptakan kondisi yang aman/melindungi masyarakat melalui pengurangan risiko bencana kebakaran.</li>
+                                <li class="text-dark">Membangun sistem penanggulangan kebakaran dan rescue yang handal, terencana, terpadu, terkoordinasi, dan menyeluruh.</li>
+                                <li class="text-dark">Meningkatkan kualitas sumber daya aparatur dalam penanggulangan kebakaran.</li>
+                                <li class="text-dark">Menciptakan kondisi yang aman/melindungi masyarakat melalui pengurangan risiko bencana kebakaran.</li>
                             </ul>
                         </p>
                     </div>
@@ -141,24 +141,24 @@
     <section class="pt-3 pb-4" style="font-family: sans-serif;">
         <div class="container">
             <div class="row">
-                <div class="col-lg-10 text-light mx-auto py-4" style="margin-bottom: 100px; border-radius: 25px; background-color: rgb(218, 37, 29);" >
-                    <h1 class="text-center text-light fw-bold" style="margin-bottom: 80px;">SEJARAH</h1>
+                <div class="col-lg-10 text-light mx-auto py-4" style="margin-bottom: 100px; border-radius: 25px; background-color: rgb(218, 37, 29); background-color: #eee;" >
+                    <h1 class="text-center fw-bold" style="margin-bottom: 80px; color: rgb(218, 37, 29) ;">SEJARAH</h1>
                     <div class="container col-10" style="margin-bottom: 100px;">
-                        <p class="text-sejarah">Terbitnya Peraturan Pemerintah Nomor 18 tahun 2016 tentang Perangkat Daerah yang ditindaklanjuti dengan keluarnya Peraturan Daerah
+                        <p class="text-sejarah text-dark">Terbitnya Peraturan Pemerintah Nomor 18 tahun 2016 tentang Perangkat Daerah yang ditindaklanjuti dengan keluarnya Peraturan Daerah
                             Kabupaten Minahasa Nomor 4 Tahun 2016  tentang Pembentukan dan Susunan Perangkat Daerah Kabupaten Minahasa berdampak positif bagilayanan publik. Peningkatan status kelembagaan dari salah satu seksi di Bagian Perlengkapan Setda Kabupaten Minahasa menjadi suatu Dinas merupakan antisipasi positif Pemerintah 
                             Kabupaten Minahasa dalam menyediakan sebuah pelayanan prima bagi warganya, khususnya di bidang layanan terhadap bahaya kebakaran yang meliputi pencegahan,
                             penanggulangan kebakaran, dan penyelamatan bencana lainnya. </p>
                             <br>
-                        <p class="text-sejarah">Renstra Dinas Pemadam Kebakaran mengacu pada Peraturan Pemerintah Nomor 8 Tahun 2008 tentang tahapan, tata cara penyusunan pengendalian dan evaluasi pelaksanaan rencana pembangunan daerah,
+                        <p class="text-sejarah text-dark">Renstra Dinas Pemadam Kebakaran mengacu pada Peraturan Pemerintah Nomor 8 Tahun 2008 tentang tahapan, tata cara penyusunan pengendalian dan evaluasi pelaksanaan rencana pembangunan daerah,
                             perencanaan pembangunan daerah merupakan satu kesatuan dalam sistem perencanaan pembangunan nasional yang dilakukan pemerintah
                             daerah bersama para pemangku kepentingan berdasarkan peran dan kewenangannya, berdasarkan kondisi dan potensi yang dimiliki masingmasing daerah sesuai dinamika pembangunan.</p>
                             <br>
-                        <p class="text-sejarah">Perencanaan pembangunan daerah merupakan bagian yang tidak terpisahkan dari sistem perencanaan pembangunan nasional yang diatur dalam Undang-undang Nomor 25 Tahun 2004 tentang Sistem Perencanaan
+                        <p class="text-sejarah text-dark">Perencanaan pembangunan daerah merupakan bagian yang tidak terpisahkan dari sistem perencanaan pembangunan nasional yang diatur dalam Undang-undang Nomor 25 Tahun 2004 tentang Sistem Perencanaan
                             Pembangunan Nasional dan Undang-undang Nomor 23 tahun 2014 tentang Pemerintahan Daerah, yang mengamanatkan kepada perangkat daerah untuk menyusun Rencana Strategis (RENSTRA) dengan koordinasi
                             Badan Perencanaan Penelitian Pembangunan Daerah. Terkait dengan penyusunan Renstra perangkat daerah, Peraturan Menteri Dalam Negeri Nomor 54 Tahun 2010 telah mengatur bahwa RPJMD yang telah
                             ditetapkan dengan peraturan daerah harus menjadi pedoman dalam penyusunan Renstra Perangkat Daerah. Visi, misi, tujuan, strategi dan kebijakan yang tertuang didalam Renstra dirumuskan dalam rangka mewujudkan pencapaian sasaran program yang ditetapkan dalam RPJMD. </p>
                             <br>
-                        <p class="text-sejarah">Berdasarkan hal tersebut, maka Dinas Pemadam Kebakaran Kabupaten Minahasa menyusun Rencana Strategis Tahun 2018-2023 yang merupakan dokumen perencanaan lima tahunan yang memuat tujuan, sasaran,
+                        <p class="text-sejarah text-dark">Berdasarkan hal tersebut, maka Dinas Pemadam Kebakaran Kabupaten Minahasa menyusun Rencana Strategis Tahun 2018-2023 yang merupakan dokumen perencanaan lima tahunan yang memuat tujuan, sasaran,
                             strategi, kebijakan, program dan kegiatan pembangunan di bidang Pemadam Kebakaran dan Penyelamatan lainnya berdasarkan kondisi dan potensi daerah di Kabupaten Minahasa.</p>
                             <br>
                     </div>
@@ -189,216 +189,216 @@
     <section class="pt-3 pb-4" style="font-family: sans-serif;">
         <div class="container">
             <div class="row">
-                <div class="col-lg-10 text-light mx-auto py-4" style="margin-bottom: 100px; border-radius: 25px; background-color: rgb(218, 37, 29);" >
-                    <h1 class="text-center text-light fw-bold" style="margin-bottom: 80px;">Tugas, Fungsi dan Struktur Organisasi Dinas Pemadam Kebakaran</h1>
+                <div class="col-lg-10 text-light mx-auto py-4" style="margin-bottom: 100px; border-radius: 25px; background-color: rgb(218, 37, 29); background-color: #eee;" >
+                    <h1 class="text-center fw-bold" style="margin-bottom: 80px; color: rgb(218, 37, 29);">Tugas, Fungsi dan Struktur Organisasi Dinas Pemadam Kebakaran</h1>
                     <div class="container col-10" style="margin-bottom: 100px;"> 
 
-                        <p class="text-tf mb-3">Dinas Pemadam Kebakaran mempunyai tugas membantu Walikota dalam melaksanakan urusan pemerintahan bidang ketenteraman dan ketertiban umum sub urusan kebakaran yang menjadi kewenangan daerah dan tugas pembantuan yang ditugaskan kepada daerah.</p>
+                        <p class="text-tf text-dark mb-3">Dinas Pemadam Kebakaran mempunyai tugas membantu Walikota dalam melaksanakan urusan pemerintahan bidang ketenteraman dan ketertiban umum sub urusan kebakaran yang menjadi kewenangan daerah dan tugas pembantuan yang ditugaskan kepada daerah.</p>
 
-                        <p class="text-tf mb-3">Dinas Pemadam Kebakaran dalam melaksanakan tugas  menyelenggarakan fungsi :</p>
+                        <p class="text-tf text-dark mb-3">Dinas Pemadam Kebakaran dalam melaksanakan tugas  menyelenggarakan fungsi :</p>
 
-                        <p class="text-tf mb-0">1. Kepala Dinas</p>
+                        <p class="text-tf text-dark mb-3">1. Kepala Dinas</br>
                             Melaksanakan sebagain tugas Bupati di bidang sub urusan kebakaran menyangkut pelayanan dasar masyarakat dalam penyelenggaraan Pencegahan, Pengendalian, Pemadaman, Penyelamatan dan Penanganan bahaya kebakaran.
                             </p>
-                        <p class="text-tf mb-0">Dalam melaksanakan tugas Kepala Dinas mempunyai fungsi :</p>
+                        <p class="text-tf text-dark mb-0">Dalam melaksanakan tugas Kepala Dinas mempunyai fungsi :</br>
                             a. Penyiapan perumusan di bidang pembinaan dan pengawasan
                             penyelenggaraan pencegahan, pengendalian, pemadaman,
-                            penyelamatan dan penanganan bahaya kebakaran ;</p>
+                            penyelamatan dan penanganan bahaya kebakaran ;</br>
                             b. Penyiapan strategi pencapaian standar pelayanan minimal di bidang
-                            sub urusan kebakaran;</p>
+                            sub urusan kebakaran;</br>
                             c. Penyiapan penyusunan Standard Operasional Prosedur
-                            penyelenggaraan pemadam kebakaran;</p>
+                            penyelenggaraan pemadam kebakaran;</br>
                             d. Penyusunan program dan anggaran kegiatan pencegahan,
                             pengendalian, pemadaman kebakaran bangunan, gedung,
-                            permukiman penduduk,</p>
+                            permukiman penduduk,</br>
                             e. pabrik/industri, hutan, lahan dan perkebunan, penyelamatan dan
-                            penanganan bahan berbahaya dan beracun kebakaran;</p>
+                            penanganan bahan berbahaya dan beracun kebakaran;</br>
                             f. Penyusunan rencana kebutuhan sumberdaya manusia pemadam
-                            kebakaran berbasis kompetensi dan sertifikasi;</p>
+                            kebakaran berbasis kompetensi dan sertifikasi;</br>
                             g. Penyusunan rencana kebutuhan sarana dan prasarana pemadam
-                            kebakaran berbasis standard pelayanan minimal;</p>
+                            kebakaran berbasis standard pelayanan minimal;</br>
                             h. Pelaksanaan kebijakan dibidang koordinasi kegiatan pencegahan,
                             pengendalian, pemadaman, penyelamatan dan penanganan bahan
-                            berbahaya dan beracun kebakaran;</p>
+                            berbahaya dan beracun kebakaran;</br>
                             i. Pelaksanaan koordinasi penyusunan pemetaan dibidang sub urusan
-                            kebakaran;</p>
+                            kebakaran;</br>
                             j. Pelaksanaan pemantauan, evaluasi dan pelaporan pencegahan,
                             pengendalian, pemadaman, penyelamatan dan penanganan bahan
-                            berbahaya dan beracun;</p>
-                            k. Fasilitasi penanganan kebakaran bersama seluruh stakeholder;</p>
+                            berbahaya dan beracun;</br>
+                            k. Fasilitasi penanganan kebakaran bersama seluruh stakeholder;</br>
                             l. Melaksanakan tugas lain yang diberikan oleh Bupati. </p>
-                        <p class="text-tf mb-0">2. Sekretariat </p>
+                        <p class="text-tf text-dark mb-3">2. Sekretariat </br>
                             Sekretariat Dinas adalah memberikan pelayanan administrative dan teknis kepada semua unsur di lingkungan Dinas Pemadam Kebakaran.;</p>
-                        <p class="text-tf mb-0">Dalam melaksanakan tugas Sekretaris menyelenggarakan fungsi : </p>
-                            a. Koordinasi penyusunan program dan anggaran;</p>
+                        <p class="text-tf text-dark mb-3">Dalam melaksanakan tugas Sekretaris menyelenggarakan fungsi : </br>
+                            a. Koordinasi penyusunan program dan anggaran;</br>
                             b. Penyiapan dan implementasi norma, standard, prosedur dan kriteria
                             penyelenggaraan pencegahan, pengendalian, pemadaman,
-                            penyelamatan dan penanganan bahan berbahaya dan beracun;</p>
+                            penyelamatan dan penanganan bahan berbahaya dan beracun;</br>
                             c. Penyiapan penyusunan dan fasilitasi penyelesaian terkait
                             penyelenggaraan pencegahan, pengendalian, pemadaman,
-                            penyelamatan dan penanganan bahan berbahaya dan beracun;</p>
-                            d. Pelaksanaan pengelolaan keuangan;</p>
+                            penyelamatan dan penanganan bahan berbahaya dan beracun;</br>
+                            d. Pelaksanaan pengelolaan keuangan;</br>
                             e. Pengelolaan sarana dan prasarana, urusan tata usaha, rumah
-                            tangga dan aset;</p>
-                            f. Pengelolaan aparatur sipil negara;</p>
+                            tangga dan aset;</br>
+                            f. Pengelolaan aparatur sipil negara;</br>
                             g. Pelayanan administrative dan teknis kepada semua unsur
-                            dilingkungan Dinas Pemadam kebakaran.</p>
+                            dilingkungan Dinas Pemadam kebakaran.</br>
                             h. Melaksanakan tugas lain yang diberikan oleh Kepala Dinas;</p>
-                        <p class="text-tf mb-0">Dalam melaksanakan tugas pokok dan fungsinya, Sekretariat
-                            membawahi:</p>
+                        <p class="text-tf text-dark mb-3 ">Dalam melaksanakan tugas pokok dan fungsinya, Sekretariat
+                            membawahi:</br>
                             1. Sub Bagian Umum dan Kepegawaian
                             Sub bagian Umum dan Kepegawaian mempunyai tugas :
                             Melaksanakan urusan persuratan, tata usaha, urusan administrasi
                             ASN, urusan perlengkapan dan rumah tangga dan penataan barang
-                            milik Negara/Daerah.</p>
+                            milik Negara/Daerah.</br>
                             Dalam melaksanakan tugas sub Bagian Umum dan kepegawaian
-                            menyelenggarakan fungsi :</p>
-                            a. Pelaksanaan urusan persuratan dan tata usaha;</p>
-                            b. Pelaksanaan urusan kearsipan.</p>
-                            c. Penyiapan administrasi ASN.</p>
-                            d. Pelaksanaan urusan perlengkapan dan rumah tangga.</p>
-                            e. Pelaksanaan urusan penataan barang milik Negara/Daerah.</p>
-                            f. Menyampaikan laporan kegiatan kepada Sekretaris</p>
-                            2. Sub Bagian Perencanaan Program dan Keuangan</p>
-                            Sub bagian Perencanaan Program dan Keuangan mempunyai tugas :</p>
+                            menyelenggarakan fungsi :</br>
+                            a. Pelaksanaan urusan persuratan dan tata usaha;</br>
+                            b. Pelaksanaan urusan kearsipan.</br>
+                            c. Penyiapan administrasi ASN.</br>
+                            d. Pelaksanaan urusan perlengkapan dan rumah tangga.</br>
+                            e. Pelaksanaan urusan penataan barang milik Negara/Daerah.</br>
+                            f. Menyampaikan laporan kegiatan kepada Sekretaris</br>
+                            2. Sub Bagian Perencanaan Program dan Keuangan</br>
+                            Sub bagian Perencanaan Program dan Keuangan mempunyai tugas :</br>
                             Melaksanakan penyiapan koordinasi penyusunan program dan
                             anggaran, pengelolaan data dan informasi, pelaksanaan monitoring
                             dan evaluasi, penyusunan laporan kinerja, pengelolaan keuangan,
-                            penatausahaan, akuntansi serta verifikasi dan pembukuan.</p>
+                            penatausahaan, akuntansi serta verifikasi dan pembukuan.</br>
                             Dalam melaksanakan tugas sub Bagian Perencanaan Program dan
-                            Keuangan menyelenggarakan fungsi :</p>
-                            a. Penyiapan koordinasi penyusunan program dan anggaran.</p>
-                            b. Pengolahan data, informasi, monitoring dan evaluasi.</p>
-                            c. Penataan sistim dan prosedur dan penyusunan laporan kinerja.</p>
-                            d. Pelaksanaan anggaran.</p>
+                            Keuangan menyelenggarakan fungsi :</br>
+                            a. Penyiapan koordinasi penyusunan program dan anggaran.</br>
+                            b. Pengolahan data, informasi, monitoring dan evaluasi.</br>
+                            c. Penataan sistim dan prosedur dan penyusunan laporan kinerja.</br>
+                            d. Pelaksanaan anggaran.</br>
                             e. Penyiapan bahan tanggapan atas laporan pemeriksaan
-                            keuangan.</p>
-                            f. Pelaksanaan urusan perbendaharaan.</p>
-                            g. Pelaksanaan verifikasi dan akuntansi.</p>
+                            keuangan.</br>
+                            f. Pelaksanaan urusan perbendaharaan.</br>
+                            g. Pelaksanaan verifikasi dan akuntansi.</br>
                             h. Melaksanakan evaluasi kegiatan dan melaporkan hasil kegiatan
                             kepada Sekretaris.</p>
-                        <p class="text-tf mb-0">3. Bidang Pencegahan, Peningkatan Kapasitas SDM dan Sarpras</p>
+                        <p class="text-tf text-dark mb-3">3. Bidang Pencegahan, Peningkatan Kapasitas SDM dan Sarpras</br>
                             Bidang Pencegahan, Peningkatan Kapasitas SDM dan Sarpras
                             mempunyai tugas melaksanakan sebagian tugas Kepala Dinas di Bidang
                             Sub urusan kebakaran menyangkut pelayanan dasar masyarakat dalam
                             penyelenggaraan kebakaran dan peningkatan kapasitas SDM dan sarana
-                            prasarana.</p>
+                            prasarana.</br>
                             Dalam melaksanakan tugas Bidang Pencegahan, Peningkatan Kapasitas
-                            SDM dan Sarpras menyelenggarakan fungsi :</p>
+                            SDM dan Sarpras menyelenggarakan fungsi :</br>
                             a. Penyiapan perumusan kebijakan dibidang pembinaan dan
                             pengawasan penyelenggaraan pencegahan dan peningkatan
-                            kapasitas SDM dan Sarpras.</p>
+                            kapasitas SDM dan Sarpras.</br>
                             b. Penyiapan strategi pencapaian standard pelayanan minimal di
-                            bidang sub urusan kebakaran.</p>
+                            bidang sub urusan kebakaran.</br>
                             c. Penyiapan penyusunan Standard Operasional Prosedur
                             penyelenggaraan pencegahan dan peningkatan kapasitas SDM dan
-                            Sarpras.</p>
+                            Sarpras.</br>
                             d. Penyusunan program dan anggaran kegiatan pencegahan kebakaran
                             bangunan gedung, permukiman penduduk, pabrik/industri,
                             hutan, lahan dan perkebunan dan penanganan bahan berbahaya dan beracun
-                            kebakaran.</p>
+                            kebakaran.</br>
                             e. Penyusunan rencana kebutuhan SDM Damkar berbasis kompetensi
-                            dan sertifikat serta Sarpras.</p>
+                            dan sertifikat serta Sarpras.</br>
                             f. Pelaksanaan kebijakan dibidang koordinasi kegiatan pencegahan
-                            dan peningkatan kapasitas SDM serta penyediaan Sarpras.</p>
+                            dan peningkatan kapasitas SDM serta penyediaan Sarpras.</br>
                             g. Pelaksanaan pemantauan, evaluasi dan pelaporan pencegahan dan
-                            ningkatan kapasitas SDM, ketersediaan Sarpras.</p>
+                            ningkatan kapasitas SDM, ketersediaan Sarpras.</br>
                             h. Fasilitasi penanganan kebakaran dan penyediaan sarana prasarana
-                            bersama seluruh stakeholder.</p>
+                            bersama seluruh stakeholder.</br>
                             i. Melaksanakan tugas-tugas lain yang diberikan oleh Kepala Dinas.</p>
-                        <p class="text-tf mb-0">Dalam melaksanakan tugas pokok dan fungsinya, Bidang Pencegahan,
-                            Peningkatan Kapasitas SDM dan Sarpras membawahi</p>:
+                        <p class="text-tf text-dark mb-3">Dalam melaksanakan tugas pokok dan fungsinya, Bidang Pencegahan,
+                            Peningkatan Kapasitas SDM dan Sarpras membawahi</br>:
                             1. Seksi Pemberdayaan Masyarakat dan Pelatihan
-                            Seksi Pemberdayaan Masyarakat dan Pelatihan mempunyai tugas :</p>
-                            a. Mengkoordinasikan penyusunan rencana dan program kerja.</p>
+                            Seksi Pemberdayaan Masyarakat dan Pelatihan mempunyai tugas :</br>
+                            a. Mengkoordinasikan penyusunan rencana dan program kerja.</br>
                             b. Menyusun Petunjuk Teknis pelaksanaan Pemberdayaan
-                            Masyarakat dan Pelatihan.</p>
+                            Masyarakat dan Pelatihan.</br>
                             c. Melaksanakan kebijakan di bidang Pemberdayaan Masyarakat
-                            dan Pelatihan.</p>
+                            dan Pelatihan.</br>
                             d. Melaksanakan Penyuluhan dan Sosialisasi pencegahan bahaya
-                            kebakaran.</p>
+                            kebakaran.</br>
                             e. Melakukan koordinasi dengan unsur-unsur terkait dalam hal
-                            Pemberdayaan Masyarakat dan Pelatihan.</p>
+                            Pemberdayaan Masyarakat dan Pelatihan.</br>
                             f. Melaporkan hasil kegiatan Pemberdayaan Msyarakat dan
-                            Pelatihan kepada Kepala Bidang.</p>
+                            Pelatihan kepada Kepala Bidang.</br>
                             g. Melaksanakan tugas-tugas lain yang diberikan oleh Kepala Dinas.</p>
-                        <p class="text-tf mb-0"> 2.Seksi Inspeksi Proteksi Kebakaran</p>
-                            Seksi Inspeksi Proteksi Kebakaran mempunyai tugas :</p>
-                            a. Mengkoordinasikan penyusunan rencana dan program kerja.</p>
+                        <p class="text-tf text-dark mb-3"> 2.Seksi Inspeksi Proteksi Kebakaran</br>
+                            Seksi Inspeksi Proteksi Kebakaran mempunyai tugas :</br>
+                            a. Mengkoordinasikan penyusunan rencana dan program kerja.</br>
                             b. Menyusun Petunjuk Teknis pelaksanaan Inspeksi Proteksi
-                            Kebakaran.</p>
-                            c. Melaksanakan kebijakan di bidang Inspeksi Proteksi Kebakaran.</p>
+                            Kebakaran.</br>
+                            c. Melaksanakan kebijakan di bidang Inspeksi Proteksi Kebakaran.</br>
                             d. Melaksanakan Penyuluhan dan Sosialisasi pencegahan bahaya
-                            kebakaran.</p>
+                            kebakaran.</br>
                             e. Melakukan pengawasan, pemantauan dan monitoring
-                            pelaksanaan kegiatan Proteksi kebakaran.</p>
-                            f. Melaporkan hasil kegiatan kepada Kepala Bidang.</p>
+                            pelaksanaan kegiatan Proteksi kebakaran.</br>
+                            f. Melaporkan hasil kegiatan kepada Kepala Bidang.</br>
                             g. Melaksanakan tugas-tugas lain yang diberikan oleh Kepala Dinas.</p>
-                        <p class="text-tf mb-0">3. Seksi Sarana dan Prasarana</p>
-                            Seksi Inspeksi Proteksi Kebakaran mempunyai tugas :</p>
+                        <p class="text-tf text-dark mb-3">3. Seksi Sarana dan Prabrarana</br>
+                            Seksi Inspeksi Proteksi Kebakaran mempunyai tugas :</br>
                             a. Penyusunan rencana dan program kerja di bidang Sarana dan
-                            Prasarana Damkar.</p>
-                            b. Mengkoordinasi penyusunan rencana dan program kerja.</p>
+                            Prasarana Damkar.</br>
+                            b. Mengkoordinasi penyusunan rencana dan programbrkerja.</br>
                             c. Melakukan pengawasan, pemantauan dan monitoring
-                            pelaksanaan kegiatan Sarana dan Prasarana Damkar.</p>
-                            d. Melaporkan hasil kegiatan kepada Kepala Bidang.</p>
+                            pelaksanaan kegiatan Sarana dan Prasarana Damkar.</br>
+                            d. Melaporkan hasil kegiatan kepada Kepala Bidang.</br>
                             e. Melaksanakan tugas-tugas lain yang diberikan oleh Kepala Dinas.</p>
-                        <p class="text-tf mb-0">4. Bidang Pemadaman dan Penyelamatan</p>
-                        <p class="text-tf mb-0">Bidang Pemadaman dan Penyelamatan mempunyai tugas melaksanakan
+                        <p class="text-tf text-dark mb-3">4. Bidang Pemadaman dan Penyelamatan</p>
+                        <p class="text-tf text-dark mb-3">Bidang Pemadaman dan Penyelamatan mempunyai tugas melaksanakan
                             sebagian tugas Kepala Dinas di Bidang Sub urusan kebakaran
                             menyangkut pelayanan dasar masyarakat dalam penyelenggaraan
-                            pengendalian operasi pemadaman dan penyelamatan.</p>
+                            pengendalian operasi pemadaman dan penyelamatan.</br>
                             Dalam melaksanakan tugas Bidang Pemadaman dan Penyelamatan
-                            menyelenggarakan fungsi :</p>
+                            menyelenggarakan fungsi :</br>
                             a. Penyiapan perumusan kebijakan dibidang pengendalian operasi
-                            pemadaman dan penyelamatan.</p>
+                            pemadaman dan penyelamatan.</br>
                             b. Penyiapan strategi pencapaian standard pelayanan minimal dibidang
-                            sub urusan kebakaran.</p>
+                            sub urusan kebakaran.</br>
                             c. Penyiapan penyusunan Standard Operasional Prosedur
-                            pengendalian operasi pemadaman dan penyelamatan.</p>
+                            pengendalian operasi pemadaman dan penyelamatan.</br>
                             d. Penyusunan program dan anggaran kegiatan kesiapsiagaan
                             pengendalian operasi pemadaman kebakaran dan penyelamatan
                             pada kebakaran bangunan, gedung, permukiman penduduk,
                             pabrik/industry, hutan, lahan dan perkebunan dan penanganan
-                            bahan berbahaya dan beracun kebakaran.</p>
+                            bahan berbahaya dan beracun kebakaran.</br>
                             e. Penyusunan rencana kebutuhan sumberdaya bidang pengendalian
-                            operasi pemadaman dan penyelamatan.</p>
+                            operasi pemadaman dan penyelamatan.</br>
                             f. Pelaksanaan kebijakan dibidang pengendalian operasi pemadaman
-                            dan penyelamatan.</p>
+                            dan penyelamatan.</br>
                             g. Pelaksanaan pemantauan, evaluasi dan pelaporan bidang
-                            pengendalian operasi pemadaman dan penyelamatan.</p>
+                            pengendalian operasi pemadaman dan penyelamatan.</br>
                             h. Fasilitasi pengendalian operasi pemadaman kebakaran dan
-                            penyelamatan bersama seluruh stakeholder.</p>
+                            penyelamatan bersama seluruh stakeholder.</br>
                             i. Melaksanakan tugas-tugas lain yang diberikan oleh Kepala Dinas.</p>
-                        <p class="text-tf mb-0">Dalam melaksanakan tugas pokok dan fungsinya, Bidang Pemadaman
-                            dan Penyelamatan membawakan ;</p>
-                            1. Seksi Operasi Pemadaman dan Investigasi</p>
-                            Seksi Operasi Pemadaman dan Investigasi mempunyai tugas :</p>
+                        <p class="text-tf text-dark mb-3">Dalam melaksanakan tugas pokok dan fungsinya, Bidang Pemadaman
+                            dan Penyelamatan membawakan ;</br>
+                            1. Seksi Operasi Pemadaman dan Investigasi</br>
+                            Seksi Operasi Pemadaman dan Investigasi mempunyai tugas :</br>
                             a. Penyusunan rencana dan program kerja di bidang pemadaman
-                            dan investigasi.</p>
-                            b. Melaksanakan operasi pemadaman kebakaran.</p>
-                            c. Melaksanakan tugas lain yang diberikan oleh Kepala Bidang</p>
-                            d. Melaporkan hasil kegiatan kepada Kepala Bidang.</p>
+                            dan investigasi.</br>
+                            b. Melaksanakan operasi pemadaman kebakaran.</br>
+                            c. Melaksanakan tugas lain yang diberikan oleh Kepala Bidang</br>
+                            d. Melaporkan hasil kegiatan kepada Kepala Bidang.</br>
                             2. Seksi Evakuasi, Penyelamatan dan Perlindungan Hak Sipil
                             Seksi Evakuasi, Penyelamatan dan Perlindungan Hak Sipil
-                            mempunyai tugas :</p>
+                            mempunyai tugas :</br>
                             a. Penyusunan rencana dan program kerja di bidang Evakuasi,
-                            Penyelamatan dan Perlindungan Hak Sipil.</p>
-                            b. Melaksanakan evakuasi dan penyelamatan korban kebakaran.</p>
-                            c. Memberikan perlindungan bagi korban kebakaran.</p>
+                            Penyelamatan dan Perlindungan Hak Sipil.</br>
+                            b. Melaksanakan evakuasi dan penyelamatan korban kebakaran.</br>
+                            c. Memberikan perlindungan bagi korban kebakaran.</br>
                             d. Melaksanakan evaluasi dan melaporkan hasil kegiatan kepada
-                            Kepala Bidang.</p>
-                            e. Melaksanakan tugas lain yang diberikan oleh Kepala Bidang</p>
-                            3. Seksi Kesiapsiagaan dan Komunikasi</p>
-                            Seksi Kesiapsiagaan dan Komunikasi mempunyai tugas :</p>
+                            Kepala Bidang.</br>
+                            e. Melaksanakan tugas lain yang diberikan oleh Kepala Bidang</br>
+                            3. Seksi Kesiapsiagaan dan Komunikasi</br>
+                            Seksi Kesiapsiagaan dan Komunikasi mempunyai tugas :</br>
                             a. Penyusunan rencana dan program kerja di bidang Kesiapsiagaan
-                            dan Komunikasi.</p>
+                            dan Komunikasi.</br>
                             b. Melaksanakan kesiagaan serta menerima laporan terhadap
-                            terjadinya bahaya kebakaran.</p>
-                            c. Melaksanakan tugas lain yang diberikan oleh Kepala Bidang.</p>
+                            terjadinya bahaya kebakaran.</br>
+                            c. Melaksanakan tugas lain yang diberikan oleh Kepala Bidang.</br>
                             d. Melaksanakan evaluasi dan melaporkan hasil kegiatan kepada
                             Kepala Bidang.</p>
-                        <p class="text-tf mb-5">STRUKTUR ORGANISASI DINAS PEMADAM KEBAKARAN KABUPATEN MINAHASA</p>
+                        <p class="text-tf text-dark mb-5">STRUKTUR ORGANISASI DINAS PEMADAM KEBAKARAN KABUPATEN MINAHASA</p>
                     </div>
                 </div>
             </div>
@@ -1019,11 +1019,11 @@
     <section class="pt-3 pb-4" style="font-family: sans-serif;">
         <div class="container">
             <div class="row">
-                <div class="col-lg-10 text-light mx-auto py-4" style="margin-bottom: 100px; border-radius: 25px; background-color: rgb(51, 33, 117);" >
-                    <h1 class="text-center text-light fw-bold" style="margin-bottom: 40px;">Landasan Hukum</h1>
-                    <h5 class="text-center text-light fw-bold mx-auto" style="margin-bottom: 30px;">Rencana Strategis (RENSTRA) Dinas Pemadam Kebakaran disusun
+                <div class="col-lg-10 text-light mx-auto py-4" style="margin-bottom: 100px; border-radius: 25px; background-color: rgb(51, 33, 117); background-color: #eee;" >
+                    <h1 class="text-center fw-bold" style="margin-bottom: 40px; color: rgb(218, 37, 29);">Landasan Hukum</h1>
+                    <h5 class="text-center fw-bold mx-auto" style="margin-bottom: 30px; color: rgb(51, 33, 117);">Rencana Strategis (RENSTRA) Dinas Pemadam Kebakaran disusun
                         berdasarkan aturan perundang-undangan. Dasar hukum penyusunan RENSTRA adalah sebagai berikut :</h5>
-                    <div class="container col-10">
+                    <div class="text-dark container col-10">
                         <p class="text-dh mb-4">1. Undang-Undang Nomor 29 Tahun 1959 tentang Pembentukan Daerah-Daerah Tingkat II di Sulawesi;</p>
                         
                         <p class="text-dh mb-4">2. Undang-Undang Nomor 28 Tahun 1999 tentang Penyelenggaraan Negara yang Bersih dan Bebas dari korupsi, Kolusi dan Nepotisme;</p>

@@ -367,18 +367,18 @@ include_once 'koneksi.php';
     <section class="pt-3 pb-4" style="font-family: sans-serif;">
         <div class="container">
             <div class="row">
-                <div class="col-lg-10 text-light mx-auto py-4" style="margin-bottom: 100px; border-radius: 25px; background-color: rgb(51, 33, 117);" >
-                    <h1 class="text-center text-light fw-bold" style="margin-bottom: 80px;"></h1>
+                <div class="col-lg-10 mx-auto py-4" style="margin-bottom: 100px; border-radius: 25px; background-color: rgb(51, 33, 117); background-color: #eee;" >
+                    <h1 class="text-center fw-bold" style="margin-bottom: 80px;"></h1>
                     <div class="container col-10" style="margin-bottom: 100px;">
-                        <p class="text-tf mb-0">Sumber Daya Dinas Pemadam Kebakaran</p>
-                            <p class="text-tf mb-3">1. Sumber daya manusia</p>
+                        <p class="text-dark text-tf mb-0">Sumber Daya Dinas Pemadam Kebakaran</p>
+                            <p class="text-dark text-tf mb-3">1. Sumber daya manusia</p>
 
-                            <p class="text-tf mb-5">Berdasarkan data kepegawaian Dinas Pemadam Kebakaran jumlah
+                            <p class="text-dark text-tf mb-5">Berdasarkan data kepegawaian Dinas Pemadam Kebakaran jumlah
                                 pegawai seluruhnya sebanyak 91 orang, sebagaimana tabel berikut:</p>
 
 
                             <!-- Komposisi Pegawai Menurut Jenjang Pendidikan -->
-                            <h5 class="text-center mb-3"> Komposisi Pegawai Menurut Jenjang Pendidikan</h5>
+                            <h5 class="text-dark text-center mb-3"> Komposisi Pegawai Menurut Jenjang Pendidikan</h5>
 
                             <?php 
                                 //INI CODE PHP UNTUK LOOPING BERITANYA. LAKUKAN DI TABEL2 LAINN
@@ -395,12 +395,12 @@ include_once 'koneksi.php';
                                 }
                             ?>
 
-                            <table style="border: 1px solid white; text-align: center;">
+                            <table style="border: 1px solid black; text-align: center;">
                                 <tr>
-                                    <th style="border: 1px solid white; width: 5%; text-align: center;">No</th>
-                                    <th style="border: 1px solid white; width: 20%; text-align: center;">Jenjang Pendidikan</th>
-                                    <th style="border: 1px solid white; width: 10%; text-align: center;">Jumlah (Orang)</th>
-                                    <th style="border: 1px solid white; width: 10%; text-align: center;">Presentase (%)</th>
+                                    <th style="border: 1px solid black; width: 5%; text-align: center;">No</th>
+                                    <th style="border: 1px solid black; width: 20%; text-align: center;">Jenjang Pendidikan</th>
+                                    <th style="border: 1px solid black; width: 10%; text-align: center;">Jumlah (Orang)</th>
+                                    <th style="border: 1px solid black; width: 10%; text-align: center;">Presentase (%)</th>
                                     <a href=""></a>
                                 </tr>
                             
@@ -408,13 +408,13 @@ include_once 'koneksi.php';
                             <?php foreach ($item as $row): ?>
 
                                 <tr style="height: 40px;">
-                                    <td style="border: 1px solid white; text-align: center;"><?= $row[1];?></td>
-                                    <td style="border: 1px solid white; text-align: center;"><?= $row[2];?></td>
-                                    <td style="border: 1px solid white; text-align: center;"><?= $row[3];?></td>
-                                    <td style="border: 1px solid white; text-align: center;"><?= $row[4];?></td>
-                                    <td style="border: 1px solid white; text-align: center; width: 5%;">
+                                    <td style="border: 1px solid black; text-align: center;"><?= $row[1];?></td>
+                                    <td style="border: 1px solid black; text-align: center;"><?= $row[2];?></td>
+                                    <td style="border: 1px solid black; text-align: center;"><?= $row[3];?></td>
+                                    <td style="border: 1px solid black; text-align: center;"><?= $row[4];?></td>
+                                    <!-- <td style="border: 1px solid white; text-align: center; width: 5%;">
                                         <a href="./update_jp.php?id=<? $row['id'] ?>">Edit</a>
-                                    </td>
+                                    </td> -->
                                 </tr>
                             <?php endforeach; ?>
 
@@ -441,20 +441,20 @@ include_once 'koneksi.php';
 
                             <table>
                                 <tr>
-                                    <th style="border: 1px solid white; width: 5%; text-align: center;">No</th>
-                                    <th style="border: 1px solid white; width: 20%; text-align: center;">Status Kepegawaian</th>
-                                    <th style="border: 1px solid white; width: 10%; text-align: center;">Jumlah (Orang)</th>
-                                    <th style="border: 1px solid white; width: 10%; text-align: center;">Presentase (%)</th>
+                                    <th style="border: 1px solid black; width: 5%; text-align: center;">No</th>
+                                    <th style="border: 1px solid black; width: 20%; text-align: center;">Status Kepegawaian</th>
+                                    <th style="border: 1px solid black; width: 10%; text-align: center;">Jumlah (Orang)</th>
+                                    <th style="border: 1px solid black; width: 10%; text-align: center;">Presentase (%)</th>
                                 </tr>
                             
 
                             <?php foreach ($item as $row): ?>
 
                                 <tr style="height: 40px;">
-                                    <td style="border: 1px solid white; text-align: center;"><?= $row[1];?></td>
-                                    <td style="border: 1px solid white; text-align: center;"><?= $row[2];?></td>
-                                    <td style="border: 1px solid white; text-align: center;"><?= $row[3];?></td>
-                                    <td style="border: 1px solid white; text-align: center;"><?= $row[4];?></td>
+                                    <td style="border: 1px solid black; text-align: center;"><?= $row[1];?></td>
+                                    <td style="border: 1px solid black; text-align: center;"><?= $row[2];?></td>
+                                    <td style="border: 1px solid black; text-align: center;"><?= $row[3];?></td>
+                                    <td style="border: 1px solid black; text-align: center;"><?= $row[4];?></td>
                                 </tr>
                             <?php endforeach; ?>
                             </table>
@@ -479,18 +479,18 @@ include_once 'koneksi.php';
 
                             <table>
                                 <tr>
-                                    <th style="border: 1px solid white; width: 5%; text-align: center;">No</th>
-                                    <th style="border: 1px solid white; width: 20%; text-align: center;">Jenjang Pendidikan</th>
-                                    <th style="border: 1px solid white; width: 10%; text-align: center;">Jumlah (Orang)</th>
+                                    <th style="border: 1px solid black; width: 5%; text-align: center;">No</th>
+                                    <th style="border: 1px solid black; width: 20%; text-align: center;">Jenjang Pendidikan</th>
+                                    <th style="border: 1px solid black; width: 10%; text-align: center;">Jumlah (Orang)</th>
                                 </tr>
                             
 
                             <?php foreach ($item as $row): ?>
 
                                 <tr style="height: 40px;">
-                                    <td style="border: 1px solid white; text-align: center;"><?= $row[1];?></td>
-                                    <td style="border: 1px solid white; text-align: center;"><?= $row[2];?></td>
-                                    <td style="border: 1px solid white; text-align: center;"><?= $row[3];?></td>
+                                    <td style="border: 1px solid black; text-align: center;"><?= $row[1];?></td>
+                                    <td style="border: 1px solid black; text-align: center;"><?= $row[2];?></td>
+                                    <td style="border: 1px solid black; text-align: center;"><?= $row[3];?></td>
                                 </tr>
                             <?php endforeach; ?>
                             </table>
@@ -515,27 +515,27 @@ include_once 'koneksi.php';
 
                             <table>
                                 <tr>
-                                    <th rowspan="2" style="border: 1px solid white; width: 10%; text-align: center;">Jenis</th>
-                                    <th rowspan="2" style="border: 1px solid white; width: 10%; text-align: center;">Jumlah (unit/buah)</th>
-                                    <th colspan="3" style="border: 1px solid white; width: 10%; text-align: center;">Kondisi Sekarang</th>
-                                    <th rowspan="2" style="border: 1px solid white; width: 10%; text-align: center;">Yang Diharapkan Jumlah (unit/buah)</th>
+                                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Jenis</th>
+                                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Jumlah (unit/buah)</th>
+                                    <th colspan="3" style="border: 1px solid black; width: 10%; text-align: center;">Kondisi Sekarang</th>
+                                    <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Yang Diharapkan Jumlah (unit/buah)</th>
                                 </tr>
                                 <tr>
-                                <th style="border: 1px solid white; width: 10%; text-align: center;">Baik</th>
-                                <th style="border: 1px solid white; width: 10%; text-align: center;">Rusak Ringan / Layak Pakai</th>
-                                <th style="border: 1px solid white; width: 10%; text-align: center;">Rusak Berat</th>
+                                <th style="border: 1px solid black; width: 10%; text-align: center;">Baik</th>
+                                <th style="border: 1px solid black; width: 10%; text-align: center;">Rusak Ringan / Layak Pakai</th>
+                                <th style="border: 1px solid black; width: 10%; text-align: center;">Rusak Berat</th>
                                 </tr>
                             
 
                             <?php foreach ($item as $row): ?>
 
                                 <tr style="height: 40px;">
-                                    <td style="border: 1px solid white; text-align: center;"><?= $row[1];?></td>
-                                    <td style="border: 1px solid white; text-align: center;"><?= $row[2];?></td>
-                                    <td style="border: 1px solid white; text-align: center;"><?= $row[3];?></td>
-                                    <td style="border: 1px solid white; text-align: center;"><?= $row[4];?></td>
-                                    <td style="border: 1px solid white; text-align: center;"><?= $row[5];?></td>
-                                    <td style="border: 1px solid white; text-align: center;"><?= $row[6];?></td>
+                                    <td style="border: 1px solid black; text-align: center;"><?= $row[1];?></td>
+                                    <td style="border: 1px solid black; text-align: center;"><?= $row[2];?></td>
+                                    <td style="border: 1px solid black; text-align: center;"><?= $row[3];?></td>
+                                    <td style="border: 1px solid black; text-align: center;"><?= $row[4];?></td>
+                                    <td style="border: 1px solid black; text-align: center;"><?= $row[5];?></td>
+                                    <td style="border: 1px solid black; text-align: center;"><?= $row[6];?></td>
                                 </tr>
                             <?php endforeach; ?>
                             </table>
