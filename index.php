@@ -729,10 +729,43 @@ include_once 'koneksi.php';
         <div id="data5" class="container berita mx-auto" style="padding-left: 36px; padding-right: 42px;">
             <h5 class="data-content text-center fw-bold mt-5 mb-4" style="font-size: 24px; font-family: sans-serif;">BREAKING NEWS</h5>
             <div class="row">
+
+            <?php 
+                //INI CODE PHP UNTUK LOOPING BERITANYA. LAKUKAN DI TABEL2 LAINN
+                $sql = "SELECT * FROM berita";
+
+                $berita = [];
+                if ($result = mysqli_query($con, $sql)) {
+                    // tampilkan satu per satu
+                    while ($row = mysqli_fetch_assoc($result)) {
+                        $berita[] = $row;
+                    }
+                    mysqli_free_result($result);
+                }
+                
+                
+                if ($result = mysqli_query($con, $sql)) {
+                    // Fetch one and one row
+                    while ($row = mysqli_fetch_row($result)) {
+            ?>
+
+            <?php foreach ($berita as $row): ?>
+
                 <div class="graph col-12 col-md-6 col-lg-3">
-                    <a href="./berita.php"><img src="./image/berita-1.jpg" class="img-news shadow rounded mb-3" alt=""></a>
+                    <a href="./berita.php"><img src="./image/<?=$row['photo_link']?>" class="img-news shadow rounded mb-3" alt=""></a>
                 </div>
-                <div class="graph col-12 col-md-6 col-lg-3">
+
+            <?php endforeach;?>
+
+            <?php
+                }
+                //mysqli_free_result($result);
+            }
+            // tutup koneksi
+            mysqli_close($con);
+            ?>
+
+                <!-- <div class="graph col-12 col-md-6 col-lg-3">
                     <a href="./berita.php"><img src="./image/berita-2.jpg" class="img-news shadow rounded mb-3" alt=""></a>
                 </div>
                 <div class="graph col-12 col-md-6 col-lg-3">
@@ -752,7 +785,7 @@ include_once 'koneksi.php';
                 </div>
                 <div class="graph col-12 col-md-6 col-lg-3">
                     <a href="./berita.php"><img src="./image/berita-8.jpg" class="img-news rounded mb-3" alt=""></a>
-                </div>
+                </div> -->
             </div>
         </div>
         </section>

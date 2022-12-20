@@ -374,7 +374,7 @@ include_once 'koneksi.php';
                             <p class="text-dark text-tf mb-3">1. Sumber daya manusia</p>
 
                             <p class="text-dark text-tf mb-5">Berdasarkan data kepegawaian Dinas Pemadam Kebakaran jumlah
-                                pegawai seluruhnya sebanyak 91 orang, sebagaimana tabel berikut:</p>
+                                pegawai seluruhnya sebanyak 97 orang, sebagaimana tabel berikut:</p>
 
 
                             <!-- Komposisi Pegawai Menurut Jenjang Pendidikan -->
@@ -385,11 +385,11 @@ include_once 'koneksi.php';
                                 
                                 $sql = "SELECT * FROM kp_jenjangpendidikan";
                                 
-                                $item = [];
+                                $kp_jenjangpendidikan = [];
                                 if ($result = mysqli_query($con, $sql)) {
                                     // Fetch one and one row
                                     while ($row = mysqli_fetch_row($result)) {
-                                    $item[] = $row;
+                                    $kp_jenjangpendidikan[] = $row;
                                     }
                                     mysqli_free_result($result);
                                 }
@@ -405,16 +405,16 @@ include_once 'koneksi.php';
                                 </tr>
                             
 
-                            <?php foreach ($item as $row): ?>
+                            <?php foreach ($kp_jenjangpendidikan as $row): ?>
 
                                 <tr style="height: 40px;">
                                     <td style="border: 1px solid black; text-align: center;"><?= $row[1];?></td>
                                     <td style="border: 1px solid black; text-align: center;"><?= $row[2];?></td>
                                     <td style="border: 1px solid black; text-align: center;"><?= $row[3];?></td>
                                     <td style="border: 1px solid black; text-align: center;"><?= $row[4];?></td>
-                                    <!-- <td style="border: 1px solid white; text-align: center; width: 5%;">
+                                    <td style="border: 1px solid black; text-align: center; width: 5%;">
                                         <a href="./update_jp.php?id=<? $row['id'] ?>">Edit</a>
-                                    </td> -->
+                                    </td>
                                 </tr>
                             <?php endforeach; ?>
 
@@ -445,6 +445,8 @@ include_once 'koneksi.php';
                                     <th style="border: 1px solid black; width: 20%; text-align: center;">Status Kepegawaian</th>
                                     <th style="border: 1px solid black; width: 10%; text-align: center;">Jumlah (Orang)</th>
                                     <th style="border: 1px solid black; width: 10%; text-align: center;">Presentase (%)</th>
+                                    <th style="border: 1px solid black; width: 5%; text-align: center;"></th>
+
                                 </tr>
                             
 
@@ -455,6 +457,9 @@ include_once 'koneksi.php';
                                     <td style="border: 1px solid black; text-align: center;"><?= $row[2];?></td>
                                     <td style="border: 1px solid black; text-align: center;"><?= $row[3];?></td>
                                     <td style="border: 1px solid black; text-align: center;"><?= $row[4];?></td>
+                                    <td style="border: 1px solid black; text-align: center; width: 5%;">
+                                        <a href="./update_statuskepegawaian.php?id=<? $row[0] ?>">Edit</a>
+                                    </td>
                                 </tr>
                             <?php endforeach; ?>
                             </table>
@@ -476,6 +481,7 @@ include_once 'koneksi.php';
                                     //mysqli_free_result($result);
                                 }
                             ?>
+
 
                             <table>
                                 <tr>

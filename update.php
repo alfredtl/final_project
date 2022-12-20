@@ -20,17 +20,18 @@ if(isset($_GET['id'])){
 
     if ($result = mysqli_query($con, $sql)) {
         // echo "<br>data tersedia";
-        while($user_data = mysqli_fetch_assoc($result)) {
-            $judul = $user_data['judul'];
-            $tempat_kejadian = $user_data['tempat_kejadian'];
-            $tanggal = $user_data['tanggal'];
-            $isi_berita = $user_data['isi_berita'];
-            $photo_link = $user_data['photo_link'];
+        while($data_berita = mysqli_fetch_assoc($result)) {
+            $judul = $data_berita['judul'];
+            $tempat_kejadian = $data_berita['tempat_kejadian'];
+            $tanggal = $data_berita['tanggal'];
+            $isi_berita = $data_berita['isi_berita'];
+            $photo_link = $data_berita['photo_link'];
         }
     } else {
         echo "Error: " . $sql . "<br>" . mysqli_error($con);
     }
-
+    //echo print_r($user_data);
+    //die();
     mysqli_close($con);
 
 }
@@ -59,6 +60,12 @@ if (isset($_POST['submit'])){
 
     if (mysqli_query($con, $sql)) {
         echo "<br>Data berhasil diupdate";
+        // kalau berhasil pake perintah redirect kembali ke halaman berita.php
+   
+        // kembali ke halaman sebelumnya
+        header("Location: ./berita.php", TRUE, 301);
+        exit();
+
     } else {
         echo "Error: " . $sql . "<br>" . mysqli_error($con);
     }
@@ -91,11 +98,11 @@ if (isset($_POST['submit'])){
 
 //     if ($result = mysqli_query($con, $sql)) {
 //         // echo "<br>data tersedia";
-//         while($user_data = mysqli_fetch_assoc($result)) {
-//             $no = $user_data['no'];
-//             $jenjang_pendidikan = $user_data['jenjang_pendidikan'];
-//             $jumlah = $user_data['jumlah'];
-//             $presentase = $user_data['presentase'];
+//         while($data = mysqli_fetch_assoc($result)) {
+//             $no = $data['no'];
+//             $jenjang_pendidikan = $data['jenjang_pendidikan'];
+//             $jumlah = $data['jumlah'];
+//             $presentase = $data['presentase'];
 //         }
 //     } else {
 //         echo "Error: " . $sql . "<br>" . mysqli_error($con);
@@ -127,6 +134,12 @@ if (isset($_POST['submit'])){
 
 //     if (mysqli_query($con, $sql)) {
 //         echo "<br>Data berhasil diupdate";
+        // kalau berhasil pake perintah redirect kembali ke halaman berita.php
+   
+        // kembali ke halaman sebelumnya
+        // header("Location: ./berita.php", TRUE, 301);
+        // exit();
+
 //     } else {
 //         echo "Error: " . $sql . "<br>" . mysqli_error($con);
 //     }
@@ -226,7 +239,7 @@ if (isset($_POST['submit'])){
                 <div class="col col-lg-9 col-xl-7">
                     <div class="card shadow rounded-3">
                         <div class="card-body p-4">
-                            <h2>UPDATE DATA PEMADAMAN</h2>
+                            <h2 class="text-center">UPDATE DATA PEMADAMAN</h2>
                             <form action="action.php?p=gambar" method="post" enctype="multipart/form-data">
                                 <label for="exampleFormControlInput1" class="form-label">Tanggal</label>
                                 <input type="text" name="tanggal" class="form-control mb-3">
@@ -234,10 +247,9 @@ if (isset($_POST['submit'])){
                                 <label for="exampleFormControlInput1" class="form-label">Upload Foto :</label><br>
                                 <input type="file" name="berkas" class="mb-5"><br>
                         
-                                <div class="row justify-content-between">
-                                    <a href="./index.php" class="btn btn-success col-md-4 col-sm-12" style="width: 90px;">Kembali</a>
-                                    <input class="btn btn-danger ms-2 col-md-4 col-sm-12" style="width: 90px;" type="reset" name="submit" value="Reset">
-                                    <input class="btn btn-primary ms-2 col-md-4 col-sm-12" style="width: 90px;" type="submit" name="submit" value="Submit">
+                                <div class="row justify-content-center mt-5">
+                                    <input class="btn btn-danger me-5 col-md-4 col-sm-12" style="width: 90px;" type="reset" name="submit" value="Reset">
+                                    <input class="btn btn-primary col-md-4 col-sm-12" style="width: 90px;" type="submit" name="submit" value="Submit">
                                 </div>
                             </form>
                         </div>
@@ -246,13 +258,14 @@ if (isset($_POST['submit'])){
             </div>
         </div>
     </section>
+
     <section class="vh-2" style="margin-bottom: 100px; background-color: #f2f2fc;">
         <div class="container py-1 h-50">
             <div class="row d-flex justify-content-center align-items-center h-50">
                 <div class="col col-lg-9 col-xl-7">
                     <div class="card shadow rounded-3">
                         <div class="card-body p-4">
-                            <h2>UPDATE DATA PENYELAMATAN</h2>
+                            <h2 class="text-center">UPDATE DATA PENYELAMATAN</h2>
                             <form action="action.php?p=gambar" method="post" enctype="multipart/form-data">
                                 <label for="exampleFormControlInput1" class="form-label">Judul :</label>
                                 <input type="text" name="judul kejadian" class="form-control mb-3">
@@ -264,10 +277,9 @@ if (isset($_POST['submit'])){
                                 <input type="file" name="berkas" class="mb-5"><br>
 
 
-                                <div class="row justify-content-between">
-                                    <a href="./index.php" class="btn btn-success col-md-4 col-sm-12" style="width: 90px;">Kembali</a>
-                                    <input class="btn btn-danger ms-2 col-md-4 col-sm-12" style="width: 90px;" type="reset" name="submit" value="Reset">
-                                    <input class="btn btn-primary ms-2 col-md-4 col-sm-12" style="width: 90px;" type="submit" name="submit" value="Submit">
+                                <div class="row justify-content-center mt-5">
+                                    <input class="btn btn-danger me-5 col-md-4 col-sm-12" style="width: 90px;" type="reset" name="submit" value="Reset">
+                                    <input class="btn btn-primary col-md-4 col-sm-12" style="width: 90px;" type="submit" name="submit" value="Submit">
                                 </div>
                             </form>
                         </div>
@@ -282,7 +294,7 @@ if (isset($_POST['submit'])){
                 <div class="col col-lg-9 col-xl-7">
                     <div class="card shadow rounded-3">
                         <div class="card-body p-4">
-                            <h2>UPDATE GALERI</h2>
+                            <h2 class="text-center">UPDATE GALERI</h2>
                             <form action="action.php?p=gambar" method="post" enctype="multipart/form-data">
                                 <label for="exampleFormControlInput1" class="form-label">Judul :</label>
                                 <input type="text" name="judul kegiatan" class="form-control mb-3">
@@ -294,10 +306,9 @@ if (isset($_POST['submit'])){
                                 <div class="mb-0">
                                     <input class="form-control mb-5" name="berkas" type="file" id="formFileMultiple" multiple> 
                                 </div>
-                                <div class="row justify-content-between">
-                                    <a href="./galeri.php" class="btn btn-success col-md-4 col-sm-12" style="width: 90px;">Kembali</a>
-                                    <input class="btn btn-danger ms-2 col-md-4 col-sm-12" style="width: 90px;" type="reset" name="submit" value="Reset">
-                                    <input class="btn btn-primary ms-2 col-md-4 col-sm-12" style="width: 90px;" type="submit" name="submit" value="Submit">
+                                <div class="row justify-content-center mt-5">
+                                    <input class="btn btn-danger me-5 col-md-4 col-sm-12" style="width: 90px;" type="reset" name="submit" value="Reset">
+                                    <input class="btn btn-primary col-md-4 col-sm-12" style="width: 90px;" type="submit" name="submit" value="Submit">
                                 </div>
                                     
                             </form>
@@ -307,13 +318,15 @@ if (isset($_POST['submit'])){
             </div>
         </div>
     </section>
+
+
     <section class="vh-2" style="margin-bottom: 100px; background-color: #f2f2fc;">
         <div class="container py-1 h-100">
             <div class="row d-flex justify-content-center align-items-center h-100">
                 <div class="col col-lg-9 col-xl-7">
                     <div class="card shadow rounded-3">
                         <div class="card-body p-4">
-                            <h2>UPDATE BERITA</h2>
+                            <h2 class="text-center">UPDATE BERITA</h2>
 
                             <?php if(isset($_GET['id'])): ?>
                             <form action="" method="post" enctype="multipart/form-data">
@@ -362,11 +375,15 @@ if (isset($_POST['submit'])){
                                 <label for="exampleFormControlInput1" class="form-label">link foto :</label>
                                 <input type="text" name="photo_link" class="form-control mb-3" value="<?php echo $photo_link; ?>">
 
-                                <div class="row justify-content-between">
-                                    <a href="./berita.php" class="btn btn-success col-md-4 col-sm-12" style="width: 90px;">Kembali</a>
-                                    <input class="btn btn-danger ms-2 col-md-4 col-sm-12" style="width: 90px;" type="reset" name="submit" value="Reset">
-                                    <input class="btn btn-primary ms-2 col-md-4 col-sm-12" style="width: 90px;" type="submit" name="submit" value="Submit">
+                                <div class="row justify-content-center mt-5">
+                                    <input class="btn btn-danger me-5 col-md-4 col-sm-12" style="width: 90px;" type="reset" name="submit" value="Reset">
+                                    <input class="btn btn-primary col-md-4 col-sm-12" style="width: 90px;" type="submit" name="submit" value="Submit">
                                 </div>
+                                <?php //setelah tombol submit ini dipencet, dia akan memproses kembali halaman ini lagi bedanya variable $_POST nya akan bernilai jadi 
+                                    // block if yang paling atas itu akan diproses.Lihat baris 39. di blok itu, data akan disimpan setelah disimpan akan diredirect balik ke berita.php
+                                    //paham yah?
+                                ?>
+
                                     
                                     
                             </form>
@@ -380,47 +397,6 @@ if (isset($_POST['submit'])){
         </div>
     </section>
 
-
-    <section class="vh-2" style="margin-bottom: 100px; background-color: #f2f2fc;">
-        <div class="container py-1 h-100">
-            <div class="row d-flex justify-content-center align-items-center h-100">
-                <div class="col col-lg-9 col-xl-7">
-                    <div class="card shadow rounded-3">
-                        <div class="card-body p-4">
-                            <h2>KOMPOSISI PEGAWAI MENURUT JENJANG PENDIDIKAN</h2>
-
-                            <?php if(isset($_GET['id'])): ?>
-                            <form action="" method="post" enctype="multipart/form-data">
-
-                                <label for="exampleFormControlInput1" class="form-label mt-3">No :</label>
-                                <input type="text" name="no_" class="form-control mb-3" value="<?php echo $no_; ?>">
-
-                                <label for="exampleFormControlInput1" class="form-label">Jenjang Pendidikan :</label>
-                                <input type="text" name="jenjang_pendidikan" class="form-control mb-3" value="<?php echo $jenjang_pendidikan; ?>">
-
-                                <label for="exampleFormControlInput1" class="form-label">Jumlah :</label>
-                                <input type="text" name="jumlah" class="form-control mb-3" value="<?php echo $jumlah; ?>">
-
-                                <label for="exampleFormControlInput1" class="form-label">Presentase :</label>
-                                <input type="text" name="presentase" class="form-control mb-3" value="<?php echo $presentase; ?>">
-
-                                <div class="row justify-content-between">
-                                    <a href="./personil.php" class="btn btn-success col-md-4 col-sm-12" style="width: 90px;">Kembali</a>
-                                    <input class="btn btn-danger ms-2 col-md-4 col-sm-12" style="width: 90px;" type="reset" name="submit" value="Reset">
-                                    <input class="btn btn-primary ms-2 col-md-4 col-sm-12" style="width: 90px;" type="submit" name="submit" value="Submit">
-                                </div>
-                                    
-                                    
-                            </form>
-
-                            <?php endif; ?>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 
