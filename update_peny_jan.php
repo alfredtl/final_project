@@ -99,7 +99,7 @@ if (isset($_POST['submit'])){
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
 </head>
-<body>
+<body style="background-color: #f2f2fc;">
 
 
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -130,7 +130,7 @@ if (isset($_POST['submit'])){
 
 
     <!-- =========== Navbar Baru Lagi =========== -->
-    <nav class="navbar navbar-expand-lg shadow-sm sticky-top" style="background-color:rgb(51, 33, 117);">
+    <nav class="navbar navbar-expand-lg shadow sticky-top" style="background-color:rgb(51, 33, 117);">
         <div class="container justify-content-between">
             <a class="navbar-brand navbar-dark d-flex  align-items-center text-white  ms-sm-3 col-6 col-md-4 me-6" aria-label="Bootstrap" href="./darmisa.php"></svg><img class="logo-darmisa text-dark rounded-circle" src="./image/logo_DarMisa.jpg" alt="" title="DarMisa"><span class="fw-bold" style="margin-left: 80px; margin-right: 80px;">DarMisa</span></a>
             

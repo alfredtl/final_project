@@ -144,7 +144,7 @@ if (isset($_POST['submit'])){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>update data</title>
+    <title>Update Data</title>
     <link rel="stylesheet" href="./dist/css/update.css">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
@@ -153,7 +153,7 @@ if (isset($_POST['submit'])){
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
 </head>
-<body>
+<body style="background-color: #f2f2fc;">
     
 
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -184,7 +184,7 @@ if (isset($_POST['submit'])){
 
 
     <!-- =========== Navbar Baru Lagi =========== -->
-    <nav class="navbar navbar-expand-lg shadow-sm sticky-top" style="background-color:rgb(51, 33, 117);">
+    <nav class="navbar navbar-expand-lg shadow sticky-top" style="background-color:rgb(51, 33, 117);">
         <div class="container justify-content-between">
             <a class="navbar-brand navbar-dark d-flex  align-items-center text-white  ms-sm-3 col-6 col-md-4 me-6" aria-label="Bootstrap" href="./darmisa.php"></svg><img class="logo-darmisa text-dark rounded-circle" src="./image/logo_DarMisa.jpg" alt="" title="DarMisa"><span class="fw-bold" style="margin-left: 80px; margin-right: 80px;">DarMisa</span></a>
             
@@ -220,11 +220,11 @@ if (isset($_POST['submit'])){
 
 
 
-    <section class="vh-5" style="padding-top: 80px; background-color: #eee;">
+    <section class="vh-5" style="padding-top: 80px;  margin-bottom: 100px; background-color: #f2f2fc;">
         <div class="container py-1 h-50">
             <div class="row d-flex justify-content-center align-items-center h-50">
                 <div class="col col-lg-9 col-xl-7">
-                    <div class="card rounded-3">
+                    <div class="card shadow rounded-3">
                         <div class="card-body p-4">
                             <h2>UPDATE DATA PEMADAMAN</h2>
                             <form action="action.php?p=gambar" method="post" enctype="multipart/form-data">
@@ -246,11 +246,11 @@ if (isset($_POST['submit'])){
             </div>
         </div>
     </section>
-    <section class="vh-2" style="background-color: #eee;">
+    <section class="vh-2" style="margin-bottom: 100px; background-color: #f2f2fc;">
         <div class="container py-1 h-50">
             <div class="row d-flex justify-content-center align-items-center h-50">
                 <div class="col col-lg-9 col-xl-7">
-                    <div class="card rounded-3">
+                    <div class="card shadow rounded-3">
                         <div class="card-body p-4">
                             <h2>UPDATE DATA PENYELAMATAN</h2>
                             <form action="action.php?p=gambar" method="post" enctype="multipart/form-data">
@@ -276,11 +276,11 @@ if (isset($_POST['submit'])){
             </div>
         </div>
     </section>
-    <section class="vh-2" style="background-color: #eee;">
+    <section class="vh-2" style="margin-bottom: 100px; background-color: #f2f2fc;">
         <div class="container py-1 h-100">
             <div class="row d-flex justify-content-center align-items-center h-100">
                 <div class="col col-lg-9 col-xl-7">
-                    <div class="card rounded-3">
+                    <div class="card shadow rounded-3">
                         <div class="card-body p-4">
                             <h2>UPDATE GALERI</h2>
                             <form action="action.php?p=gambar" method="post" enctype="multipart/form-data">
@@ -307,11 +307,11 @@ if (isset($_POST['submit'])){
             </div>
         </div>
     </section>
-    <section class="vh-2" style="padding-bottom: 80px; background-color: #eee;">
+    <section class="vh-2" style="margin-bottom: 100px; background-color: #f2f2fc;">
         <div class="container py-1 h-100">
             <div class="row d-flex justify-content-center align-items-center h-100">
                 <div class="col col-lg-9 col-xl-7">
-                    <div class="card rounded-3">
+                    <div class="card shadow rounded-3">
                         <div class="card-body p-4">
                             <h2>UPDATE BERITA</h2>
 
@@ -381,11 +381,11 @@ if (isset($_POST['submit'])){
     </section>
 
 
-    <section class="vh-2" style="padding-bottom: 80px; background-color: #eee;">
+    <section class="vh-2" style="margin-bottom: 100px; background-color: #f2f2fc;">
         <div class="container py-1 h-100">
             <div class="row d-flex justify-content-center align-items-center h-100">
                 <div class="col col-lg-9 col-xl-7">
-                    <div class="card rounded-3">
+                    <div class="card shadow rounded-3">
                         <div class="card-body p-4">
                             <h2>KOMPOSISI PEGAWAI MENURUT JENJANG PENDIDIKAN</h2>
 

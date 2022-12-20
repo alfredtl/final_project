@@ -19,7 +19,7 @@ include_once 'koneksi.php';
     <link href="/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
 </head>
-<body>
+<body style="background-color: #f2f2fc;">
 
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
         <symbol id="bootstrap" viewBox="0 0 118 94">
@@ -472,7 +472,7 @@ include_once 'koneksi.php';
 
 
     <!-- =========== Navbar Baru Lagi =========== -->
-    <nav class="navbar navbar-expand-lg shadow-sm sticky-top" style="background-color:rgb(51, 33, 117);">
+    <nav class="navbar navbar-expand-lg shadow sticky-top" style="background-color:rgb(51, 33, 117);">
         <div class="container">
             <a class="navbar-brand navbar-dark d-flex  align-items-center text-white  ms-sm-3 col-6 col-md-4 me-6" aria-label="Bootstrap" href="#"></svg><img class="logo-darmisa text-dark rounded-circle" src="./image/logo_DarMisa.jpg" alt="" title="DarMisa"><span class="fw-bold" style="margin-right: 100px;">DarMisa</span></a>
             
@@ -560,7 +560,7 @@ include_once 'koneksi.php';
     <section class="box pt-3 pb-4">
         <div class="container">
             <div class="row">
-                <div class="box-box z-index-2 text-light mx-auto py-4" style=" margin-top: -50px; margin-bottom: 200px; border-radius: 25px; background-color: rgba(40, 22, 111, 1);" >
+                <div class="box-box z-index-2 shadow-lg mx-auto py-4" style=" margin-top: -50px; margin-bottom: 200px; border-radius: 25px; background-color: rgba(40, 22, 111, 1);" >
                     <div class="row" style="text-decoration: none;">
                         <div class="col-md-4 position-relative">
                             <div class="p-3 text-center">
@@ -655,7 +655,7 @@ include_once 'koneksi.php';
             <div class="row">
                 <div class="graph">
                     <!-- <img src="./image/fuji-famous.jpg" class="data-img d-block mx-auto" alt=""> -->
-                    <img src="./image/<?=$row['2']?>" class="data-img d-block mx-auto rounded" alt="" >
+                    <img src="./image/<?=$row['2']?>" class="data-img d-block shadow mx-auto rounded" alt="" >
                 </div>
             </div>
         </div>
@@ -730,22 +730,22 @@ include_once 'koneksi.php';
             <h5 class="data-content text-center fw-bold mt-5 mb-4" style="font-size: 24px; font-family: sans-serif;">BREAKING NEWS</h5>
             <div class="row">
                 <div class="graph col-12 col-md-6 col-lg-3">
-                    <a href="./berita.php"><img src="./image/berita-1.jpg" class="img-news rounded mb-3" alt=""></a>
+                    <a href="./berita.php"><img src="./image/berita-1.jpg" class="img-news shadow rounded mb-3" alt=""></a>
                 </div>
                 <div class="graph col-12 col-md-6 col-lg-3">
-                    <a href="./berita.php"><img src="./image/berita-2.jpg" class="img-news rounded mb-3" alt=""></a>
+                    <a href="./berita.php"><img src="./image/berita-2.jpg" class="img-news shadow rounded mb-3" alt=""></a>
                 </div>
                 <div class="graph col-12 col-md-6 col-lg-3">
-                    <a href="./berita.php"><img src="./image/berita-3.jpg" class="img-news rounded mb-3" alt=""></a>
+                    <a href="./berita.php"><img src="./image/berita-3.jpg" class="img-news shadow rounded mb-3" alt=""></a>
                 </div>
                 <div class="graph col-12 col-md-6 col-lg-3">
-                    <a href="./berita.php"><img src="./image/berita-4.jpg" class="img-news rounded mb-3" alt=""></a>
+                    <a href="./berita.php"><img src="./image/berita-4.jpg" class="img-news shadow rounded mb-3" alt=""></a>
                 </div>
                 <div class="graph col-12 col-md-6 col-lg-3">
-                    <a href="./berita.php"><img src="./image/berita-5.jpg" class="img-news rounded mb-3" alt=""></a>
+                    <a href="./berita.php"><img src="./image/berita-5.jpg" class="img-news shadow rounded mb-3" alt=""></a>
                 </div>
                 <div class="graph col-12 col-md-6 col-lg-3">
-                    <a href="./berita.php"><img src="./image/berita-6.jpg" class="img-news rounded mb-3" alt=""></a>
+                    <a href="./berita.php"><img src="./image/berita-6.jpg" class="img-news shadow rounded mb-3" alt=""></a>
                 </div>
                 <div class="graph col-12 col-md-6 col-lg-3">
                     <a href="./berita.php"><img src="./image/berita-7.jpg" class="img-news rounded mb-3" alt=""></a>
@@ -783,7 +783,7 @@ include_once 'koneksi.php';
 
 
         <!-- ========== footer ========== -->
-        <div class="container-fluid bg-light">
+        <div class="container-fluid shadow-lg" style="background-color: #fdf9ff;">
             <footer class="footer py-5 " style="font-family: sans-serif;">
                 <div class="row">
                     <div class="justify-content-between col-12 col-md-4 mb-3">

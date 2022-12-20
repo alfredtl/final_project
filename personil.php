@@ -18,7 +18,7 @@ include_once 'koneksi.php';
     <link href="/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
 </head>
-<body>
+<body style="background-color: #f2f2fc;">
 
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
         <symbol id="bootstrap" viewBox="0 0 118 94">
@@ -48,7 +48,7 @@ include_once 'koneksi.php';
 
 
     <!-- =========== Navbar Baru Lagi =========== -->
-    <nav class="navbar navbar-expand-lg shadow-sm sticky-top" style="background-color:rgb(51, 33, 117);">
+    <nav class="navbar navbar-expand-lg shadow sticky-top" style="background-color:rgb(51, 33, 117);">
         <div class="container justify-content-between">
             <a class="navbar-brand navbar-dark d-flex  align-items-center text-white  ms-sm-3 col-6 col-md-4 me-6" aria-label="Bootstrap" href="#"></svg><img class="logo-darmisa text-dark rounded-circle d-flex mx-auto" src="./image/logo_DarMisa.jpg" alt="" title="DarMisa"><span class="fw-bold" style="margin-left: 80px; margin-right: 80px;">DarMisa</span></a>
             
@@ -112,7 +112,7 @@ include_once 'koneksi.php';
     </header>
     <!-- =========== Nav Baru End =========== -->
 
-        <h1 class="text-center fw-bold mb-5">Personil dan Unit</h1>
+        <h1 class="text-center fw-bold mb-5 mt-4">Personil dan Unit</h1>
     <!-- =========== Personil =========== -->
     <!-- <section class="pt-3 pb-4" style="font-family: sans-serif;">
         <div class="container">
@@ -367,7 +367,7 @@ include_once 'koneksi.php';
     <section class="pt-3 pb-4" style="font-family: sans-serif;">
         <div class="container">
             <div class="row">
-                <div class="col-lg-10 mx-auto py-4" style="margin-bottom: 100px; border-radius: 25px; background-color: rgb(51, 33, 117); background-color: #eee;" >
+                <div class="col-lg-10 shadow mx-auto py-4" style="margin-bottom: 100px; border-radius: 25px; background-color: rgb(51, 33, 117); background-color: #fdf9ff;" >
                     <h1 class="text-center fw-bold" style="margin-bottom: 80px;"></h1>
                     <div class="container col-10" style="margin-bottom: 100px;">
                         <p class="text-dark text-tf mb-0">Sumber Daya Dinas Pemadam Kebakaran</p>
@@ -769,7 +769,7 @@ include_once 'koneksi.php';
 
 
      <!-- ========== footer ========== -->
-     <div class="container-fluid bg-light">
+     <div class="container-fluid shadow-lg" style="background-color: #fdf9ff;">
             <footer class="footer py-5 " style="font-family: sans-serif;">
                 <div class="row">
                     <div class="justify-content-between col-12 col-md-4 mb-3">

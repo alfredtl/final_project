@@ -15,7 +15,7 @@
     <link href="/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
 </head>
-<body>
+<body style="background-color: #f2f2fc;">
 
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
   <symbol id="bootstrap" viewBox="0 0 118 94">
@@ -44,7 +44,7 @@
     <div class="b-example-divider"></div>
 
 <!-- =========== Navbar Baru Lagi =========== -->
-  <nav class="navbar navbar-expand-lg shadow-sm sticky-top" style="background-color:rgb(51, 33, 117);">
+  <nav class="navbar navbar-expand-lg shadow sticky-top" style="background-color:rgb(51, 33, 117);">
     <div class="container justify-content-between">
       <a class="navbar-brand navbar-dark d-flex  align-items-center text-white  ms-sm-3 col-6 col-md-4 me-6" aria-label="Bootstrap" href="#"></svg><img class="logo-darmisa text-dark rounded-circle" src="./image/logo_DarMisa.jpg" alt="" title="DarMisa"><span class="fw-bold" style="margin-left: 80px; margin-right: 80px;">DarMisa</span></a>
     
@@ -79,7 +79,7 @@
 <!-- =========== Navbar Baru Lagi End =========== -->
 
 
-  <h1 class="text-center text-dark fw-bold mt-5" style="margin-bottom: 60px;">Gallery</h1>
+  <h1 class="text-center text-dark fw-bold mb-5" style="margin-top: 100px;">Gallery</h1>
 
 <!-- =========== Foto bersama =========== -->
     <section class="pt-3 pb-4" style="font-family: sans-serif;">
@@ -299,7 +299,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 
      <!-- ========== footer ========== -->
-     <div class="container-fluid bg-light">
+     <div class="container-fluid shadow-lg" style="background-color: #fdf9ff;">
             <footer class="footer py-5 " style="font-family: sans-serif;">
                 <div class="row">
                     <div class="justify-content-between col-12 col-md-4 mb-3">

@@ -14,7 +14,7 @@
     <link href="/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
 </head>
-<body>
+<body style="background-color: #f2f2fc;">
 
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
         <symbol id="bootstrap" viewBox="0 0 118 94">
@@ -112,15 +112,16 @@
     <section class="pt-3 pb-4" style="font-family: sans-serif;">
         <div class="container">
             <div class="row">
-                <div class="col-lg-10 text-light mx-auto py-4" style="margin-bottom: 100px; border-radius: 25px; background-color: rgb(51, 33, 117); background-color: #eee;" >
-                    <h1 class="text-center fw-bold" style="margin-bottom: 80px; color: rgb(218, 37, 29);">VISI MISI</h1>
+                <h1 class="text-center fw-bold mt-3 mb-5">VISI MISI</h1>
+                <div class="col-lg-10 shadow mx-auto py-4" style="margin-bottom: 100px; border-radius: 25px; background-color: rgb(51, 33, 117); background-color: #fdf9ff;" >
+                    
                     <div class="container col-10" style="margin-bottom: 100px;">
-                        <h1 class="text-center fw-bold" style="color: rgb(51, 33, 117);">VISI</h1>
+                        <h1 class="text-center fw-bold" style="color: rgb(218, 37, 29);">VISI</h1>
                         <p class="text-seal text-center text-dark lh-lg mb-5">Dinas Pemadam Kebakaran Kabupaten Minahasa</p>
                         <p class="text-seal text-center text-dark lh-lg">"Terciptanya Aparatur Penanggulangan Kebakaran dan Rescue Yang Handal, Beretika dan Profesional Dalam Memajukan Kabupaten Minahasa"</p>
                     </div>
                     <div class="container col-10 mb-5 ">
-                        <h1 class="text-center  fw-bold" style="color: rgb(51, 33, 117);">MISI</h1>
+                        <h1 class="text-center  fw-bold" style="color: rgb(218, 37, 29);">MISI</h1>
                         <p class="text-seal text-center text-dark lh-lg mb-5">Dinas Pemadam Kebakaran Kabupaten Minahasa</p>
                         <p class="text-seal text-center text-dark lh-lg">
                             <ul class="text-center mx-auto">
@@ -141,7 +142,7 @@
     <section class="pt-3 pb-4" style="font-family: sans-serif;">
         <div class="container">
             <div class="row">
-                <div class="col-lg-10 text-light mx-auto py-4" style="margin-bottom: 100px; border-radius: 25px; background-color: rgb(218, 37, 29); background-color: #eee;" >
+                <div class="col-lg-10 shadow mx-auto py-4" style="margin-bottom: 100px; border-radius: 25px; background-color: rgb(218, 37, 29); background-color: #fdf9ff;" >
                     <h1 class="text-center fw-bold" style="margin-bottom: 80px; color: rgb(218, 37, 29) ;">SEJARAH</h1>
                     <div class="container col-10" style="margin-bottom: 100px;">
                         <p class="text-sejarah text-dark">Terbitnya Peraturan Pemerintah Nomor 18 tahun 2016 tentang Perangkat Daerah yang ditindaklanjuti dengan keluarnya Peraturan Daerah
@@ -173,7 +174,7 @@
     <section class="pt-3 pb-4" style="font-family: sans-serif;">
         <div class="container">
             <div class="row">
-                <div class="col-lg-10 text-light mx-auto py-4" style="margin-bottom: 100px; border-radius: 25px; background-color: rgb(51, 33, 117);" >
+                <div class="col-lg-10 text-light shadow mx-auto py-4" style="margin-bottom: 100px; border-radius: 25px; background-color: rgb(51, 33, 117);" >
                     <h1 class="text-center text-light fw-bold" style="margin-bottom: 80px;">Struktur Organisasi</h1>
                     <div class="container mx-auto col-10" style="margin-bottom: 100px;">
                         <img class="struktur" src="./image/struktur-organisasi1.png" alt="">
@@ -189,7 +190,7 @@
     <section class="pt-3 pb-4" style="font-family: sans-serif;">
         <div class="container">
             <div class="row">
-                <div class="col-lg-10 text-light mx-auto py-4" style="margin-bottom: 100px; border-radius: 25px; background-color: rgb(218, 37, 29); background-color: #eee;" >
+                <div class="col-lg-10 shadow mx-auto py-4" style="margin-bottom: 100px; border-radius: 25px; background-color: rgb(218, 37, 29); background-color: #fdf9ff;" >
                     <h1 class="text-center fw-bold" style="margin-bottom: 80px; color: rgb(218, 37, 29);">Tugas, Fungsi dan Struktur Organisasi Dinas Pemadam Kebakaran</h1>
                     <div class="container col-10" style="margin-bottom: 100px;"> 
 
@@ -1019,7 +1020,7 @@
     <section class="pt-3 pb-4" style="font-family: sans-serif;">
         <div class="container">
             <div class="row">
-                <div class="col-lg-10 text-light mx-auto py-4" style="margin-bottom: 100px; border-radius: 25px; background-color: rgb(51, 33, 117); background-color: #eee;" >
+                <div class="col-lg-10 shadow mx-auto py-4" style="margin-bottom: 100px; border-radius: 25px; background-color: rgb(51, 33, 117); background-color: #fdf9ff;" >
                     <h1 class="text-center fw-bold" style="margin-bottom: 40px; color: rgb(218, 37, 29);">Landasan Hukum</h1>
                     <h5 class="text-center fw-bold mx-auto" style="margin-bottom: 30px; color: rgb(51, 33, 117);">Rencana Strategis (RENSTRA) Dinas Pemadam Kebakaran disusun
                         berdasarkan aturan perundang-undangan. Dasar hukum penyusunan RENSTRA adalah sebagai berikut :</h5>
@@ -1110,7 +1111,7 @@
 
 
      <!-- ========== footer ========== -->
-     <div class="container-fluid bg-light">
+     <div class="container-fluid shadow-lg" style="background-color: #fdf9ff;">
             <footer class="footer py-5 " style="font-family: sans-serif;">
                 <div class="row">
                     <div class="justify-content-between col-12 col-md-4 mb-3">
