@@ -10,7 +10,7 @@ include_once 'koneksi.php';
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css" type="text/css">
-    <title>Home</title>
+    <title>Home | DarMisa</title>
     <!-- icon bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     
@@ -560,7 +560,7 @@ include_once 'koneksi.php';
     <section class="box pt-3 pb-4">
         <div class="container">
             <div class="row">
-                <div class="box-box z-index-2 shadow-lg mx-auto py-4" style=" margin-top: -50px; margin-bottom: 200px; border-radius: 25px; background-color: rgba(40, 22, 111, 1);" >
+                <div class="box-box z-index-2 mx-auto py-4" style=" margin-top: -50px; margin-bottom: 200px; border-radius: 25px; box-shadow: 5px 5px 20px #000000; text-shadow: 2px 2px 4px #000000; background-color: rgba(40, 22, 111, 1);" >
                     <div class="row" style="text-decoration: none;">
                         <div class="col-md-4 position-relative">
                             <div class="p-3 text-center">

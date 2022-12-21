@@ -247,9 +247,9 @@ if (isset($_POST['submit'])){
                                 <label for="exampleFormControlInput1" class="form-label">Upload Foto :</label><br>
                                 <input type="file" name="berkas" class="mb-5"><br>
                         
-                                <div class="row justify-content-center mt-5">
-                                    <input class="btn btn-danger me-5 col-md-4 col-sm-12" style="width: 90px;" type="reset" name="submit" value="Reset">
-                                    <input class="btn btn-primary col-md-4 col-sm-12" style="width: 90px;" type="submit" name="submit" value="Submit">
+                                <div class="row justify-content-end mt-5">
+                                    <input class="btn btn-danger me-3 col-md-4 col-sm-12" style="width: 90px;" type="reset" name="submit" value="Reset">
+                                    <input class="btn btn-primary me-2 col-md-4 col-sm-12" style="width: 90px;" type="submit" name="submit" value="Submit">
                                 </div>
                             </form>
                         </div>
@@ -277,9 +277,9 @@ if (isset($_POST['submit'])){
                                 <input type="file" name="berkas" class="mb-5"><br>
 
 
-                                <div class="row justify-content-center mt-5">
-                                    <input class="btn btn-danger me-5 col-md-4 col-sm-12" style="width: 90px;" type="reset" name="submit" value="Reset">
-                                    <input class="btn btn-primary col-md-4 col-sm-12" style="width: 90px;" type="submit" name="submit" value="Submit">
+                                <div class="row justify-content-end mt-5">
+                                    <input class="btn btn-danger me-3 col-md-4 col-sm-12" style="width: 90px;" type="reset" name="submit" value="Reset">
+                                    <input class="btn btn-primary me-2 col-md-4 col-sm-12" style="width: 90px;" type="submit" name="submit" value="Submit">
                                 </div>
                             </form>
                         </div>
@@ -306,9 +306,9 @@ if (isset($_POST['submit'])){
                                 <div class="mb-0">
                                     <input class="form-control mb-5" name="berkas" type="file" id="formFileMultiple" multiple> 
                                 </div>
-                                <div class="row justify-content-center mt-5">
-                                    <input class="btn btn-danger me-5 col-md-4 col-sm-12" style="width: 90px;" type="reset" name="submit" value="Reset">
-                                    <input class="btn btn-primary col-md-4 col-sm-12" style="width: 90px;" type="submit" name="submit" value="Submit">
+                                <div class="row justify-content-end mt-5">
+                                    <input class="btn btn-danger me-3 col-md-4 col-sm-12" style="width: 90px;" type="reset" name="submit" value="Reset">
+                                    <input class="btn btn-primary me-2 col-md-4 col-sm-12" style="width: 90px;" type="submit" name="submit" value="Submit">
                                 </div>
                                     
                             </form>
@@ -375,9 +375,9 @@ if (isset($_POST['submit'])){
                                 <label for="exampleFormControlInput1" class="form-label">link foto :</label>
                                 <input type="text" name="photo_link" class="form-control mb-3" value="<?php echo $photo_link; ?>">
 
-                                <div class="row justify-content-center mt-5">
-                                    <input class="btn btn-danger me-5 col-md-4 col-sm-12" style="width: 90px;" type="reset" name="submit" value="Reset">
-                                    <input class="btn btn-primary col-md-4 col-sm-12" style="width: 90px;" type="submit" name="submit" value="Submit">
+                                <div class="row justify-content-end mt-5">
+                                    <input class="btn btn-danger me-3 col-md-4 col-sm-12" style="width: 90px;" type="reset" name="submit" value="Reset">
+                                    <input class="btn btn-primary me-2 col-md-4 col-sm-12" style="width: 90px;" type="submit" name="submit" value="Submit">
                                 </div>
                                 <?php //setelah tombol submit ini dipencet, dia akan memproses kembali halaman ini lagi bedanya variable $_POST nya akan bernilai jadi 
                                     // block if yang paling atas itu akan diproses.Lihat baris 39. di blok itu, data akan disimpan setelah disimpan akan diredirect balik ke berita.php
