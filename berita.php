@@ -214,7 +214,7 @@ include_once 'koneksi.php';
                 <?php foreach ($berita as $row): ?>
 
                 <!-- berita 1 -->
-                <div id="berita1" class="box-box shadow mx-auto py-5" style="margin-bottom: 200px; border-radius: 25px; background-color: rgb(218, 37, 29); background-color: #fdf9ff;" >
+                <div id="berita1" class="box-box shadow mx-auto py-5" style="margin-bottom: 50px; border-radius: 25px; background-color: rgb(218, 37, 29); background-color: #fdf9ff;" >
                     <div class="row" style="text-decoration: none;">
                         <div class="col-md-4 col-sm-12 position-relative">
                             <div class="p-2 text-center">

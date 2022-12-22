@@ -488,6 +488,7 @@ include_once 'koneksi.php';
                                     <th style="border: 1px solid black; width: 5%; text-align: center;">No</th>
                                     <th style="border: 1px solid black; width: 20%; text-align: center;">Jenjang Pendidikan</th>
                                     <th style="border: 1px solid black; width: 10%; text-align: center;">Jumlah (Orang)</th>
+                                    <th style="border: 1px solid black; width: 5%; text-align: center;"></th>
                                 </tr>
                             
 
@@ -497,6 +498,9 @@ include_once 'koneksi.php';
                                     <td style="border: 1px solid black; text-align: center;"><?= $row[1];?></td>
                                     <td style="border: 1px solid black; text-align: center;"><?= $row[2];?></td>
                                     <td style="border: 1px solid black; text-align: center;"><?= $row[3];?></td>
+                                    <td style="border: 1px solid black; text-align: center; width: 5%;">
+                                        <a href="./update_kp_jbt.php?id=<? $row[0] ?>">Edit</a>
+                                    </td>
                                 </tr>
                             <?php endforeach; ?>
                             </table>
@@ -525,6 +529,8 @@ include_once 'koneksi.php';
                                     <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Jumlah (unit/buah)</th>
                                     <th colspan="3" style="border: 1px solid black; width: 10%; text-align: center;">Kondisi Sekarang</th>
                                     <th rowspan="2" style="border: 1px solid black; width: 10%; text-align: center;">Yang Diharapkan Jumlah (unit/buah)</th>
+                                    <th rowspan="2" style="border: 1px solid black; width: 5%; text-align: center;"></th>
+
                                 </tr>
                                 <tr>
                                 <th style="border: 1px solid black; width: 10%; text-align: center;">Baik</th>
@@ -542,6 +548,9 @@ include_once 'koneksi.php';
                                     <td style="border: 1px solid black; text-align: center;"><?= $row[4];?></td>
                                     <td style="border: 1px solid black; text-align: center;"><?= $row[5];?></td>
                                     <td style="border: 1px solid black; text-align: center;"><?= $row[6];?></td>
+                                    <td style="border: 1px solid black; text-align: center; width: 5%;">
+                                        <a href="./update_jumlah_kondisiarmada.php?id=<? $row[0] ?>">Edit</a>
+                                    </td>
                                 </tr>
                             <?php endforeach; ?>
                             </table>
