@@ -642,7 +642,7 @@ include_once 'koneksi.php';
 
         <?php 
             //INI CODE PHP UNTUK LOOPING BERITANYA. LAKUKAN DI TABEL2 LAINN
-            $sql = "SELECT * FROM diagram_pemadaman_penyelamatan";
+            $sql = "SELECT * FROM diagram_pema_peny";
 
             if ($result = mysqli_query($con, $sql)) {
                 // Fetch one and one row
@@ -657,7 +657,7 @@ include_once 'koneksi.php';
                     <!-- <img src="./image/fuji-famous.jpg" class="data-img d-block mx-auto" alt=""> -->
                     <img src="./image/<?=$row['2']?>" class="data-img d-block shadow mx-auto rounded" alt="" >
                     <div class="text-center mt-3">
-                        <a href="./update_jp.php?id=<?= $row[0] ?>" class="btn text-light w-25" style="background-color:rgb(51, 33, 117);">Ubah</a>
+                        <a href="./update_dpema_peny.php?id=<?= $row[0] ?>" class="btn text-light w-25" style="background-color:rgb(51, 33, 117);">Ubah</a>
                     </div>
                 </div>
             </div>
