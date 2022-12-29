@@ -233,8 +233,8 @@ if (isset($_POST['submit'])){
     <!-- =========== Navbar Baru Lagi End =========== -->
 
 
-
-    <section class="vh-5" style="padding-top: 80px;  margin-bottom: 100px; background-color: #f2f2fc;">
+    <!-- Data Pemadam -->
+    <!-- <section class="vh-5" style="padding-top: 80px;  margin-bottom: 100px; background-color: #f2f2fc;">
         <div class="container py-1 h-50">
             <div class="row d-flex justify-content-center align-items-center h-50">
                 <div class="col col-lg-9 col-xl-7">
@@ -248,7 +248,7 @@ if (isset($_POST['submit'])){
                                 <label for="exampleFormControlInput1" class="form-label">Upload Foto :</label><br>
                                 <input type="file" name="berkas" class="mb-5"><br>
                         
-                                <div class="row justify-content-end mt-5">
+                                <div class="row justify-content-start mt-5">
                                     <input class="btn btn-danger me-3 col-md-4 col-sm-12" style="width: 90px;" type="reset" name="submit" value="Reset">
                                     <input class="btn btn-primary me-2 col-md-4 col-sm-12" style="width: 90px;" type="submit" name="submit" value="Submit">
                                 </div>
@@ -258,9 +258,10 @@ if (isset($_POST['submit'])){
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
-    <section class="vh-2" style="margin-bottom: 100px; background-color: #f2f2fc;">
+    <!-- Data Penyelamatan -->
+    <!-- <section class="vh-2" style="margin-bottom: 100px; background-color: #f2f2fc;">
         <div class="container py-1 h-50">
             <div class="row d-flex justify-content-center align-items-center h-50">
                 <div class="col col-lg-9 col-xl-7">
@@ -278,7 +279,7 @@ if (isset($_POST['submit'])){
                                 <input type="file" name="berkas" class="mb-5"><br>
 
 
-                                <div class="row justify-content-end mt-5">
+                                <div class="row justify-content-start mt-5">
                                     <input class="btn btn-danger me-3 col-md-4 col-sm-12" style="width: 90px;" type="reset" name="submit" value="Reset">
                                     <input class="btn btn-primary me-2 col-md-4 col-sm-12" style="width: 90px;" type="submit" name="submit" value="Submit">
                                 </div>
@@ -288,8 +289,10 @@ if (isset($_POST['submit'])){
                 </div>
             </div>
         </div>
-    </section>
-    <section class="vh-2" style="margin-bottom: 100px; background-color: #f2f2fc;">
+    </section> -->
+
+    <!-- Galeri -->
+    <!-- <section class="vh-2" style="margin-bottom: 100px; background-color: #f2f2fc;">
         <div class="container py-1 h-100">
             <div class="row d-flex justify-content-center align-items-center h-100">
                 <div class="col col-lg-9 col-xl-7">
@@ -307,7 +310,7 @@ if (isset($_POST['submit'])){
                                 <div class="mb-0">
                                     <input class="form-control mb-5" name="berkas" type="file" id="formFileMultiple" multiple> 
                                 </div>
-                                <div class="row justify-content-end mt-5">
+                                <div class="row justify-content-start mt-5">
                                     <input class="btn btn-danger me-3 col-md-4 col-sm-12" style="width: 90px;" type="reset" name="submit" value="Reset">
                                     <input class="btn btn-primary me-2 col-md-4 col-sm-12" style="width: 90px;" type="submit" name="submit" value="Submit">
                                 </div>
@@ -318,14 +321,14 @@ if (isset($_POST['submit'])){
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
-
+    <!-- Berita -->
     <section class="vh-2" style="margin-bottom: 100px; background-color: #f2f2fc;">
         <div class="container py-1 h-100">
             <div class="row d-flex justify-content-center align-items-center h-100">
                 <div class="col col-lg-9 col-xl-7">
-                    <div class="card shadow rounded-3">
+                    <div class="card shadow rounded-3 mt-5">
                         <div class="card-body p-4">
                             <h2 class="text-center">UPDATE BERITA</h2>
 
@@ -362,7 +365,8 @@ if (isset($_POST['submit'])){
                                 <input type="text" name="judul" class="form-control mb-3" value="<?php echo $judul; ?>">
 
                                 <label for="exampleFormControlInput1" class="form-label">Isi Berita :</label>
-                                <input type="text" name="isi_berita" class="form-control mb-3" value="<?php echo $isi_berita; ?>">
+                                <textarea type="text" name="isi_berita" class="form-control mb-3" value="<?php echo $isi_berita; ?>"></textarea>
+                                <!-- <input type="text" name="isi_berita" class="form-control mb-3" value="<?php echo $isi_berita; ?>"> -->
 
                                 <label for="exampleFormControlInput1" class="form-label">Tanggal :</label>
                                 <input type="text" name="tanggal" class="form-control mb-3" value="<?php echo $tanggal; ?>">
@@ -376,7 +380,7 @@ if (isset($_POST['submit'])){
                                 <label for="exampleFormControlInput1" class="form-label">link foto :</label>
                                 <input type="text" name="photo_link" class="form-control mb-3" value="<?php echo $photo_link; ?>">
 
-                                <div class="row justify-content-end mt-5">
+                                <div class="row justify-content-start mt-5">
                                     <input class="btn btn-danger me-3 col-md-4 col-sm-12" style="width: 90px;" type="reset" name="submit" value="Reset">
                                     <input class="btn btn-primary me-2 col-md-4 col-sm-12" style="width: 90px;" type="submit" name="submit" value="Submit">
                                 </div>
