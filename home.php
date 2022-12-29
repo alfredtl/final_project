@@ -483,7 +483,7 @@ include_once 'koneksi.php';
             <div class="collapse navbar-collapse text-center" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item me-3">
-                        <a class="nav-link" aria-current="page" href="./homeindex.php">Beranda</a>
+                        <a class="nav-link" aria-current="page" href="./home.php">Beranda</a>
                     </li>
                     <li class="nav-item me-3">
                         <a class="nav-link" aria-current="page" href="./profil.php">Profil</a>
@@ -524,7 +524,7 @@ include_once 'koneksi.php';
                             <i class="list-burger bi bi-list d-lg-none ms-4" style="color: white; cursor: pointer;"></i></button>
                             <div class="collapse navbar-collapse" id="navbarNav">   
                                 <ul class="nav mb-md-0 mx-auto" style="width: 500px;">
-                                    <li><a href="./index.html" class="nav-link px-2 ">Beranda</a></li>
+                                    <li><a href="./home.html" class="nav-link px-2 ">Beranda</a></li>
                                     <li><a href="./profil.html" class="nav-link px-2 ">Profil</a></li>
                                     <li><a href="#" class="nav-link px-2 ">Berita</a></li>
                                     <li><a href="#" class="nav-link px-2 ">Personil & Unit</a></li>
