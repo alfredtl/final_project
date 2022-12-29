@@ -55,7 +55,7 @@
             <div class="collapse navbar-collapse text-center" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item me-4">
-                        <a class="nav-link" aria-current="page" href="./index.php">Beranda</a>
+                        <a class="nav-link" aria-current="page" href="./home.php">Beranda</a>
                     </li>
                     <li class="nav-item me-4">
                         <a class="nav-link" aria-current="page" href="./profil.php">Profil</a>
@@ -91,7 +91,7 @@
                             <a href="" class="btn btn-sm rounded-pill text-white mb-0 ms-auto d-lg-none d-block" title="Login" style="background-color:rgb(218, 37, 29); width: 80px;">Login</a>
                             <i class="list-burger bi bi-list d-lg-none ms-4" style="color: white; cursor: pointer;"></i>
                             <ul class="nav mb-md-0 mx-auto" style="width: 500px; font-size: 14px;">
-                                <li><a href="./index.html" class="nav-link px-2" >Beranda</a></li>
+                                <li><a href="./home.html" class="nav-link px-2" >Beranda</a></li>
                                 <li><a href="./profil.html" class="nav-link px-2 ">Profil</a></li>
                                 <li><a href="#" class="nav-link px-2 ">Berita</a></li>
                                 <li><a href="#" class="nav-link px-2 ">Personil & Unit</a></li>
@@ -1116,7 +1116,7 @@
                 <div class="row">
                     <div class="justify-content-between col-12 col-md-4 mb-3">
                         <div class="row">
-                            <a class="navbar-brand navbar-dark d-flex p-0 align-items-center text-dark w-75 fs-5 ms-sm-3 col-6 col-md-4 me-6 mb-4" href="#"></svg><img class="logo-darmisa text-dark" src="./image/logo-seal.jpeg" alt="" title="Social Economic Accelerator Lab"><span a class="fw-bold mx-4" title="DarMisa">DarMisa</span></a>
+                            <a class="navbar-brand navbar-dark d-flex p-0 align-items-center text-dark w-75 fs-5 ms-sm-3 col-6 col-md-4 me-6 mb-4" href="./darmisa.php"></svg><img class="logo-darmisa text-dark" src="./image/logo-seal.jpeg" alt="" title="Social Economic Accelerator Lab"><span a class="fw-bold mx-4" title="DarMisa">DarMisa</span></a>
                         </div>
                         
                         <p class="mb-4">Damkar Information And Reporting Website</p>

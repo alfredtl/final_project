@@ -209,7 +209,7 @@ if (isset($_POST['submit'])){
             <div class="collapse navbar-collapse text-center" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item me-4">
-                        <a class="nav-link" aria-current="page" href="./index.php">Beranda</a>
+                        <a class="nav-link" aria-current="page" href="./home.php">Beranda</a>
                     </li>
                     <li class="nav-item me-4">
                         <a class="nav-link" aria-current="page" href="./profil.php">Profil</a>

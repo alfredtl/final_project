@@ -47,62 +47,6 @@ include_once 'koneksi.php';
 
     <div class="b-example-divider"></div>
 
-
-    <!-- coba -->
-    <!-- <header>
-        <div id="nav" class="container" style="font-family: sans-serif;">
-            <div class="row g-0 text-center sticky-top">
-                <div class="col-12">
-                    <nav class="navbar d-flex navbar-expand-lg rounded-pill position-absolute justify-content-between p-3 my-3 py-2 start-0 end-0 mx-4 sticky-top" style="background-color:rgb(51, 33, 117);">
-                        <div class="container justify-content-between">
-                            <a class="navbar-brand navbar-dark d-flex  align-items-center text-white  ms-sm-3 col-6 col-md-4 me-6" aria-label="DarMisa" href="./darmisa.html"></svg><img class="logo-darmisa text-dark rounded-circle d-flex ms-3" src="./image/logo_DarMisa.jpg" alt="" title="DarMisa"><span class="text-logo fw-bold">DarMisa</span></a>
-                            
-                            <a href="" class="btn-small btn btn-sm rounded-pill text-white mb-0 ms-auto me-2" title="Login" style="background-color:rgb(218, 37, 29); width: 80px;">Login</a>
-                            
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <i class="list-burger bi bi-list d-lg-none ms-0 text-end" style="color: white; cursor: pointer;"></i></button>
-                            <div class="collapse navbar-collapse text-center" id="navbarNav">
-                                <ul class="navbar-nav mx-auto">
-                                    <li class="nav-item me-4">
-                                        <a class="nav-link" aria-current="page" href="./index.html">Beranda</a>
-                                    </li>
-                                    <li class="nav-item me-4">
-                                        <a class="nav-link" aria-current="page" href="./profil.html">Profil</a>
-                                    </li>
-                                    <li class="nav-item me-4">
-                                        <a class="nav-link" aria-current="page" href="#skill">Berita</a>
-                                    </li>
-                                    <li class="nav-item me-4">
-                                        <a class="nav-link" aria-current="page" href="#education">Personil & Unit</a>
-                                    </li>
-                                    <li class="nav-item me-4">
-                                        <a class="nav-link" aria-current="page" href="portofolio.html">Hubungi Kami</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="btn-login col-md-2 col-lg-2 text-end">
-                                <button type="button" class="btn text-white rounded-pill w-50 me-0" title="Login" style="background-color:rgb(218, 37, 29);">Login</button>
-                            </div>
-                        </div>
-
-                    </nav>
-                </div>
-            </div> 
-            <div class="row">
-                <div class="text-header col-lg-6 col-sm-12">
-                    <p class="text-moto text-white fw-bolder text-align-sm-center" >Pantang Pulang Sebelum Api Padam</p>
-                    <p class="" style="color: rgb(133, 129, 147); margin-left: 90px;">Tetap jaga kesehatan dan selalu waspada terhadap bahaya kebakaran</p>
-                    <button type="button" class="btn text-white rounded mt-4 me-2" style="background-color:rgb(218, 37, 29); width: 320px; margin-left: 90px;"><i class="bi bi-telephone-fill" style="color: rgb(51, 33, 117); margin-right: 10px;"></i> EMERGENCY CALL (0431) 321001</button>
-                </div>
-                <div class="img col-lg-6 col-sm-12">
-                    <img src="./image/logo-pemadam1.png" class="logo-pemadam" alt="">
-                </div>
-            </div>
-        </div>
-    </header>    -->
-    <!-- coba end -->
-
-
     <!-- =========== Navbar Baru Lagi =========== -->
     <nav class="navbar navbar-expand-lg shadow sticky-top" style="background-color:rgb(51, 33, 117);">
         <div class="container justify-content-between">
@@ -115,7 +59,7 @@ include_once 'koneksi.php';
             <div class="collapse navbar-collapse text-center" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item me-4">
-                        <a class="nav-link" aria-current="page" href="./index.php">Beranda</a>
+                        <a class="nav-link" aria-current="page" href="./home.php">Beranda</a>
                     </li>
                     <li class="nav-item me-4">
                         <a class="nav-link" aria-current="page" href="./profil.php">Profil</a>

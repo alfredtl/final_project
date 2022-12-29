@@ -432,7 +432,7 @@ include_once 'koneksi.php';
                             <div class="collapse navbar-collapse text-center" id="navbarNav">
                                 <ul class="navbar-nav mx-auto">
                                     <li class="nav-item me-4">
-                                        <a class="nav-link" aria-current="page" href="./index.html">Beranda</a>
+                                        <a class="nav-link" aria-current="page" href="./home.html">Beranda</a>
                                     </li>
                                     <li class="nav-item me-4">
                                         <a class="nav-link" aria-current="page" href="./profil.html">Profil</a>
@@ -483,7 +483,7 @@ include_once 'koneksi.php';
             <div class="collapse navbar-collapse text-center" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item me-3">
-                        <a class="nav-link" aria-current="page" href="./index.php">Beranda</a>
+                        <a class="nav-link" aria-current="page" href="./homeindex.php">Beranda</a>
                     </li>
                     <li class="nav-item me-3">
                         <a class="nav-link" aria-current="page" href="./profil.php">Profil</a>
@@ -656,6 +656,9 @@ include_once 'koneksi.php';
                 <div class="graph">
                     <!-- <img src="./image/fuji-famous.jpg" class="data-img d-block mx-auto" alt=""> -->
                     <img src="./image/<?=$row['2']?>" class="data-img d-block shadow mx-auto rounded" alt="" >
+                    <div class="text-center mt-3">
+                        <a href="./update_jp.php?id=<?= $row[0] ?>" class="btn text-light w-25" style="background-color:rgb(51, 33, 117);">Ubah</a>
+                    </div>
                 </div>
             </div>
         </div>
