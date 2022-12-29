@@ -81,17 +81,40 @@
 
   <h1 class="text-center text-dark fw-bold mb-5" style="margin-top: 100px;">Gallery</h1>
 
+
+
+
 <!-- =========== Foto bersama =========== -->
     <section class="pt-3 pb-4" style="font-family: sans-serif;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 text-light mx-auto py-4" style="margin-bottom: 100px; border-radius: 25px; background-color:rgb(218, 37, 29);" >
-                    <h5 class="text-light fw-bold" style="margin-bottom: 80px;">Foto Bersama</h5>
+                    <h5 class="text-light fw-bold ms-5" style="margin-bottom: 80px;">Foto Bersama</h5>
                     <div class="container text-center">
-                        <div class="row align-items-start">
+
+                <?php 
+                //INI CODE PHP UNTUK LOOPING. LAKUKAN DI TABEL2 LAINN
+                // $sql = "SELECT * FROM foto_bersama";
+
+                // $foto_bersama = [];
+                // if ($result = mysqli_query($con, $sql)) {
+                //     // tampilkan satu per satu
+                //     while ($row = mysqli_fetch_assoc($result)) {
+                //         $foto_bersama[] = $row;
+                //     }
+                //     mysqli_free_result($result);
+                // }
+                ?>
+
+
+                <?php //foreach ($foto_bersama as $row): ?>
+                        <div class="row align-items-center">
                           <div class="col">
+                          <a href=""><img src="./image/<?=$row[1]?>" class="rounded" style="width: 200px; border-radius: 25px;" alt=""> </a>
+
                            <a href=""><img src="./image/fotobersama1.jpg" style="width: 200px; border-radius: 25px;" alt=""> </a>
                           </div>
+
                           <div class="col">
                             <a href=""><img src="./image/fotobersama4.jpg" style="width: 200px; border-radius: 25px;" alt=""> </a>
                           </div>
@@ -99,6 +122,7 @@
                             <a href=""><img src="./image/fotobersama3.jpg" style="width: 200px; border-radius: 25px;" alt=""> </a>
                           </div>
                         </div>
+
                         <div class="row align-items-center">
                           <div class="col">
                             <div class="col">
@@ -112,6 +136,7 @@
                             <a href=""><img src="./image/fotobersama5.jpg" class="mt-5" style="width: 200px; height: 140px; border-radius: 25px;" alt=""> </a>
                           </div>
                         </div>
+
                         <div class="row align-items-end">
                           <div class="col">
                             <!-- One of three columns -->
@@ -124,22 +149,32 @@
                           </div>
                         </div>
                       </div>
-                    <div class="container col-10" style="margin-bottom: 100px;">
-                        <h1 class="text-center text-light fw-bold"></h1>
-                        <p class="text-seal text-center text-light lh-lg mb-5"></p>
-                        <p class="text-seal text-center text-light lh-lg"></p>
-                    </div>
+                      
+                      <div class="container col-10" style="margin-bottom: 100px;">
+                          <h1 class="text-center text-light fw-bold"></h1>
+                          <p class="text-seal text-center text-light lh-lg mb-5"></p>
+                          <p class="text-seal text-center text-light lh-lg"></p>
+                      </div>
+                <!-- <p class="lead text-end">
+                  <a href="./update_foto_bersama.php?id=<?= $row[0] ?>" class="btn btn-lg btn-secondary fw-bold border-black me-3"  style="margin-bottom: -15px; color: white; background-color:rgb(51, 33, 117);">Ubah</a>
+                </p> -->
                 </div>
+
+                <?php //endforeach;?>
+
             </div>
         </div>
     </section>
+
+                    
+
 
  <!-- =========== Foto Saat Bertugas =========== -->
     <section class="pt-3 pb-4" style="font-family: sans-serif;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 text-light mx-auto py-4" style="margin-bottom: 100px; border-radius: 25px; background-color:rgb(51, 33, 117);" >
-                    <h5 class="text-light fw-bold" style="margin-bottom: 80px;">Foto Saat Bertugas</h5>
+                    <h5 class="text-light fw-bold ms-5" style="margin-bottom: 80px;">Foto Saat Bertugas</h5>
                     <div class="container text-center">
                         <div class="row align-items-start">
                           <div class="col">
@@ -186,6 +221,7 @@
             </div>
         </div>
     </section>
+
 
 <!-- =========== Foto Rapat =========== -->
     <!-- <section class="pt-3 pb-4" style="font-family: sans-serif;">
