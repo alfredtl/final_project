@@ -831,7 +831,7 @@ include_once 'koneksi.php';
                             <li class=""><a class="text-muted mb-2" href="https://web.facebook.com/dinasdamkar.kabupatenminahasa"><i class="bi bi-facebook" title="facebook"></i></a></li>
                             <!-- <li class="ms-2"><a class="text-muted mb-1" href="https://wa.me/message/XUYOEQ6PQY7SF1"><i class="bi bi-whatsapp" title="Whatsapp"></i></a></li> -->
                             <li class="ms-2"><a class="text-muted mb-1" href="#"><i class="bi bi-instagram" title="instagram"></i></a></li>
-                            <li class="ms-2"><a class="text-muted mb-1" href="#"><i class="bi bi-youtube" title="Youtube"></i></a></li>
+                            <li class="ms-2"><a class="text-muted mb-1" href="https://www.youtube.com/@damkarminahasa6420"><i class="bi bi-youtube" title="Youtube"></i></a></li>
                         </ul>
                     </div>
           

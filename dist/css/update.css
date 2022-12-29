@@ -4,6 +4,7 @@
 } */
 body{
     font-family: sans-serif;
+    background-color: #f2f2fc;
 }
 p{
     transition: all 0.5 ease;

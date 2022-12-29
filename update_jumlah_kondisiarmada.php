@@ -123,7 +123,7 @@ if (isset($_POST['submit'])){
                                 <label for="exampleFormControlInput1" class="form-label">Jumlah Yang Diharapkan (unit/buah) :</label>
                                 <input type="text" name="diharapkan" class="form-control mb-3" value="<?php echo $diharapkan; ?>">
 
-                                <div class="row justify-content-end mt-5">
+                                <div class="row justify-content-start mt-5">
                                     <input class="btn btn-danger me-3 col-md-4 col-sm-12" style="width: 90px;" type="reset" name="submit" value="Reset">
                                     <input class="btn btn-primary me-2 col-md-4 col-sm-12" style="width: 90px;" type="submit" name="submit" value="Submit">
                                 </div>

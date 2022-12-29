@@ -21,7 +21,8 @@ if(isset($_GET['id'])){
     if ($result = mysqli_query($con, $sql)) {
         // echo "<br>data tersedia";
         while($data = mysqli_fetch_assoc($result)) {
-            $Jbt = $data['Jbt'];
+            $no_ = $data['no_'];
+            $jbt = $data['jbt'];
             $jumlah = $data['jumlah'];
         }
     } else {
@@ -35,6 +36,7 @@ if(isset($_GET['id'])){
 
 if (isset($_POST['submit'])){
     //var_dump($_POST);
+    $no_ = $_POST['no_'];
     $jbt = $_POST['jbt'];
     $jumlah = $_POST['jumlah'];
 
@@ -80,6 +82,7 @@ if (isset($_POST['submit'])){
 
     <!-- icon bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    
 </head>
 <body style="background-color: #f2f2fc;">
     
@@ -100,7 +103,7 @@ if (isset($_POST['submit'])){
                                 <label for="exampleFormControlInput1" class="form-label">Jumlah (orang) :</label>
                                 <input type="text" name="jumlah" class="form-control mb-3" value="<?php echo $jumlah; ?>">
 
-                                <div class="row justify-content-end mt-5">
+                                <div class="row justify-content-start mt-5">
                                     <input class="btn btn-danger me-3 col-md-4 col-sm-12" style="width: 90px;" type="reset" name="submit" value="Reset">
                                     <input class="btn btn-primary me-2 col-md-4 col-sm-12" style="width: 90px;" type="submit" name="submit" value="Submit">
                                 </div>
