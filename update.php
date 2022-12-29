@@ -365,8 +365,8 @@ if (isset($_POST['submit'])){
                                 <input type="text" name="judul" class="form-control mb-3" value="<?php echo $judul; ?>">
 
                                 <label for="exampleFormControlInput1" class="form-label">Isi Berita :</label>
-                                <textarea type="text" name="isi_berita" class="form-control mb-3" value="<?php echo $isi_berita; ?>"></textarea>
-                                <!-- <input type="text" name="isi_berita" class="form-control mb-3" value="<?php echo $isi_berita; ?>"> -->
+                                <!-- <textarea type="text" name="isi_berita" class="form-control mb-3" value="<?php echo $isi_berita; ?>"></textarea> -->
+                                <input type="text" name="isi_berita" class="form-control mb-3" value="<?php echo $isi_berita; ?>">
 
                                 <label for="exampleFormControlInput1" class="form-label">Tanggal :</label>
                                 <input type="text" name="tanggal" class="form-control mb-3" value="<?php echo $tanggal; ?>">
